@@ -282,7 +282,9 @@ clone_dotfiles() {
     mkdir -p $HOME/.local/bin
 
     declare -a local__bin_scripts=(
-      "monitor-config"
+      "monitor-config",
+      "wl-random-wallpaper",
+      "wl-wallpapers-rotator"
     )
 
     cd $directory/.dotfiles
@@ -368,7 +370,7 @@ create_local__bin_symlinks() {
     error "Error at try to read $dotfiles_path: No such file or directory"
   fi
 
-  to_paste="monitor-config"
+  to_paste="monitor-config wl-random-wallpaper wl-wallpapers-rotator"
 
   for to_paste_item in $to_paste; do
     echo "==> ln -s $dotfiles_path/.local/bin/$to_paste_item $HOME/.local/bin/$to_paste_item"

@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+
+from argparse import Namespace as CommandArguments
+from random import randint
+from sys import stderr
+from wl.core.wallpapers import wallpapers
+from wl.resources.config import config
+from wl.scripts.arguments import arguments
+from wl.commands.set import Set
+
+
+def set_wallpaper(wallpaper: str):
+    argv: CommandArguments = arguments(wallpaper=wallpaper)
+    Set(argv)
+
+
+def error(message: str):
+    print(message, file=stderr)
+    exit(1)
+
+
+def get_random_wallpaper_name() -> str:
+    configured_wallpapers = wallpapers.get_wallpapers()
+    index = randint(0, (len(configured_wallpapers) - 1))
+    print(index)
+    wallpaper = configured_wallpapers[index]
+
+    return wallpaper
+
+
+def main():
+    parsed_config = config.parse()
+    if not 'wallpapers_folder' in parsed_config:
+        error('You not have a configured wallpapers_folder')
+    if not 'wallpaper' in parsed_config:
+        error('You not have a configured wallpaper')
+    else:
+        print(f'Your actual wallpaper is: {parsed_config["wallpaper"]}')
+
+    wallpaper_name = get_random_wallpaper_name()
+    set_wallpaper(wallpaper_name)
+
+if __name__ == '__main__':
+    main()

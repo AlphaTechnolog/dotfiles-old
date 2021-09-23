@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+from argparse import Namespace as CommandArguments
+from wl.commands.set import Set
+from wl.scripts.arguments import arguments
+from wl.core.wallpapers import wallpapers
+from time import sleep
+
+
+def set_wallpaper(wallpaper: str):
+    argv: CommandArguments = arguments(wallpaper=wallpaper)
+    Set(argv)
+
+
+def main():
+    for wallpaper in wallpapers.get_wallpapers():
+        set_wallpaper(wallpaper=wallpaper)
+        sleep(1)
+
+
+if __name__ == '__main__':
+    main()
