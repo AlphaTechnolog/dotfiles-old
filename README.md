@@ -89,3 +89,8 @@ Conky already have this, but in this guide I present it for you!
 My favorite shell is fish, to change the shell in bash to fish, use the command
 `tofish`, it is an alias to change the default shell to fish, if the password
 is asked, please write your user password.
+
+## Screenshots
+
+![dotfiles](./screenshots/dotfiles.png)
+![dotfiles-2](./screenshots/dotfiles-2.png)
