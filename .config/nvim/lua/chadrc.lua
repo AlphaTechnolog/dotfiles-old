@@ -15,7 +15,7 @@ M.ui = {
       enabled = false,
       fav_themes = {
          "onedark",
-         "gruvbox",
+         "one-light",
       },
    },
 
@@ -50,10 +50,10 @@ M.options = {
    mapleader = " ",
    mouse = "a",
    number = true,
+   wrap = false,
    -- relative numbers in normal mode tool at the bottom of options.lua
    numberwidth = 2,
    permanent_undo = true,
-   wrap = false,
    shiftwidth = 2,
    smartindent = true,
    tabstop = 8, -- Number of spaces that a <Tab> in the file counts for
@@ -77,20 +77,20 @@ M.options.plugin = {
 M.plugin_status = {
    autosave = false, -- to autosave files
    blankline = true, -- beautified blank lines
-   bufferline = false, -- buffer shown as tabs
+   bufferline = true, -- buffer shown as tabs
    cheatsheet = true, -- fuzzy search your commands/keymappings
    colorizer = true,
    comment = true, -- universal commentor
-   dashboard = true, -- a nice looking dashboard
+   dashboard = false, -- a nice looking dashboard
    esc_insertmode = true, -- escape from insert mode using custom keys
    feline = true, -- statusline
    gitsigns = true, -- gitsigns in statusline
    lspsignature = true, -- lsp enhancements
    neoformat = true, -- universal formatter
    neoscroll = true, -- smooth scroll
-   telescope_media = true, -- see media files in telescope picker
-   truezen = true, -- no distraction mode for nvim
-   vim_fugitive = true, -- git in nvim
+   telescope_media = false, -- see media files in telescope picker
+   truezen = false, -- no distraction mode for nvim
+   vim_fugitive = false, -- git in nvim
    vim_matchup = true, -- % magic, match it but improved
 }
 
@@ -121,10 +121,10 @@ M.mappings = {
    terminal = {
       -- multiple mappings can be given for esc_termmode and esc_hide_termmode
       -- get out of terminal mode
-      esc_termmode = { "jk" }, -- multiple mappings allowed
+      esc_termmode = { "jk", "jj", "kk", "kj" }, -- multiple mappings allowed
       -- get out of terminal mode and hide it
       -- it does not close it, see pick_term mapping to see hidden terminals
-      esc_hide_termmode = { "<leader>q" }, -- multiple mappings allowed
+      esc_hide_termmode = { "JK" }, -- multiple mappings allowed
       -- show hidden terminal buffers in a telescope picker
       pick_term = "<leader>W",
       -- below three are for spawning terminals
@@ -165,7 +165,7 @@ M.mappings.plugin = {
    },
    -- note: this is an edditional mapping to escape, escape key will still work
    better_escape = {
-      esc_insertmode = { "jk", "kj", "jj", "kk" }, -- multiple mappings allowed
+      esc_insertmode = { "jk", "kj", "kk", "jj" }, -- multiple mappings allowed
    },
    nvimtree = {
       toggle = "<C-n>", -- file manager

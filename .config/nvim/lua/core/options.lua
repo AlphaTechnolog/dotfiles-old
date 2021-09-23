@@ -15,11 +15,11 @@ opt.expandtab = options.expandtab
 opt.shiftwidth = options.shiftwidth
 opt.smartindent = options.smartindent
 
+-- Wrapping
+opt.wrap = options.wrap
+
 -- disable tilde on end of buffer: https://github.com/  neovim/neovim/pull/8546#issuecomment-643643758
 opt.fillchars = { eob = " " }
-
--- wrap lines (set wrap or set nowrap (vim script))
-opt.wrap = options.wrap
 
 opt.hidden = options.hidden
 opt.ignorecase = options.ignorecase

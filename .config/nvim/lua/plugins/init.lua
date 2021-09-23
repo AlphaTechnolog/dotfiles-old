@@ -163,10 +163,10 @@ return packer.startup(function()
    }
 
    use {
-      "jdhao/better-escape.vim",
+      "max397574/better-escape.nvim",
       disable = not plugin_status.esc_insertmode,
       event = "InsertEnter",
-      setup = function()
+      config = function()
          require("plugins.configs.others").better_escape()
       end,
    }
@@ -336,9 +336,5 @@ return packer.startup(function()
       setup = function()
          require("core.mappings").vim_fugitive()
       end,
-   }
-
-   use {
-     "romgrk/doom-one.vim"
    }
 end)
