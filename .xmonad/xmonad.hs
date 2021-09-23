@@ -388,10 +388,10 @@ myKeys =
         , ("M-u <Space>", spawn "mocp --toggle-pause")
 
     -- KB_GROUP Emacs (CTRL-e)
-        , ("C-e", spawn myEmacs)
+        , ("C-e e", spawn myEmacs)
 
     -- KB_GROUP Vim (CTRL-v)
-        , ("C-v", spawn myEditor)
+        , ("C-e v", spawn myEditor)
 
     -- KB_GROUP Multimedia Keys
         , ("<XF86AudioPlay>", spawn "mocp --play")
