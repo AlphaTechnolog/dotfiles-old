@@ -82,8 +82,8 @@ myEmacs :: String
 myEmacs = "emacs"  -- Makes emacs keybindings easier to type
 
 myEditor :: String
-myEditor = "emacs"  -- Sets emacs as editor
--- myEditor = myTerminal ++ " -e vim "    -- Sets vim as editor
+-- myEditor = "emacs"  -- Sets emacs as editor
+myEditor = myTerminal ++ " -e vim "    -- Sets vim as editor
 
 myBorderWidth :: Dimension
 myBorderWidth = 2           -- Sets border width for windows
@@ -387,9 +387,11 @@ myKeys =
         , ("M-u h", spawn "mocp --previous")
         , ("M-u <Space>", spawn "mocp --toggle-pause")
 
-    -- KB_GROUP Emacs (CTRL-e followed by a key)
-        -- , ("C-e e", spawn myEmacs)                 -- start emacs
-        , ("C-e e", spawn myEmacs)                 -- emacs
+    -- KB_GROUP Emacs (CTRL-e)
+        , ("C-e", spawn myEmacs)
+
+    -- KB_GROUP Vim (CTRL-v)
+        , ("C-v", spawn myEditor)
 
     -- KB_GROUP Multimedia Keys
         , ("<XF86AudioPlay>", spawn "mocp --play")
