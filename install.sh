@@ -144,7 +144,8 @@ install_required_programs() {
   declare -a dependencies=(
     "conky",
     "nm-applet",
-    "trayer"
+    "trayer",
+    "emacs"
   )
 
   declare -a pypi_dependencies=(
@@ -153,9 +154,16 @@ install_required_programs() {
 
   declare -a to_recompile_dependencies=(
     "volumeicon",
-    "cbatticon",
-    "udiskie",
-    "rofi"
+    "rofi",
+    "nvim",
+    "alacritty",
+    "picom",
+    "xmonad",
+    "xmobar"
+  )
+
+  declare -a to_manually_install_dependencies=(
+    "brave-browser"
   )
 
   if confirm "Do you want to install the required programs with apt and git, if not, I list all packages you will install" 1; then
@@ -191,6 +199,17 @@ install_required_programs() {
 
       echo "Done."
     fi
+
+    if confirm "Exists dependencies to install manually go to its website, list it?" 1; then
+      echo "-----------------"
+      echo "Listing the dependencies to install manually..."
+
+      for dependency in ${to_manually_install_dependencies[@]}; do
+        echo "  -> $dependency"
+      done
+
+      echo "Done."
+    fi
   else
     clear
     title "Dependencies store"
@@ -218,6 +237,13 @@ install_required_programs() {
     done
 
     echo "Done."
+
+    echo "-----------------"
+    echo "Listing the dependencies to install manually..."
+
+    for dependency in ${to_manually_install_dependencies[@]}; do
+      echo " -> $dependency"
+    done
   fi
 
   press_enter_to_continue
