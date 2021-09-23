@@ -20,17 +20,18 @@ main_menu() {
   printf "  4. Create $HOME symlinks\n"
   printf "  5. Create .local/bin symlinks (optional because the step 1 already apply this)\n"
   printf "  6. Setup rofi\n"
-  printf "  7. Exit of installer\n"
+  printf "  7. Setup wl wallpaper\n"
+  printf "  8. Exit of installer\n"
   echo
   echo "Uninstall:"
-  printf "  8. Remove all config\n"
+  printf "  9. Remove all config\n"
 
   echo "----------------------------------------"
 
   printf "=> Write the option to make: "
   read option
 
-  while [[ $option < 1 || $option > 8 && "$option" -eq "$option" ]]; do
+  while [[ $option < 1 || $option > 9 && "$option" -eq "$option" ]]; do
     echo "==> Invalid option!"
     printf "=> Write the option to make: "
     read option
@@ -43,8 +44,9 @@ main_menu() {
     4) create_home_symlinks ;;
     5) create_local__bin_symlinks;;
     6) setup_rofi ;;
-    7) clear && echo "Bye bye. Enjoy!!!" && exit 0;;
-    8) remove_all_config ;;
+    7) setup_wallpaper ;;
+    8) clear && echo "Bye bye. Enjoy!!!" && exit 0;;
+    9) remove_all_config ;;
   esac
 }
 
@@ -423,6 +425,33 @@ setup_rofi() {
   prevented_process ln -s $dotfiles_path/.local/share/rofi/themes/onedark.rasi $HOME/.local/share/rofi/themes/onedark.rasi 
 
   echo "Done."
+
+  press_enter_to_continue
+  main_menu
+}
+
+setup_wallpaper() {
+  clear
+  title "Setup the wl wallpaper"
+
+  printf "=> Write the dotfiles path (default $HOME/.dotfiles): "
+  read dotfiles_path
+
+  if [[ $dotfiles_path == "" ]]; then
+    dotfiles_path="$HOME/.dotfiles"
+  fi
+
+  if [[ ! $dotfiles_path ]]; then
+    error "Error at try to open $dotfiles_path: No such file or directory"
+  fi
+
+  echo "==> $HOME/.local/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers"
+  prevented_process $HOME/.local/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers
+
+  if confirm "Do you want to setup a default wl wallapaper 04.jpeg? " 1; then
+    echo "==> $HOME/.local/bin/wl set 04.jpeg"
+    prevented_process $HOME/.local/bin/wl set 04.jpeg
+  fi
 
   press_enter_to_continue
   main_menu
