@@ -109,8 +109,8 @@ ${color1}[S]+[0-9]${alignr}${color2}switch workspace${color}
 ${color1}[S]+[SHIFT]+[0-9]${alignr}${color2}send window${color}
 ${color1}[S]+h/l${alignr}${color2}shrink/expand${color}
 ${color1}${hr}${color}
-${color1}[CTRL]+e${alignr}${color2}launch emacs${color}
-${color1}[CTRL]+v${alignr}${color2}launch neovim${color}
+${color1}[CTRL]+e+e${alignr}${color2}launch emacs${color}
+${color1}[CTRL]+e+v${alignr}${color2}launch neovim${color}
 ${color1}${hr}${color}
 ${color1}[S]+[SHIFT]+r${alignr}${color2}restart xmonad${color}
 ${color1}[S]+[SHIFT]+q${alignr}${color2}quit xmonad${color}
