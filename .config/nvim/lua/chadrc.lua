@@ -33,7 +33,7 @@ M.ui.plugin = {
       hidden = {},
       shown = {},
       -- default, round , slant , block , arrow
-      style = "default",
+      style = "round",
    },
 }
 

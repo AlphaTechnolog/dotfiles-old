@@ -23,7 +23,7 @@ opt.fillchars = { eob = " " }
 
 opt.hidden = options.hidden
 opt.ignorecase = options.ignorecase
-opt.mouse = options.mouse
+-- opt.mouse = options.mouse
 
 -- Numbers
 opt.number = options.number
