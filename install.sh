@@ -159,11 +159,14 @@ install_required_programs() {
     "alacritty",
     "picom",
     "xmonad",
-    "xmobar"
+    "xmobar",
+    "fish"
   )
 
   declare -a to_manually_install_dependencies=(
-    "brave-browser"
+    "brave-browser",
+    "colorscript",
+    "bash-insulter"
   )
 
   if confirm "Do you want to install the required programs with apt and git, if not, I list all packages you will install" 1; then
