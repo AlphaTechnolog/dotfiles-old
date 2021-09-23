@@ -83,3 +83,9 @@ Conky already have this, but in this guide I present it for you!
 - S-e-v : Spawn neovim
 - S-Shift-r : Restart xmonad
 - S-Shift-q : Quit xmonad and go to login screen
+
+## Tips
+
+My favorite shell is fish, to change the shell in bash to fish, use the command
+`tofish`, it is an alias to change the default shell to fish, if the password
+is asked, please write your user password.
