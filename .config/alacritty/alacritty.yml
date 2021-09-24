@@ -109,8 +109,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Sauce Code Pro Nerd Font
-    # family: CodeNewRoman Nerd Font
+    # family: Sauce Code Pro Nerd Font
+    family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
     # family: JetBrains Mono Nerd Font
@@ -128,8 +128,8 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Sauce Code Pro Nerd Font
-    # family: CodeNewRoman Nerd Font
+    # family: Sauce Code Pro Nerd Font
+    family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
     # family: JetBrains Mono Nerd Font
@@ -147,8 +147,8 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Sauce Code Pro Nerd Font
-    # family: CodeNewRoman Nerd Font
+    # family: Sauce Code Pro Nerd Font
+    family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
     # family: JetBrains Mono Nerd Font
@@ -410,7 +410,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *onedark
+colors: *dracula
 
 # Visual Bell
 #

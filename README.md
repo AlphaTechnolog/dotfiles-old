@@ -9,6 +9,13 @@ spectrwm, tint2, dwmblocks and much more.
 ![dotfiles](./screenshots/dotfiles.png)
 ![dotfiles-2](./screenshots/dotfiles-2.png)
 
+## Config explain
+
+My config not use [my nvim dofiles](https://github.com/AlphaTechnolog/nvim-dotfiles)
+because I found a more better solution, [NvChad](https://github.com/NvChad/NvChad)
+it is an attempt to make neovim terminal in a functional and complete IDE, in it
+you can 
+
 ## Notes
 
 This config is oriented to a Debian users and the install.sh script is only
