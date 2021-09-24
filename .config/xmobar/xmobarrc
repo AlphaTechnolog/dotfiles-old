@@ -10,12 +10,12 @@ Config { font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.8:
                            , "xft:Font Awesome 5 Brands:pixelsize=12"
                            ]
        -- Onedark colors:
-       -- , bgColor      = "#1e2127"
-       -- , fgColor      = "#ff6c6b"
+       , bgColor      = "#1e2127"
+       , fgColor      = "#ff6c6b"
        -- --------------------------
        -- Dracula colors
-       , bgColor      = "#282a36"
-       , fgColor      = "#f8f8f2"
+       -- , bgColor      = "#282a36"
+       -- , fgColor      = "#f8f8f2"
        -- Position TopSize and BottomSize take 3 arguments:
        --   an alignment parameter (L/R/C) for Left, Right or Center.
        --   an integer for the percentage width, so 100 would be 100%.
