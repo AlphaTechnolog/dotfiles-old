@@ -109,7 +109,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Sauce Code Pro Nerd Font
+    # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -118,6 +118,7 @@ font:
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
+    family: CaskaydiaCove NF
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -128,7 +129,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Sauce Code Pro Nerd Font
+    # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -137,6 +138,7 @@ font:
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
+    family: CaskaydiaCove NF
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -147,7 +149,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Sauce Code Pro Nerd Font
+    # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -156,6 +158,7 @@ font:
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
+    family: CaskaydiaCove NF
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -166,7 +169,7 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Sauce Code Pro Nerd Font
+    # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -175,12 +178,14 @@ font:
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
+    family: CaskaydiaCove NF
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
 
   # Point size
-  size: 12.0
+  # size: 12.0
+  size: 13.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -462,7 +467,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *onedark
+colors: *dracula
 
 # Visual Bell
 #
