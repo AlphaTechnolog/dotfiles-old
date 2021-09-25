@@ -439,11 +439,26 @@ main = do
               -- the following variables beginning with 'pp' are settings for xmobar.
               { ppOutput = \x -> hPutStrLn xmproc0 x                          -- xmobar on monitor 1
                               >> hPutStrLn xmproc1 x                          -- xmobar on monitor 2
-              , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
-              , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
-              , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
-              , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
-              , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
+              -- Onedark
+              -- , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
+              -- Gruvbox
+              , ppCurrent = xmobarColor "#b16286" "" . wrap "<box type=Bottom width=2 mb=2 color=#b16286>" "</box>"
+              -- Onedark
+              -- , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
+              -- Gruvbox
+              , ppVisible = xmobarColor "#b16286" "" . clickable              -- Visible but not current workspace
+              -- Onedark
+              -- , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
+              -- Gruvbox
+              , ppHidden = xmobarColor "#458588" "" . wrap "<box type=Top width=2 mt=2 color=#458588>" "</box>" . clickable -- Hidden workspaces
+              -- Onedark
+              -- , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
+              -- Gruvbox
+              , ppHiddenNoWindows = xmobarColor "#458588" ""  . clickable     -- Hidden workspaces (no windows)
+              -- Onedark
+              -- , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
+              -- Gruvbox
+              , ppTitle = xmobarColor "#a89984" "" . shorten 60               -- Title of active window
               , ppSep =  "<fc=#666666> <fn=1>|</fn> </fc>"                    -- Separator character
               , ppUrgent = xmobarColor "#C45500" "" . wrap "!" "!"            -- Urgent workspace
               , ppExtras  = [windowCount]                                     -- # of windows current workspace
