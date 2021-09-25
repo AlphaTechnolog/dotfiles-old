@@ -104,7 +104,10 @@ myStartupHook = do
     spawnOnce "volumeicon &"
     spawnOnce "$HOME/.local/bin/monitor-config"
     spawnOnce "conky -c $HOME/.config/conky/doomone-xmonad.conkyrc"
-    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1e222a  --height 22 &"
+    -- Onedark
+    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1e222a  --height 22 &"
+    -- Gruvbox
+    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282828  --height 22 &"
     spawnOnce "$HOME/.local/bin/wl restore"
     setWMName "LG3D"
 
