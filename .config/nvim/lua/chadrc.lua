@@ -8,7 +8,7 @@ M.ui = {
    italic_comments = false,
 
    -- theme to be used, to see all available themes, open the theme switcher by <leader> + th
-   theme = "chadracula",
+   theme = "onedark",
 
    -- theme toggler, toggle between two themes, see theme_toggleer mappings
    theme_toggler = {
@@ -21,7 +21,7 @@ M.ui = {
 
    -- Enable this only if your terminal has the colorscheme set which nvchad uses
    -- For Ex : if you have onedark set in nvchad , set onedark's bg color on your terminal
-   transparency = false,
+   transparency = true,
 }
 
 -- plugin related ui options
