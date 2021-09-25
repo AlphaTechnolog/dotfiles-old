@@ -14,7 +14,8 @@ spectrwm, tint2, dwmblocks and much more.
 My config not use [my nvim dofiles](https://github.com/AlphaTechnolog/nvim-dotfiles)
 because I found a more better solution, [NvChad](https://github.com/NvChad/NvChad)
 it is an attempt to make neovim terminal in a functional and complete IDE, in it
-you can 
+you can customize your neovim using lua, to make your faster and complete functional
+IDE.
 
 ## Notes
 
