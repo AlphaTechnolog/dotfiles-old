@@ -76,7 +76,7 @@ myTerminal :: String
 myTerminal = "alacritty"    -- Sets default terminal
 
 myBrowser :: String
-myBrowser = "brave-browser"  -- Sets qutebrowser as browser
+myBrowser = "firefox"  -- Sets qutebrowser as browser
 
 myEmacs :: String
 myEmacs = "emacs"  -- Makes emacs keybindings easier to type
@@ -105,7 +105,7 @@ windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace
 myStartupHook :: X ()
 myStartupHook = do
     spawnOnce "picom &"
-    spawnOnce "nm-applet &"
+    -- spawnOnce "nm-applet &"
     spawnOnce "volumeicon &"
     spawnOnce "$HOME/.local/bin/monitor-config"
     spawnOnce "conky -c $HOME/.config/conky/doomone-xmonad.conkyrc"

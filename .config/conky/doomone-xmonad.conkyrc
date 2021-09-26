@@ -100,7 +100,7 @@ ${goto 12}${color1}${top_mem name 3}$alignr$color${top_mem mem_res 3}
 ${voffset 18}${color1}${alignc}XMONAD KEYBINDINGS${color}
 ${color1}${hr}${color}
 ${color1}[S]+[RET]${alignr}${color2}open terminal${color}
-${color1}[S]+b${alignr}${color2}open brave-browser${color}
+${color1}[S]+b${alignr}${color2}open firefox${color}
 ${color1}[S]+[SPC]+[RET]${alignr}${color2}run prompt${color}
 ${color1}[S]+w${alignr}${color2}close window${color}
 ${color1}[S]+hjkl${alignr}${color2}move win focus${color}
