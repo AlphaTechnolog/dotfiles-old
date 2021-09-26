@@ -26,14 +26,15 @@ M.plugins = {
     bufferline = false,
     truezen = true,
     neoscroll = true,
-    dashboard = true
+    dashboard = true,
+    colorizer = true
   },
    options = {
     lspconfig = {
        servers = {"html", "cssls", "tsserver"}
     },
     statusline = {
-      style = "round"
+      style = "arrow"
     },
     nvimtree = {
       enable_git = 1

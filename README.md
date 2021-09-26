@@ -7,7 +7,12 @@ spectrwm, tint2, dwmblocks and much more.
 ## Screenshots
 
 ![dotfiles](./screenshots/dotfiles.png)
+<br>
 ![dotfiles-2](./screenshots/dotfiles-2.png)
+<br>
+![qtile](./screenshots/qtile.png)
+<br>
+![qtile-2](./screenshots/qtile-2.png)
 
 ## Config explain
 

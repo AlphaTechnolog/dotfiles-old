@@ -104,7 +104,7 @@ windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace
 
 myStartupHook :: X ()
 myStartupHook = do
-    spawnOnce "picom &"
+    spawnOnce "picom --config ~/.config/picom.xmonad/picom.conf &"
     -- spawnOnce "nm-applet &"
     spawnOnce "volumeicon &"
     spawnOnce "$HOME/.local/bin/monitor-config"
