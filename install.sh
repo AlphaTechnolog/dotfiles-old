@@ -151,7 +151,8 @@ install_required_programs() {
   )
 
   declare -a pypi_dependencies=(
-    "wl-wall"
+    "wl-wall",
+    "qtile"
   )
 
   declare -a to_recompile_dependencies=(
