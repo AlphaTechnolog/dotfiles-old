@@ -19,19 +19,5 @@ vim.cmd [[ autocmd BufEnter,BufWinEnter,FileType,WinEnter * lua require("core.ut
 -- File extension specific tabbing
 -- vim.cmd [[ autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4 ]]
 
--- 2 tabstop
-vim.cmd [[ autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 ]]
-vim.cmd [[ autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 ]]
-vim.cmd [[ autocmd Filetype javascriptreact setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 ]]
-vim.cmd [[ autocmd Filetype typescript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 ]]
-vim.cmd [[ autocmd Filetype typescriptreact setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 ]]
-vim.cmd [[ autocmd Filetype css setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 ]]
-vim.cmd [[ autocmd Filetype bash setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 ]]
-vim.cmd [[ autocmd Filetype sh setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 ]]
-vim.cmd [[ autocmd Filetype lua setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 ]]
-vim.cmd [[ autocmd Filetype vim setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 ]]
-vim.cmd [[ autocmd Filetype vue setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2 ]]
-
--- 4 tabstop
 vim.cmd [[ autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4 ]]
 vim.cmd [[ autocmd Filetype php setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4 ]]
