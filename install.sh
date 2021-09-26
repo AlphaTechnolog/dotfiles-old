@@ -398,10 +398,12 @@ remove_all_config() {
   if confirm "Do you want to remove all .config symlinks?"; then
     for dirent in $(ls $dotfiles_path/.config); do
       echo "==> rm $HOME/.config/$dirent"
+      rm $HOME/.config/$dirent
     done
 
     if confirm "Neovim has a special uninstallation method, do you want to uninstall it?"; then
       echo "==> rm -rf $HOME.cache/nvim $HOME.local/share/nvim"
+      rm -rf $HOME.cache/nvim $HOME.local/share/nvim
     fi
   fi
 }
