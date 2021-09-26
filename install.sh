@@ -163,7 +163,9 @@ install_required_programs() {
     "picom",
     "xmonad",
     "xmobar",
-    "fish"
+    "fish",
+    "cbatticon",
+    "udiskie"
   )
 
   declare -a to_manually_install_dependencies=(
