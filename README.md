@@ -1,7 +1,7 @@
 # dotfiles
 
-This is my dotfiles, now only have xmonad and xmobar configs, but in
-the future I will add configs for qtilewm, dwm, i3wm, bspwm, sxhkd, polybar
+This is my dotfiles, now only have xmonad, xmobar and qtile configs, but in
+the future I will add configs for dwm, i3wm, bspwm, sxhkd, polybar
 spectrwm, tint2, dwmblocks and much more.
 
 ## Screenshots
@@ -74,7 +74,7 @@ Uninstall:
 
 The steps are listed in it script!
 
-At finished the configuration change in the login screen your session to xmonad!
+At finished the configuration change in the login screen your session to xmonad or qtile!
 
 ## GTK
 
