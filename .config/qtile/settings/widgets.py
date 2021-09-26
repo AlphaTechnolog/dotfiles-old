@@ -1,4 +1,4 @@
-from libqtile import widget
+from libqtile import widget, qtile
 from .theme import colors
 
 # Get the icons at https://www.nerdfonts.com/cheat-sheet (you need a Nerd Font)
@@ -14,12 +14,12 @@ def separator():
     return widget.Sep(**base(), linewidth=0, padding=2)
 
 
-def icon(fg='text', bg='dark', fontsize=11.8, text="?"):
+def icon(fg='text', bg='dark', fontsize=11.8, text="?", padding=3):
     return widget.TextBox(
         **base(fg, bg),
         fontsize=fontsize,
         text=text,
-        padding=3
+        padding=padding
     )
 
 
@@ -39,9 +39,9 @@ def workspaces():
             **base(fg='light'),
             font='UbuntuMono Nerd Font',
             fontsize=13,
-            margin_y=2,
+            margin_y=4,
             margin_x=0,
-            padding_y=2.8,
+            padding_y=3.8,
             padding_x=3.2,
             borderwidth=1.5,
             active=colors['active'],
@@ -64,6 +64,10 @@ def workspaces():
 
 
 primary_widgets = [
+    icon(bg="dark", fg="light", text="  ", fontsize=16, padding=5),
+
+    separator(),
+
     *workspaces(),
 
     separator(),
@@ -80,7 +84,8 @@ primary_widgets = [
         display_format='{updates}',
         update_interval=1800,
         custom_command='checkupdates',
-        fontsize=11.8
+        fontsize=11.8,
+        mouse_callbacks={'Button1': lambda: qtile.cmd_spawn("rofi -show drun")}
     ),
 
     powerline('color3', 'color4'),
