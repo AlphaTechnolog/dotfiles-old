@@ -64,7 +64,13 @@ def workspaces():
 
 
 primary_widgets = [
-    icon(bg="dark", fg="light", text="  ", fontsize=16, padding=5),
+    icon(
+        bg="dark",
+        fg="focus",
+        text="  ",
+        fontsize=16,
+        padding=5
+    ),
 
     separator(),
 
