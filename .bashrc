@@ -259,3 +259,6 @@ fi
 ### SETTING THE STARSHIP PROMPT ###
 eval "$(starship init bash)"
 
+### Merging the .Xresources database
+
+xrdb -merge ~/.Xresources

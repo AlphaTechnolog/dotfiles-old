@@ -310,3 +310,7 @@ colorscript random
 
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source
+
+### Automerge the Xresources
+
+xrdb -merge ~/.Xresources
