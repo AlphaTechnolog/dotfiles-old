@@ -17,8 +17,7 @@ M.options = {
 }
 
 M.ui = {
-  theme = "onedark",
-  transparency = true
+  theme = "onedark"
 }
 
 -- NvChad included plugin options & overrides
