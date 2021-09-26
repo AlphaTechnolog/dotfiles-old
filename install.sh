@@ -150,10 +150,7 @@ install_required_programs() {
     "emacs"
   )
 
-  declare -a pypi_dependencies=(
-    "wl-wall",
-    "qtile"
-  )
+  pypi_dependencies="wl-wall qtile"
 
   declare -a to_recompile_dependencies=(
     "volumeicon",
@@ -175,13 +172,18 @@ install_required_programs() {
   )
 
   if confirm "Do you want to install the required programs with apt and git, if not, I list all packages you will install" 1; then
-    # clear
     title "Dependencies installing process"
 
     if ! confirm "Do you want to skip the python libraries installing process?" 0; then
       printf "Please write the python binary name to use pypi: "
       read python
-      for dependency in ${pypi_dependencies[@]}; do
+
+      while [[ $python == "" ]]; do
+        printf "Invalid python binary name. Please write the python binary name to use pypi: "
+        read python
+      done
+
+      for dependency in $pypi_dependencies; do
         echo "==> ${python} -m pip install $dependency"
         prevented_process $python -m pip install $dependency
       done
@@ -231,7 +233,7 @@ install_required_programs() {
     echo "-----------------"
     echo "Listing the python (pypi) dependencies..."
 
-    for dependency in ${pypi_dependencies[@]}; do
+    for dependency in $pypi_dependencies; do
       echo "  -> $dependency"
     done
 
