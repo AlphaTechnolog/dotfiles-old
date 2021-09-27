@@ -271,10 +271,9 @@ myLayoutHook = avoidStruts
                       ||| tallAccordion
                       ||| wideAccordion
 
--- myWorkspaces = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "]
--- myWorkspaces = [" dev ", " www ", " sys ", " doc ", " vbox ", " chat ", " mus ", " vid ", " gfx "]
 -- myWorkspaces = [" net ", " dev ", " term ", " fs ", " ref ", " misc ", " mus ", " chat ", " conf "]
-myWorkspaces = [" \xf268  ", " \xf1cb  ", " \xe795  ", " \xe5ff  ", " \xf121  ", " \xf1b3  ", " \xf001  ", " \xfb6e  ", " \xf992  "]
+-- myWorkspaces = ["   ", "   ", "   ", "   ", "   ", "   ", "   ", " ﭮ  ", " 漣  "]
+myWorkspaces = [" \xf269  ", " \xf1cb  ", " \xe795  ", " \xe5ff  ", " \xf121  ", " \xf1b3  ", " \xf001  ", " \xfb6e  ", " \xf992  "]
 myWorkspaceIndices = M.fromList $ zipWith (,) myWorkspaces [1..] -- (,) == \x y -> (x,y)
 
 clickable ws = "<action=xdotool key super+"++show i++">"++ws++"</action>"

@@ -1,4 +1,4 @@
-from libqtile import widget, qtile
+from libqtile import widget
 from .theme import colors
 
 # Get the icons at https://www.nerdfonts.com/cheat-sheet (you need a Nerd Font)
@@ -90,8 +90,7 @@ primary_widgets = [
         display_format='{updates}',
         update_interval=1800,
         custom_command='checkupdates',
-        fontsize=11.8,
-        mouse_callbacks={'Button1': lambda: qtile.cmd_spawn("rofi -show drun")}
+        fontsize=11.8
     ),
 
     powerline('color3', 'color4'),
