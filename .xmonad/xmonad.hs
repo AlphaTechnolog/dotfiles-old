@@ -76,7 +76,7 @@ myTerminal :: String
 myTerminal = "alacritty"    -- Sets default terminal
 
 myBrowser :: String
-myBrowser = "firefox"  -- Sets qutebrowser as browser
+myBrowser = "~/.config/installed-apps/firefox/firefox"  -- Sets firefox as browser
 
 myEmacs :: String
 myEmacs = "emacs"  -- Makes emacs keybindings easier to type

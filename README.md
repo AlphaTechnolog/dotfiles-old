@@ -107,3 +107,7 @@ Conky already have this, but in this guide I present it for you!
 My favorite shell is fish, to change the shell in bash to fish, use the command
 `tofish`, it is an alias to change the default shell to fish, if the password
 is asked, please write your user password.
+
+## What's the next
+
+Install firefox in the route `.config/installed-apps/firefox`, this because qtile and xmonad and all config call as default browser the order `$ ~/.config/installed-apps/firefox/firefox`
