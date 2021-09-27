@@ -10,5 +10,5 @@ connected_monitors=$(xrandr | grep -w 'connected' | cut -d ' ' -f 2 | wc -l)
 if [[ $connected_monitors > 1 ]]; then
   xrandr --newmode "1600x900R"   97.50  1600 1648 1680 1760  900 903 908 926 +hsync -vsync
   xrandr --addmode HDMI-1 1600x900R
-  xrandr --output LVDS-1 --off --output HDMI-1 --mode 1360x768 --primary
+  xrandr --output LVDS-1 --off --output HDMI-1 --mode 1600x900R --primary
 fi
