@@ -44,7 +44,7 @@ def workspaces():
             padding_y=3.8,
             padding_x=3.2,
             borderwidth=1.5,
-            active=colors['active'],
+            active=colors['focus'],
             inactive=colors['inactive'],
             rounded=False,
             highlight_method='line',
