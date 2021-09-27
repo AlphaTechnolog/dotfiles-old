@@ -15,7 +15,7 @@ M.options, M.ui, M.mappings, M.plugins = {}, {}, {}, {}
 -- }
 
 M.ui = {
-  theme = "onedark"
+  theme = "tokyonight"
 }
 
 -- NvChad included plugin options & overrides
