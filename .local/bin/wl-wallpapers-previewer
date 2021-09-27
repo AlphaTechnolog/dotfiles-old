@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+from pynput.keyboard import Listener
+
+
+def handle_key_press(key):
+    print(key)
+    if key == 'q':
+        return False
+
+
+def main():
+    with Listener(on_press=handle_key_press) as listener:
+        listener.join()
+
+
+if __name__ == "__main__":
+    main()
