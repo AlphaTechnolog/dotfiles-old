@@ -6,9 +6,9 @@ spectrwm, tint2, dwmblocks and much more.
 
 ## Screenshots
 
-![dotfiles](./screenshots/dotfiles.png)
+![xmonad](./screenshots/xmonad.png)
 <br>
-![dotfiles-2](./screenshots/dotfiles-2.png)
+![xmonad-2](./screenshots/xmonad-2.png)
 <br>
 ![qtile](./screenshots/qtile.png)
 <br>
