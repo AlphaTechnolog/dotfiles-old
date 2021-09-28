@@ -110,7 +110,9 @@ myStartupHook = do
     spawnOnce "$HOME/.local/bin/monitor-config"
     spawnOnce "udiskie -t &"
     -- Onedark
-    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1e222a  --height 22 &"
+    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1e222a  --height 22 &"
+    -- Gotham
+    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x0a0f14  --height 22 &"
     -- Dracula
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282a36  --height 22 &"
     -- Tokyonight
@@ -451,31 +453,41 @@ main = do
               { ppOutput = \x -> hPutStrLn xmproc0 x                          -- xmobar on monitor 1
                               >> hPutStrLn xmproc1 x                          -- xmobar on monitor 2
               -- Onedark
-              , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
+              -- , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
+              -- Gotham
+              , ppCurrent = xmobarColor "#4e5165" "" . wrap "<box type=Bottom width=2 mb=2 color=#4e5165>" "</box>"         -- Current workspace
               -- Dracula
               -- , ppCurrent = xmobarColor "#caa9fa" "" . wrap "<box type=Bottom width=2 mb=2 color=#caa9fa>" "</box>"         -- Current workspace
               -- Gruvbox
               -- , ppCurrent = xmobarColor "#b16286" "" . wrap "<box type=Bottom width=2 mb=2 color=#b16286>" "</box>"
               -- Onedark
-              , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
+              -- , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
+              -- Gotham
+              , ppVisible = xmobarColor "#4e5165" "" . clickable              -- Visible but not current workspace
               -- Dracula
               -- , ppVisible = xmobarColor "#caa9fa" "" . clickable              -- Visible but not current workspace
               -- Gruvbox
               -- , ppVisible = xmobarColor "#b16286" "" . clickable              -- Visible but not current workspace
               -- Onedark
-              , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
+              -- , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
+              -- Gotham
+              , ppHidden = xmobarColor "#195465" "" . wrap "<box type=Top width=2 mt=2 color=#195465>" "</box>" . clickable -- Hidden workspaces
               -- Dracula
               -- , ppHidden = xmobarColor "#9aedfe" "" . wrap "<box type=Top width=2 mt=2 color=#9aedfe>" "</box>" . clickable -- Hidden workspaces
               -- Gruvbox
               -- , ppHidden = xmobarColor "#458588" "" . wrap "<box type=Top width=2 mt=2 color=#458588>" "</box>" . clickable -- Hidden workspaces
               -- Onedark
-              , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
+              -- , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
+              -- Gotham
+              , ppHiddenNoWindows = xmobarColor "#195465" ""  . clickable     -- Hidden workspaces (no windows)
               -- Dracula
               -- , ppHiddenNoWindows = xmobarColor "#9aedfe" ""  . clickable     -- Hidden workspaces (no windows)
               -- Gruvbox
               -- , ppHiddenNoWindows = xmobarColor "#458588" ""  . clickable     -- Hidden workspaces (no windows)
               -- Onedark
-              , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
+              -- , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
+              -- Gotham
+              , ppTitle = xmobarColor "#98d1ce" "" . shorten 60               -- Title of active window
               -- Dracula
               -- , ppTitle = xmobarColor "#bfbfbf" "" . shorten 60               -- Title of active window
               -- Gruvbox
