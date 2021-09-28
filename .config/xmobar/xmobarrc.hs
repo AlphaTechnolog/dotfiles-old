@@ -8,11 +8,11 @@ Config { font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.8:
                            , "xft:Font Awesome 5 Brands:pixelsize=12"
                            ]
        -- Onedark colors:
-       -- , bgColor      = "#1e2127"
-       -- , fgColor      = "#ff6c6b"
+       , bgColor      = "#1e2127"
+       , fgColor      = "#ff6c6b"
        -- Tokyonight colors
-       , bgColor      = "#1a1b26"
-       , fgColor      = "#c0caf5"
+       -- , bgColor      = "#1a1b26"
+       -- , fgColor      = "#c0caf5"
        -- --------------------------
        -- Dracula colors
        -- , bgColor      = "#282a36"
