@@ -73,3 +73,6 @@ nnoremap <c-p> :Files <cr>
 nnoremap <c-t> :Buffers <cr>
 
 lua require'colorizer'.setup()
+
+set noshowmode
+set nowrap
