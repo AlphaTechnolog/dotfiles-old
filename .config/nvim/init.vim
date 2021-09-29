@@ -1,7 +1,5 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'alvan/vim-closetag'
 Plug 'jiangmiao/auto-pairs'
@@ -15,6 +13,8 @@ Plug 'joshdick/onedark.vim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'romgrk/doom-one.vim'
 Plug 'whatyouhide/vim-gotham'
+Plug 'wadackel/vim-dogrun'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 set tabstop=2
@@ -51,9 +51,12 @@ let g:material_theme_style = 'ocean'
 "   augroup END
 " endif
 
-colorscheme gotham
+colorscheme dogrun
 
-let g:airline_powerline_fonts = 1
+let g:lightline = {}
+let g:lightline.colorscheme = 'dogrun' " dogrun as colorscheme
+let g:lightline.separator = { 'left': "\ue0b0", 'right': "\ue0b2" } " powerline fonts
+let g:lightline.subseparator = { 'left': "\ue0b1", 'right': "\ue0b3" } " powerline fonts
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j

@@ -291,6 +291,29 @@ schemes:
       magenta: '#bb9af7'
       cyan:    '#7dcfff'
       white:   '#c0caf5'
+  # Dogrun
+  dogrun: &dogrun
+    primary:
+      background: '#222433'
+      foreground: '#9ea3c0'
+    normal:
+      black: '#222433'
+      red: '#DC6F7A'
+      green: '#7CBE8C'
+      yellow: '#AC8B83'
+      blue: '#589EC6'
+      magenta: '#B871B8'
+      cyan: '#59B6B6'
+      white: '#9ea3c0'
+    bright:
+      black: '#222433'
+      red: '#DC6F7A'
+      green: '#73C1A9'
+      yellow: '#A8A384'
+      blue: '#59B6B6'
+      magenta: '#929BE5'
+      cyan: '#73C1A9'
+      white: '#9ea3c0'
   # Onedark
   onedark: &onedark
     primary:
@@ -509,7 +532,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *gotham
+colors: *dogrun
 
 # Visual Bell
 #
