@@ -87,7 +87,7 @@ requirements listed here:
 Conky already have this, but in this guide I present it for you!
 
 - S-RET : alacritty
-- S-b : google-chrome
+- S-b : brave-browser
 - S-SPC-RET : rofi
 - S-w : close active window
 - S-hjkl : move between windows
@@ -109,7 +109,7 @@ is asked, please write your user password.
 
 My apps are:
 
-- Google chrome -> $ google-chrome
+- Brave Browser -> $ brave-browser
 - rofi -> $ rofi -show drun
 - thunar -> $ thunar
 - neovim -> $ nvim
