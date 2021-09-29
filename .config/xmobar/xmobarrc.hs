@@ -11,8 +11,11 @@ Config { font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.8:
        -- , bgColor      = "#1e2127"
        -- , fgColor      = "#ff6c6b"
        -- Gotham colors:
-       , bgColor      = "#0a0f14"
-       , fgColor      = "#98d1ce"
+       -- , bgColor      = "#0a0f14"
+       -- , fgColor      = "#98d1ce"
+       -- Dogrun
+       , bgColor      = "#222433"
+       , fgColor      = "#9ea3c0"
        -- Tokyonight colors
        -- , bgColor      = "#1a1b26"
        -- , fgColor      = "#c0caf5"
@@ -61,5 +64,7 @@ Config { font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.8:
        -- Dracula
        -- , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#f4f99d><fc=#f4f99d><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#ff6e67><fc=#ff6e67><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#caa9fa><fc=#caa9fa><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#5af78e><fc=#5af78e>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#9aedfe><fc=#9aedfe>%date%</fc></box> %trayerpad%"
        -- Gotham
-       , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#edb54b><fc=#edb54b><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#c33027><fc=#c33027><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#4e5165><fc=#4e5165><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#26a98b><fc=#26a98b>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#195465><fc=#195465>%date%</fc></box> %trayerpad%"
+       -- , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#edb54b><fc=#edb54b><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#c33027><fc=#c33027><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#4e5165><fc=#4e5165><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#26a98b><fc=#26a98b>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#195465><fc=#195465>%date%</fc></box> %trayerpad%"
+       -- Dogrun
+       , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#AC8B83><fc=#AC8B83><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#DC6F7A><fc=#DC6F7A><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#929BE5><fc=#929BE5><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#7CBE8C><fc=#7CBE8C>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#59B6B6><fc=#59B6B6>%date%</fc></box> %trayerpad%"
        }
