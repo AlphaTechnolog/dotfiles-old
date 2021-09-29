@@ -6,8 +6,6 @@
 
 from libqtile.config import Key
 from libqtile.command import lazy
-from os.path import expanduser
-
 
 mod = "mod4"
 
@@ -52,7 +50,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod, "shift"], "Return", lazy.spawn("rofi -show drun")),
 
     # Browser
-    ([mod], "b", lazy.spawn(expanduser('~') + "/.config/installed-apps/firefox/firefox")),
+    ([mod], "b", lazy.spawn('google-chrome')),
 
     # Terminal
     ([mod], "Return", lazy.spawn("alacritty")),
