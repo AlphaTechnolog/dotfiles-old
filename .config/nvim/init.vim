@@ -14,7 +14,14 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'romgrk/doom-one.vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'wadackel/vim-dogrun'
-Plug 'itchyny/lightline.vim'
+" Statusline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Plug 'itchyny/lightline.vim'
+Plug 'cseelus/vim-colors-lucid'
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'rafalbromirski/vim-aurora'
+Plug 'ayu-theme/ayu-vim', { 'as': 'ayu' }
 call plug#end()
 
 set tabstop=2
@@ -51,12 +58,18 @@ let g:material_theme_style = 'ocean'
 "   augroup END
 " endif
 
-colorscheme dogrun
+set background=dark
 
-let g:lightline = {}
-let g:lightline.colorscheme = 'dogrun' " dogrun as colorscheme
-let g:lightline.separator = { 'left': "\ue0b0", 'right': "\ue0b2" } " powerline fonts
-let g:lightline.subseparator = { 'left': "\ue0b1", 'right': "\ue0b3" } " powerline fonts
+let ayucolor='mirage'
+
+colorscheme ayu
+
+let g:airline_powerline_fonts=1
+
+" let g:lightline = {}
+" let g:lightline.colorscheme = 'dogrun' " dogrun as colorscheme
+" let g:lightline.separator = { 'left': "\ue0b0", 'right': "\ue0b2" } " powerline fonts
+" let g:lightline.subseparator = { 'left': "\ue0b1", 'right': "\ue0b3" } " powerline fonts
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j

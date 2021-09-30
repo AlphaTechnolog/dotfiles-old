@@ -314,6 +314,34 @@ schemes:
       magenta: '#929BE5'
       cyan: '#73C1A9'
       white: '#9ea3c0'
+  # Ayu mirage
+  ayu-mirage: &ayu-mirage
+    primary:
+      background: '#212733'
+      foreground: '#cbccc6'
+      bright_foreground: '#f28779'
+
+    # Normal colors
+    normal:
+      black:   '#212733' #
+      red:     '#f08778' #
+      green:   '#53bf97' #
+      yellow:  '#fdcc60' #
+      blue:    '#60b8d6' # 
+      magenta: '#ec7171' #
+      cyan:    '#98e6ca' #
+      white:   '#fafafa' #
+
+    # Brightened
+    bright:
+      black:   '#686868'
+      red:     '#f58c7d'
+      green:   '#58c49c'
+      yellow:  '#ffd165'
+      blue:    '#65bddb'
+      magenta: '#f17676'
+      cyan:    '#9debcf'
+      white:   '#ffffff'
   # Onedark
   onedark: &onedark
     primary:
@@ -532,7 +560,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *dogrun
+colors: *ayu-mirage
 
 # Visual Bell
 #
