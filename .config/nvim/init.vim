@@ -22,6 +22,7 @@ Plug 'cseelus/vim-colors-lucid'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'rafalbromirski/vim-aurora'
 Plug 'ayu-theme/ayu-vim', { 'as': 'ayu' }
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 set tabstop=2
@@ -60,7 +61,9 @@ let g:material_theme_style = 'ocean'
 
 set background=dark
 
-colorscheme material
+let g:gruvbox_contrast_dark = 'hard'
+
+colorscheme gruvbox
 
 let ayucolor='mirage'
 
