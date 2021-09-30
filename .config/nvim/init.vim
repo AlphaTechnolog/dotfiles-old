@@ -60,9 +60,11 @@ let g:material_theme_style = 'ocean'
 
 set background=dark
 
+colorscheme material
+
 let ayucolor='mirage'
 
-colorscheme ayu
+" colorscheme ayu
 
 let g:airline_powerline_fonts=1
 

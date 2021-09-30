@@ -342,6 +342,32 @@ schemes:
       magenta: '#f17676'
       cyan:    '#9debcf'
       white:   '#ffffff'
+  # Material Ocean
+  material-ocean: &material-ocean
+    primary:
+      background: '#0f101a'
+      foreground: '#c5c9de'
+    cursor:
+      text: CellBackground
+      cursor: '#a151d3'
+    normal:
+      black:   '#181a29'
+      red:     '#F07178'
+      green:   '#cdea9f'
+      yellow:  '#ffd47e'
+      blue:    '#93bbff'
+      magenta: '#d3a7ee'
+      cyan:    '#98e4ff'
+      white:   '#bfd5de'
+    bright:
+      black:   '#282a40'
+      red:     '#eb7f84'
+      green:   '#e0ffad'
+      yellow:  '#ffee7e'
+      blue:    '#a3c5ff'
+      magenta: '#d6afed'
+      cyan:    '#98fffd'
+      white:   '#d1e5ed'
   # Onedark
   onedark: &onedark
     primary:
@@ -560,7 +586,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *ayu-mirage
+colors: *material-ocean
 
 # Visual Bell
 #
