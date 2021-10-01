@@ -880,3 +880,5 @@ key_bindings:
 
 cursor:
   thickness: 0.25
+  style:
+    shape: Beam
