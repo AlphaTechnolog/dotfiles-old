@@ -117,6 +117,14 @@ primary_widgets = [
 ]
 
 secondary_widgets = [
+    icon(
+        bg="dark",
+        fg="focus",
+        text="  ",
+        fontsize=16,
+        padding=5
+    ),
+
     *workspaces(),
 
     separator(),
