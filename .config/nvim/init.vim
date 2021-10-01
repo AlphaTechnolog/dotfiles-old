@@ -23,6 +23,7 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'rafalbromirski/vim-aurora'
 Plug 'ayu-theme/ayu-vim', { 'as': 'ayu' }
 Plug 'morhetz/gruvbox'
+Plug 'tomasiser/vim-code-dark'
 call plug#end()
 
 set tabstop=2
@@ -55,7 +56,7 @@ if (has("autocmd") && !has("gui_running"))
   augroup colorset
     autocmd!
     let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
-     autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
+    autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
   augroup END
 endif
 

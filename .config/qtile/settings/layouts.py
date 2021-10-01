@@ -4,13 +4,13 @@
 
 from libqtile import layout
 from libqtile.config import Match
-from .theme import colors
+from .theme import colors, theme
 
 # Layouts and layout rules
 
 
 layout_conf = {
-    'border_focus': colors['focus'][0],
+    'border_focus': colors['focus' if theme != 'dark-grey' else 'inactive'][0],
     'border_width': 1,
     'margin': 8
 }
