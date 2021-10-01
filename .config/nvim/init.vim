@@ -70,6 +70,7 @@ let ayucolor='mirage'
 " colorscheme ayu
 
 let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1
 
 " let g:lightline = {}
 " let g:lightline.colorscheme = 'dogrun' " dogrun as colorscheme
@@ -100,3 +101,7 @@ lua require'colorizer'.setup()
 
 set noshowmode
 set nowrap
+
+nnoremap <tab> :bn! <cr>
+nnoremap <s-tab> :bp! <cr>
+nnoremap <c-b> :bd! <cr>
