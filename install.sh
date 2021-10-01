@@ -287,7 +287,6 @@ clone_dotfiles() {
     mkdir -p $HOME/.local/bin
 
     declare -a local__bin_scripts=(
-      "monitor-config",
       "wl-random-wallpaper",
       "wl-wallpapers-rotator"
     )
