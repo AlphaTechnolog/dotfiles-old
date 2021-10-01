@@ -92,8 +92,6 @@ set clipboard=unnamedplus
 nnoremap <c-n> :NERDTreeFocus <cr>
 nnoremap <C-m-n> :NERDTreeToggle <cr>
 
-let NERDTreeQuitOnOpen = 1
-
 nnoremap <c-p> :Files <cr>
 nnoremap <c-t> :Buffers <cr>
 

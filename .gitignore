@@ -2,3 +2,4 @@
 /.xmonad/xmonad-x86_64-linux
 /.xmonad/xmonad.o
 .config/installed-apps
+.local/bin/monitor-config
