@@ -118,9 +118,9 @@ font:
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
-    # family: FantasqueSansMono Nerd Font
+    family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
 
     # The `style` can be specified to pick a specific face.
@@ -141,9 +141,9 @@ font:
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
-    # family: FantasqueSansMono Nerd Font
+    family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
 
     # The `style` can be specified to pick a specific face.
@@ -164,9 +164,9 @@ font:
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
-    # family: FantasqueSansMono Nerd Font
+    family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
 
     # The `style` can be specified to pick a specific face.
@@ -187,9 +187,9 @@ font:
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
-    # family: FantasqueSansMono Nerd Font
+    family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
 
     # The `style` can be specified to pick a specific face.
@@ -368,6 +368,28 @@ schemes:
       magenta: '#d6afed'
       cyan:    '#98fffd'
       white:   '#d1e5ed'
+  nord: &nord
+    primary:
+      background: '#2E3440'
+      foreground: '#D8DEE9'
+    normal:
+      black:   '#3B4252'
+      red:     '#BF616A'
+      green:   '#A3BE8C'
+      yellow:  '#EBCB8B'
+      blue:    '#81A1C1'
+      magenta: '#B48EAD'
+      cyan:    '#88C0D0'
+      white:   '#E5E9F0'
+    bright:
+      black:   '#4C566A'
+      red:     '#BF616A'
+      green:   '#A3BE8C'
+      yellow:  '#EBCB8B'
+      blue:    '#81A1C1'
+      magenta: '#B48EAD'
+      cyan:    '#8FBCBB'
+      white:   '#ECEFF4'
   # Onedark
   onedark: &onedark
     primary:
@@ -587,7 +609,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *onedark
+colors: *nord
 
 # Visual Bell
 #
@@ -879,6 +901,6 @@ key_bindings:
   - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
 
 cursor:
-  thickness: 0.3
+  thickness: 0.35
   style:
     shape: Beam

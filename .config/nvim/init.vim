@@ -24,6 +24,7 @@ Plug 'rafalbromirski/vim-aurora'
 Plug 'ayu-theme/ayu-vim', { 'as': 'ayu' }
 Plug 'morhetz/gruvbox'
 Plug 'tomasiser/vim-code-dark'
+Plug 'arcticicestudio/nord-vim', { 'as': 'nord' }
 call plug#end()
 
 set tabstop=2
@@ -52,26 +53,25 @@ let g:material_theme_style = 'ocean'
 " `gui` is the hex color code used in GUI mode/nvim true-color mode
 " `cterm` is the color code used in 256-color mode
 " `cterm16` is the color code used in 16-color mode
-if (has("autocmd") && !has("gui_running"))
-  augroup colorset
-    autocmd!
-    let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
-    autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
-  augroup END
-endif
+" if (has("autocmd") && !has("gui_running"))
+"   augroup colorset
+"     autocmd!
+"     let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
+"     autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
+"   augroup END
+" endif
 
 set background=dark
 
 let g:gruvbox_contrast_dark = 'hard'
 
-colorscheme onedark
+colorscheme nord
 
 let ayucolor='mirage'
 
 " colorscheme ayu
 
 let g:airline_powerline_fonts=1
-let g:airline#extensions#tabline#enabled = 1
 
 " let g:lightline = {}
 " let g:lightline.colorscheme = 'dogrun' " dogrun as colorscheme
