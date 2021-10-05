@@ -27,8 +27,8 @@ Config { font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.8:
        -- , fgColor      = "#c0caf5"
        -- --------------------------
        -- Dracula colors
-       -- , bgColor      = "#282a36"
-       -- , fgColor      = "#f8f8f2"
+       , bgColor      = "#282a36"
+       , fgColor      = "#f8f8f2"
        -- Gruvbox colors
        -- , bgColor      = "#1d2021"
        -- , fgColor      = "#ebdbb2"

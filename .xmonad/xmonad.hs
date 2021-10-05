@@ -97,7 +97,7 @@ myFocusColor  = "#46d9ff"   -- Border color of focused windows
 -- Gruvbox
 -- myFocusColor = "#458588"
 -- Dracula
--- myFocusColor = "#9aedfe"
+-- myFocusColor = "#caa9fa"
 -- Ayu mirage
 -- myFocusColor = "#60b8d6"
 -- Material Ocean

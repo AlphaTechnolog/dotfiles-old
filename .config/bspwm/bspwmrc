@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+bspc monitor primary -d net dev term fs ref misc music chat settings
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc config normal_border_color "#282c34"
+bspc config focused_border_color "#46d9ff"
+
+ROOT=$HOME/.config/bspwm
+
+test -f $ROOT/autostart.sh && bash $ROOT/autostart.sh
+test -f $ROOT/polybar-init.sh && bash $ROOT/polybar-init.sh
