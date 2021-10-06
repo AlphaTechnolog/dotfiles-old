@@ -2,7 +2,7 @@
 -- Dependencies: otf-font-awesome ttf-mononoki ttf-ubuntu-font-family trayer
 -- Also depends on scripts from dtos-local-bin from the dtos-core-repo.
 
-Config { font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.8:antialias=true:hinting=true"
+Config {   font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.8:antialias=true:hinting=true"
        , additionalFonts = [ "xft:Mononoki Nerd Font:pixelsize=11:antialias=true:hinting=true"
                            , "xft:Font Awesome 5 Free Solid:pixelsize=12"
                            , "xft:Font Awesome 5 Brands:pixelsize=12"
@@ -27,8 +27,8 @@ Config { font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.8:
        -- , fgColor      = "#c0caf5"
        -- --------------------------
        -- Dracula colors
-       , bgColor      = "#282a36"
-       , fgColor      = "#f8f8f2"
+       -- , bgColor      = "#282a36"
+       --, fgColor      = "#f8f8f2"
        -- Gruvbox colors
        -- , bgColor      = "#1d2021"
        -- , fgColor      = "#ebdbb2"
