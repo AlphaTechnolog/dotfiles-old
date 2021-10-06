@@ -16,6 +16,8 @@ polybar log -c ~/.config/polybar/current.ini &
 
 ## Right bar
 # polybar top -c ~/.config/polybar/current.ini &
+polybar date -c ~/.config/polybar/modules.ini &
+polybar memory -c ~/.config/polybar/modules.ini &
 polybar primary -c ~/.config/polybar/current.ini &
 
 ## Center bar
