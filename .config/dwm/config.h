@@ -182,30 +182,16 @@ static Key keys[] = {
     // ------------------- Apps --------------------
 
     // dmenu
-    { MODKEY|ShiftMask, XK_Return, spawn, {.v = dmenucmd } },
+    // { MODKEY|ShiftMask, XK_Return, spawn, {.v = dmenucmd } },
 
     // rofi
-    { MODKEY, XK_m, spawn, SHCMD("rofi -show drun") },
-
-    // Window nav (rofi)
-    { MODKEY|ShiftMask, XK_m, spawn, SHCMD("rofi -show") },
+    { MODKEY|ShiftMask, XK_Return, spawn, SHCMD("rofi -show drun") },
 
     // Terminal
     { MODKEY, XK_Return, spawn, SHCMD("alacritty") },
 
-    // File explorer
-    { MODKEY, XK_e, spawn, SHCMD("pcmanfm") },
-
     // Browser
-    { MODKEY, XK_b, spawn, SHCMD("firefox") },
-
-    // Redshift
-    { MODKEY, XK_r, spawn, SHCMD("redshift -O 2400") },
-    { MODKEY|ShiftMask, XK_r, spawn, SHCMD("redshift -x") },
-
-    // Screenshot
-    { MODKEY, XK_s, spawn, SHCMD("scrot") },
-    { MODKEY|ShiftMask, XK_s, spawn, SHCMD("scrot -s") },
+    { MODKEY, XK_b, spawn, SHCMD("brave-browser") },
 
     // ----------------- Hardware ------------------
 
