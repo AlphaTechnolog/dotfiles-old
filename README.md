@@ -1,6 +1,6 @@
 # dotfiles
 
-This is my dotfiles for xmonad, xmobar, qtile, bspwm, sxhkd, spectrwm, polybar configs, but in the future I will add configs for dwm, tint2, dwmblocks, openbox and much more.
+This is my dotfiles for xmonad, xmobar, qtile, bspwm, sxhkd, spectrwm, polybar configs, but in the future I will add configs for tint2, openbox and much more.
 
 ## Simple but elegant
 
