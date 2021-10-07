@@ -119,6 +119,11 @@ My apps are:
 ![xmonad](./screenshots/xmonad.png)
 ![xmonad-2](./screenshots/xmonad-2.png)
 
+### Dwm
+
+![dwm](./screenshots/dwm.png)
+![dwm-2](./screenshots/dwm-2.png)
+
 ### Bspwm
 
 ![bspwm](./screenshots/bspwm.png)
