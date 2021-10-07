@@ -25,6 +25,7 @@ Plug 'ayu-theme/ayu-vim', { 'as': 'ayu' }
 Plug 'morhetz/gruvbox'
 Plug 'tomasiser/vim-code-dark'
 Plug 'arcticicestudio/nord-vim', { 'as': 'nord' }
+Plug 'neoclide/coc.nvim'
 call plug#end()
 
 set tabstop=2
@@ -104,3 +105,5 @@ set nowrap
 nnoremap <tab> :bn! <cr>
 nnoremap <s-tab> :bp! <cr>
 nnoremap <c-b> :bd! <cr>
+
+source $HOME/.config/nvim/coc.vim

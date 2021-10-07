@@ -206,7 +206,7 @@ end
 
 
 ### ALIASES ###
-alias clear='/usr/bin/clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo'
+alias clear='tput reset; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo'
 
 # root privileges
 alias doas="doas --"
