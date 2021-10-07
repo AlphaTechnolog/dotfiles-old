@@ -1,0 +1,27 @@
+#!/bin/bash
+
+cd $(dirname $0)
+
+if ! pactl list | grep 'Volume.*front-left' | awk '{print $5}' | tr '\n' ' ' | awk '{print $1}' 2>&1 > /dev/null; then
+    calc_vol=0
+else
+    calc_vol=1
+fi
+
+if [[ $calc_vol == 1 ]]; then
+    vol=$(pactl list | grep 'Volume.*front-left' | awk '{print $5}' | tr '\n' ' ' | awk '{print $1}')
+else
+    vol="0%"
+fi
+
+vol_without_percentage=$(echo $vol | tr '%' ' ')
+
+if [[ $vol == "0%" ]]; then
+    echo -n "ﱝ $vol "
+else
+    if [[ $vol == "100%" ]]; then
+        echo -n "$($PWD/percentage $vol   奔 墳  ) $vol "
+    else
+        echo -n "$($PWD/percentage $vol   奔 墳  )$vol "
+    fi
+fi

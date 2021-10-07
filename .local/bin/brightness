@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd $(dirname $0)
+
+(( br = $(brightnessctl get) * 100 / $(brightnessctl m) ))
+
+ echo -n "$($PWD/percentage $br        ) $br% "

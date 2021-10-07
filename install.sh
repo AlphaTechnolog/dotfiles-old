@@ -20,11 +20,12 @@ main_menu() {
   printf "  4. Create $HOME symlinks\n"
   printf "  5. Create .local/bin symlinks (optional because the step 1 already apply this)\n"
   printf "  6. Setup rofi\n"
-  printf "  7. Setup wl wallpaper\n"
-  printf "  8. Exit of installer\n"
+  printf "  7. Make dwm\n"
+  printf "  8. Setup wl wallpaper\n"
+  printf "  9. Exit of installer\n"
   echo
   echo "Uninstall:"
-  printf "  9. Remove all config\n"
+  printf "  10. Remove all config\n"
 
   echo "----------------------------------------"
 
@@ -44,9 +45,10 @@ main_menu() {
     4) create_home_symlinks ;;
     5) create_local__bin_symlinks;;
     6) setup_rofi ;;
-    7) setup_wallpaper ;;
-    8) clear && echo "Bye bye. Enjoy!!!" && exit 0;;
-    9) remove_all_config ;;
+    7) make_dwm ;;
+    8) setup_wallpaper ;;
+    9) clear && echo "Bye bye. Enjoy!!!" && exit 0;;
+    10) remove_all_config ;;
   esac
 }
 
@@ -291,7 +293,11 @@ clone_dotfiles() {
 
     declare -a local__bin_scripts=(
       "wl-random-wallpaper",
-      "wl-wallpapers-rotator"
+      "wl-wallpapers-rotator",
+      "volume",
+      "percentage",
+      "brightness",
+      "checkupdates"
     )
 
     cd $directory/.dotfiles
@@ -439,6 +445,37 @@ setup_rofi() {
 
   press_enter_to_continue
   main_menu
+}
+
+make_dwm() {
+  clear
+  title "Make dwm"
+
+  printf "=> Write the dotfiles folder path (default $HOME/.dotfiles): "
+  read dotfiles_path
+
+  if [[ $dotfiles_path == "" ]]; then
+    dotfiles_path=$HOME/.dotfiles
+  fi
+
+  if [[ ! -d $dotfiles_path ]]; then
+    error "Error at try to open $dotfiles_path: No such file or directory"
+  fi
+
+  echo "==> mkdir -p $HOME/.local/share/dwm"
+  mkdir -p $HOME/.local/share/dwm
+
+  echo "==> ln -s $dotfiles_path/.config/dwm $HOME/.config/dwm"
+  ln -s $dotfiles_path/.config/dwm $HOME/.config/dwm
+
+  echo "==> ln -s $HOME/.config/dwm/autostart.sh $HOME/.local/share/dwm/autostart.sh"
+  ln -s $HOME/.config/dwm/autostart.sh $HOME/.local/share/dwm/autostart.sh
+
+  echo "==> cd $HOME/.config/dwm && sudo make clean install"
+  cd $HOME/.config/dwm && sudo make clean install
+
+  echo "==> cd $HOME/.config/dwm/dwmblocks && sudo make clean install"
+  cd $HOME/.config/dwm/dwmblocks && sudo make clean install
 }
 
 setup_wallpaper() {

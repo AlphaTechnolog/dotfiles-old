@@ -3,3 +3,5 @@
 /.xmonad/xmonad.o
 .config/installed-apps
 .local/bin/monitor-config
+**/**/*.o
+.config/dwm/dwm
