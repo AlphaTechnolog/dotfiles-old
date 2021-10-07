@@ -164,7 +164,8 @@ install_required_programs() {
     "cbatticon",
     "udiskie",
     "bspwm",
-    "spectrwm"
+    "spectrwm",
+    "polybar"
   )
 
   declare -a to_manually_install_dependencies=(
