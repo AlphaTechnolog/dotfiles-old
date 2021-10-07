@@ -57,7 +57,7 @@ main_menu() {
 #################################
 
 error() {
-  2> echo "$1"
+  echo "$1"
   exit 1
 }
 
@@ -292,6 +292,7 @@ clone_dotfiles() {
     mkdir -p $HOME/.local/bin
 
     declare -a local__bin_scripts=(
+      "monitor-config",
       "wl-random-wallpaper",
       "wl-wallpapers-rotator",
       "volume",
@@ -383,7 +384,7 @@ create_local__bin_symlinks() {
     error "Error at try to read $dotfiles_path: No such file or directory"
   fi
 
-  to_paste="monitor-config wl-random-wallpaper wl-wallpapers-rotator"
+  to_paste="monitor-config wl-random-wallpaper wl-wallpapers-rotator volume percentage brightness checkupdates"
 
   for to_paste_item in $to_paste; do
     echo "==> ln -s $dotfiles_path/.local/bin/$to_paste_item $HOME/.local/bin/$to_paste_item"
@@ -493,12 +494,12 @@ setup_wallpaper() {
     error "Error at try to open $dotfiles_path: No such file or directory"
   fi
 
-  echo "==> $HOME/.local/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers"
-  prevented_process $HOME/.local/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers
+  echo "==> /usr/local/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers"
+  prevented_process /usr/local/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers
 
   if confirm "Do you want to setup a default wl wallpaper 38.jpeg? " 1; then
-    echo "==> $HOME/.local/bin/wl set 38.jpeg"
-    prevented_process $HOME/.local/bin/wl set 38.jpeg
+    echo "==> /usr/local/bin/wl set 38.jpeg"
+    prevented_process /usr/local/bin/wl set 38.jpeg
   fi
 
   press_enter_to_continue
