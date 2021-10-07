@@ -451,7 +451,7 @@ setup_wallpaper() {
     dotfiles_path="$HOME/.dotfiles"
   fi
 
-  if [[ ! $dotfiles_path ]]; then
+  if [[ ! -d $dotfiles_path ]]; then
     error "Error at try to open $dotfiles_path: No such file or directory"
   fi
 
