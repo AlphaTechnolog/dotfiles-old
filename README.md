@@ -1,18 +1,10 @@
 # dotfiles
 
-This is my dotfiles, now only have xmonad, xmobar and qtile configs, but in
-the future I will add configs for dwm, i3wm, bspwm, sxhkd, polybar
-spectrwm, tint2, dwmblocks and much more.
+This is my dotfiles for xmonad, xmobar, qtile, bspwm, sxhkd, spectrwm, polybar configs, but in the future I will add configs for dwm, tint2, dwmblocks, openbox and much more.
 
-## Screenshots
+## Simple but elegant
 
-![xmonad](./screenshots/xmonad.png)
-<br>
-![xmonad-2](./screenshots/xmonad-2.png)
-<br>
-![qtile](./screenshots/qtile.png)
-<br>
-![qtile-2](./screenshots/qtile-2.png)
+![bspwm](./screenshots/bspwm.png)
 
 ## Config explain
 
@@ -114,3 +106,25 @@ My apps are:
 - thunar -> $ thunar
 - neovim -> $ nvim
 - emacs -> $ emacs
+
+## Images galery
+
+### Qtile
+
+![qtile](./screenshots/qtile.png)
+![qtile-2](./screenshots/qtile-2.png)
+
+### Xmonad
+
+![xmonad](./screenshots/xmonad.png)
+![xmonad-2](./screenshots/xmonad-2.png)
+
+### Bspwm
+
+![bspwm](./screenshots/bspwm.png)
+![bspwm-2](./screenshots/bspwm-2.png)
+
+### Spectrwm
+
+![spectrwm](./screenshots/spectrwm.png)
+![spectrwm-2](./screenshots/spectrwm-2.png)

@@ -162,7 +162,9 @@ install_required_programs() {
     "xmobar",
     "fish",
     "cbatticon",
-    "udiskie"
+    "udiskie",
+    "bspwm",
+    "spectrwm"
   )
 
   declare -a to_manually_install_dependencies=(
