@@ -476,6 +476,9 @@ make_dwm() {
 
   echo "==> cd $HOME/.config/dwm/dwmblocks && sudo make clean install"
   cd $HOME/.config/dwm/dwmblocks && sudo make clean install
+
+  press_enter_to_continue
+  main_menu
 }
 
 setup_wallpaper() {
