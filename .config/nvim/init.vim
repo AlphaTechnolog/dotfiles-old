@@ -26,6 +26,7 @@ Plug 'morhetz/gruvbox'
 Plug 'tomasiser/vim-code-dark'
 Plug 'arcticicestudio/nord-vim', { 'as': 'nord' }
 Plug 'neoclide/coc.nvim'
+Plug 'diepm/vim-rest-console'
 call plug#end()
 
 set tabstop=2
