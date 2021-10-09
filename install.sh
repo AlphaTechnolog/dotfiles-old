@@ -501,8 +501,8 @@ setup_wallpaper() {
   prevented_process /usr/local/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers
 
   if confirm "Do you want to setup a default wl wallpaper 50.jpeg? " 1; then
-    echo "==> /usr/local/bin/wl set 50.jpeg"
-    prevented_process /usr/local/bin/wl set 50.jpeg
+    echo "==> /usr/local/bin/wl set 49.jpeg"
+    prevented_process /usr/local/bin/wl set 49.jpeg
   fi
 
   press_enter_to_continue
