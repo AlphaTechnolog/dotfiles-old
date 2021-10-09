@@ -172,10 +172,10 @@ static Key keys[] = {
     { MODKEY, XK_w, killclient, {0} },
 
     // Restart dwm
-    { MODKEY|ControlMask, XK_r, quit, {1} },
+    { MODKEY|ShiftMask, XK_r, quit, {1} },
 
     // Quit dwm
-    { MODKEY|ControlMask, XK_q, quit, {0} },
+    { MODKEY|ShiftMask, XK_q, quit, {0} },
 
     // ---------------- Workspaces -----------------
 
