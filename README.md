@@ -74,6 +74,15 @@ requirements listed here:
 - Papirus Icon Theme (The icon theme, select the teal style in your console: $ papirus-folders -C teal)
 - dt-dark-theme (It is encountered in the distrotube repository!)
 
+## Some requirements
+
+You must install a some Nerd Fonts
+
+- UbuntuMono Nerd Font
+- SauceCodePro Nerd Font
+
+It can be available in the [Nerd Fonts Download Page](https://www.nerdfonts.com/font-downloads)
+
 ## Cheatsheet
 
 Conky already have this, but in this guide I present it for you!
