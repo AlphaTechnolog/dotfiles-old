@@ -47,10 +47,20 @@ static const struct Theme onedark = {
     .focus = "#528bff",
 };
 
+static const struct Theme dracula = {
+    .inactive = "#44475a",
+    .active = "#f8f8f2",
+    .bg = "#282a36",
+    .focus = "#bd93f9",
+};
+
 static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { dracula.inactive, dracula.bg, window_border },
+    { dracula.active, dracula.focus, dracula.focus },
+
     { onedark.inactive, onedark.bg, window_border },
     { onedark.active, onedark.focus,  onedark.focus  },
 
