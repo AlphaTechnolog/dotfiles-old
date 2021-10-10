@@ -93,13 +93,13 @@ myNormColor   = "#282c34"   -- Border color of normal windows
 
 myFocusColor :: String
 -- Onedark
-myFocusColor  = "#46d9ff"   -- Border color of focused windows
+-- myFocusColor  = "#46d9ff"   -- Border color of focused windows
 -- Gruvbox
 -- myFocusColor = "#458588"
 -- Dracula
 -- myFocusColor = "#caa9fa"
 -- Ayu mirage
--- myFocusColor = "#60b8d6"
+myFocusColor = "#60b8d6"
 -- Material Ocean
 -- myFocusColor = "#a151d3"
 -- Gruvbox
@@ -118,7 +118,7 @@ myStartupHook = do
     -- Onedark
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1e222a  --height 22 &"
     -- Doom one
-    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 22 &"
+    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 22 &"
     -- Material Ocean
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x0f101a  --height 22 &"
     -- Gotham
@@ -126,7 +126,7 @@ myStartupHook = do
     -- Dogrun
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x222433  --height 22 &"
     -- Ayu mirage
-    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x212733  --height 22 &"
+    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x212733  --height 22 &"
     -- Dracula
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282a36  --height 22 &"
     -- Tokyonight
@@ -461,7 +461,7 @@ main = do
               { ppOutput = \x -> hPutStrLn xmproc0 x                          -- xmobar on monitor 1
                               >> hPutStrLn xmproc1 x                          -- xmobar on monitor 2
               -- Onedark
-              , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
+              -- , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
               -- Material Ocean
               -- , ppCurrent = xmobarColor "#a151d3" "" . wrap "<box type=Bottom width=2 mb=2 color=#a151d3>" "</box>"         -- Current workspace
               -- Gotham
@@ -469,13 +469,13 @@ main = do
               -- Dogrun
               -- , ppCurrent = xmobarColor "#929BE5" "" . wrap "<box type=Bottom width=2 mb=2 color=#929BE5>" "</box>"         -- Current workspace
               -- Ayu mirage
-              -- , ppCurrent = xmobarColor "#60b8d6" "" . wrap "<box type=Bottom width=2 mb=2 color=#60b8d6>" "</box>"         -- Current workspace
+              , ppCurrent = xmobarColor "#60b8d6" "" . wrap "<box type=Bottom width=2 mb=2 color=#60b8d6>" "</box>"         -- Current workspace
               -- Dracula
               -- , ppCurrent = xmobarColor "#caa9fa" "" . wrap "<box type=Bottom width=2 mb=2 color=#caa9fa>" "</box>"         -- Current workspace
               -- Gruvbox
               -- , ppCurrent = xmobarColor "#b16286" "" . wrap "<box type=Bottom width=2 mb=2 color=#b16286>" "</box>"
               -- Onedark
-              , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
+              -- , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
               -- Material Ocean
               -- , ppVisible = xmobarColor "#a151d3" "" . clickable              -- Visible but not current workspace
               -- Gotham
@@ -483,13 +483,13 @@ main = do
               -- Dogrun
               -- , ppVisible = xmobarColor "#929BE5" "" . clickable              -- Visible but not current workspace
               -- Ayu mirage
-              -- , ppVisible = xmobarColor "#fdcc60" "" . clickable              -- Visible but not current workspace
+              , ppVisible = xmobarColor "#60b8d6" "" . clickable              -- Visible but not current workspace
               -- Dracula
               -- , ppVisible = xmobarColor "#caa9fa" "" . clickable              -- Visible but not current workspace
               -- Gruvbox
               -- , ppVisible = xmobarColor "#b16286" "" . clickable              -- Visible but not current workspace
               -- Onedark
-              , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
+              -- , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
               -- Material Ocean
               -- , ppHidden = xmobarColor "#a151d3" "" . wrap "<box type=Top width=2 mt=2 color=#a151d3>" "</box>" . clickable -- Hidden workspaces
               -- Gotham
@@ -497,13 +497,13 @@ main = do
               -- Dogrun
               -- , ppHidden = xmobarColor "#B871B8" "" . wrap "<box type=Top width=2 mt=2 color=#B871B8>" "</box>" . clickable -- Hidden workspaces
               -- Ayu mirage
-              -- , ppHidden = xmobarColor "#fdcc60" "" . wrap "<box type=Top width=2 mt=2 color=#fdcc60>" "</box>" . clickable -- Hidden workspaces
+              , ppHidden = xmobarColor "#60b8d6" "" . wrap "<box type=Top width=2 mt=2 color=#60b8d6>" "</box>" . clickable -- Hidden workspaces
               -- Dracula
               -- , ppHidden = xmobarColor "#9aedfe" "" . wrap "<box type=Top width=2 mt=2 color=#9aedfe>" "</box>" . clickable -- Hidden workspaces
               -- Gruvbox
               -- , ppHidden = xmobarColor "#458588" "" . wrap "<box type=Top width=2 mt=2 color=#458588>" "</box>" . clickable -- Hidden workspaces
               -- Onedark
-               , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
+              -- , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
               -- Material Ocean
               -- , ppHiddenNoWindows = xmobarColor "#4c566a" ""  . clickable     -- Hidden workspaces (no windows)
               -- Gotham
@@ -511,13 +511,13 @@ main = do
               -- Dogrun
               -- , ppHiddenNoWindows = xmobarColor "#589EC6" ""  . clickable     -- Hidden workspaces (no windows)
               -- Ayu mirage
-              -- , ppHiddenNoWindows = xmobarColor "#53bf97" ""  . clickable     -- Hidden workspaces (no windows)
+              , ppHiddenNoWindows = xmobarColor "#53bf97" ""  . clickable     -- Hidden workspaces (no windows)
               -- Dracula
               -- , ppHiddenNoWindows = xmobarColor "#9aedfe" ""  . clickable     -- Hidden workspaces (no windows)
               -- Gruvbox
               -- , ppHiddenNoWindows = xmobarColor "#458588" ""  . clickable     -- Hidden workspaces (no windows)
               -- Onedark
-              , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
+              -- , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
               -- Material Ocean
               -- , ppTitle = xmobarColor "#a151d3" "" . shorten 60               -- Title of active window
               -- Gotham
@@ -525,7 +525,7 @@ main = do
               -- Dogrun
               -- , ppTitle = xmobarColor "#929BE5" "" . shorten 60               -- Title of active window
               -- Ayu mirage
-              -- , ppTitle = xmobarColor "#fdcc60" "" . shorten 60               -- Title of active window
+              , ppTitle = xmobarColor "#60b8d6" "" . shorten 60               -- Title of active window
               -- Dracula
               -- , ppTitle = xmobarColor "#bfbfbf" "" . shorten 60               -- Title of active window
               -- Gruvbox
