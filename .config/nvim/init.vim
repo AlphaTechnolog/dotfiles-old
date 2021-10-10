@@ -68,11 +68,11 @@ set background=dark
 let g:gruvbox_contrast_dark = 'hard'
 let g:airline_theme = 'onedark'
 
-colorscheme doom-one
+" colorscheme doom-one
 
 let ayucolor='mirage'
 
-" colorscheme ayu
+colorscheme ayu
 
 let g:airline_powerline_fonts=1
 
