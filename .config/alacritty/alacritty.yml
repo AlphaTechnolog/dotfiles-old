@@ -117,11 +117,11 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
+    family: Mononoki Nerd Font
     # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
-    family: Fira Code Nerd Font
+    # family: Fira Code Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -140,11 +140,11 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
+    family: Mononoki Nerd Font
     # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
-    family: Fira Code Nerd Font
+    # family: Fira Code Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -163,11 +163,11 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
+    family: Mononoki Nerd Font
     # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
-    family: Fira Code Nerd Font
+    # family: Fira Code Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -186,22 +186,21 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
+    family: Mononoki Nerd Font
     # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
-    family: Fira Code Nerd Font
+    # family: Fira Code Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
 
   # Point size
-  # size: 12.0
+  size: 12.0
   # size: 13.0
   # size: 11.0
   # size: 11.5
   # size: 10.0
-  size: 9.5
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -393,6 +392,35 @@ schemes:
       magenta: '#B48EAD'
       cyan:    '#8FBCBB'
       white:   '#ECEFF4'
+  # Ayu mirage
+  ayu-mirage: &ayu-mirage
+    # Default colors
+    primary:
+      background: '#1f2430'
+      foreground: '#cbccc6'
+      bright_foreground: '#f28779'
+
+    # Normal colors
+    normal:
+      black:   '#212733' #
+      red:     '#f08778' #
+      green:   '#53bf97' #
+      yellow:  '#fdcc60' #
+      blue:    '#60b8d6' #
+      magenta: '#ec7171' #
+      cyan:    '#98e6ca' #
+      white:   '#fafafa' #
+
+    # Brightened
+    bright:
+      black: '#686868'
+      red: '#f58c7d'
+      green: '#58c49c'
+      yellow: '#ffd165'
+      blue: '#65bddb'
+      magenta: '#f17676'
+      cyan: '#9debcf'
+      white: '#ffffff'
   # Onedark
   onedark: &onedark
     primary:
@@ -612,7 +640,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *doom-one
+colors: *ayu-mirage
 
 # Visual Bell
 #
