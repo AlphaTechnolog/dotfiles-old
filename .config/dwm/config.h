@@ -61,10 +61,20 @@ static const struct Theme doom_one = {
     .focus = "#51afef",
 };
 
+static const struct Theme ayu_mirage = {
+    .inactive = "#3e4451",
+    .active = "#fafafa",
+    .bg = "#212733",
+    .focus = "#60b8d6",
+};
+
 static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { ayu_mirage.inactive, ayu_mirage.bg, window_border },
+    { ayu_mirage.active, ayu_mirage.focus, ayu_mirage.focus },
+
     { doom_one.inactive, doom_one.bg, window_border },
     { doom_one.active, doom_one.focus, doom_one.focus },
 
