@@ -68,10 +68,20 @@ static const struct Theme ayu_mirage = {
     .focus = "#60b8d6",
 };
 
+static const struct Theme horizon_dark = {
+    .inactive = "#3e4451",
+    .active = "#e0e0e0",
+    .bg = "#232530",
+    .focus = "#ee64ac",
+};
+
 static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { horizon_dark.inactive, horizon_dark.bg, window_border },
+    { horizon_dark.active, horizon_dark.focus, horizon_dark.focus },
+
     { doom_one.inactive, doom_one.bg, window_border },
     { doom_one.active, doom_one.focus, doom_one.focus },
 
