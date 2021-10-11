@@ -15,9 +15,9 @@ Plug 'romgrk/doom-one.vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'wadackel/vim-dogrun'
 " Statusline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-" Plug 'itchyny/lightline.vim'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'cseelus/vim-colors-lucid'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'rafalbromirski/vim-aurora'
@@ -27,6 +27,7 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'arcticicestudio/nord-vim', { 'as': 'nord' }
 Plug 'neoclide/coc.nvim'
 Plug 'diepm/vim-rest-console'
+Plug 'ntk148v/vim-horizon'
 call plug#end()
 
 set tabstop=2
@@ -66,20 +67,21 @@ let g:material_theme_style = 'ocean'
 set background=dark
 
 let g:gruvbox_contrast_dark = 'hard'
-let g:airline_theme = 'onedark'
+" let g:airline_theme = 'onedark'
 
-colorscheme doom-one
+let g:lightline = {}
+let g:lightline.colorscheme = 'horizon'
+let g:lightline.separator = { 'left': "\ue0b0", 'right': "\ue0b2" } " powerline fonts
+let g:lightline.subseparator = { 'left': "\ue0b1", 'right': "\ue0b3" } " powerline fonts
+
+colorscheme horizon
 
 let ayucolor='mirage'
 
 " colorscheme onedark
 
-let g:airline_powerline_fonts=1
+" let g:airline_powerline_fonts=1
 
-" let g:lightline = {}
-" let g:lightline.colorscheme = 'dogrun' " dogrun as colorscheme
-" let g:lightline.separator = { 'left': "\ue0b0", 'right': "\ue0b2" } " powerline fonts
-" let g:lightline.subseparator = { 'left': "\ue0b1", 'right': "\ue0b3" } " powerline fonts
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
