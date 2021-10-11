@@ -72,11 +72,11 @@ static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
-    { ayu_mirage.inactive, ayu_mirage.bg, window_border },
-    { ayu_mirage.active, ayu_mirage.focus, ayu_mirage.focus },
-
     { doom_one.inactive, doom_one.bg, window_border },
     { doom_one.active, doom_one.focus, doom_one.focus },
+
+    { ayu_mirage.inactive, ayu_mirage.bg, window_border },
+    { ayu_mirage.active, ayu_mirage.focus, ayu_mirage.focus },
 
     { dracula.inactive, dracula.bg, window_border },
     { dracula.active, dracula.focus, dracula.focus },
