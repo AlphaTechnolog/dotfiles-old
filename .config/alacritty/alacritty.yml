@@ -421,6 +421,29 @@ schemes:
       magenta: '#f17676'
       cyan: '#9debcf'
       white: '#ffffff'
+  # Horizon Dark
+  horizon-dark: &horizon-dark
+    primary:
+      background: '#232530'
+      foreground: '#e0e0e0'
+    normal:
+      black:   '#16161c'
+      red:     '#e95678'
+      green:   '#29d398'
+      yellow:  '#fab795'
+      blue:    '#16bbd9'
+      magenta: '#ee64ac'
+      cyan:    '#59e1e3'
+      white:   '#d5d8da'
+    bright:
+      black:   '#5b5858'
+      red:     '#ec6a88'
+      green:   '#3fdaa4'
+      yellow:  '#fbc3a7'
+      blue:    '#3fc4de'
+      magenta: '#f075b5'
+      cyan:    '#6be4e6'
+      white:   '#d5d8da'
   # Onedark
   onedark: &onedark
     primary:
@@ -640,7 +663,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *doom-one
+colors: *horizon-dark
 
 # Visual Bell
 #
