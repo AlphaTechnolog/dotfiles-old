@@ -28,6 +28,7 @@ Plug 'arcticicestudio/nord-vim', { 'as': 'nord' }
 Plug 'neoclide/coc.nvim'
 Plug 'diepm/vim-rest-console'
 Plug 'ntk148v/vim-horizon'
+Plug 'Brettm12345/moonlight.vim'
 call plug#end()
 
 set tabstop=2
@@ -70,11 +71,11 @@ let g:gruvbox_contrast_dark = 'hard'
 " let g:airline_theme = 'onedark'
 
 let g:lightline = {}
-let g:lightline.colorscheme = 'horizon'
+let g:lightline.colorscheme = 'palenight'
 let g:lightline.separator = { 'left': "\ue0b0", 'right': "\ue0b2" } " powerline fonts
 let g:lightline.subseparator = { 'left': "\ue0b1", 'right': "\ue0b3" } " powerline fonts
 
-colorscheme horizon
+colorscheme moonlight
 
 let ayucolor='mirage'
 
