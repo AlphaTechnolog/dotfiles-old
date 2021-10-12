@@ -444,6 +444,34 @@ schemes:
       magenta: '#f075b5'
       cyan:    '#6be4e6'
       white:   '#d5d8da'
+  # Moonlight
+  moonlight: &moonlight
+    primary:
+      background: '#212337'
+      foreground: '#c8d3f5'
+    cursor:
+      text: CellBackground
+      cursor: '#82aaff'
+
+    normal:
+      black: '#212337'
+      red: '#ff757f'
+      green: '#c3e88d'
+      yellow: '#ffc777'
+      blue: '#82aaff'
+      magenta: '#c099ff'
+      cyan: '#b4f9f8'
+      white: '#c8d3f5'
+
+    bright:
+      black: '#212337'
+      red: '#ff757f'
+      green: '#c3e88d'
+      yellow: '#ffc777'
+      blue: '#82aaff'
+      magenta: '#c099ff'
+      cyan: '#b4f9f8'
+      white: '#c8d3f5'
   # Onedark
   onedark: &onedark
     primary:
@@ -663,7 +691,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *horizon-dark
+colors: *moonlight
 
 # Visual Bell
 #
