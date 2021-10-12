@@ -75,10 +75,20 @@ static const struct Theme horizon_dark = {
     .focus = "#ee64ac",
 };
 
+static const struct Theme moonlight = {
+    .inactive = "#3e4451",
+    .active = "#c8d3f5",
+    .bg = "#212337",
+    .focus = "#c099ff",
+};
+
 static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { moonlight.inactive, moonlight.bg, window_border },
+    { moonlight.active, moonlight.focus, moonlight.focus },
+
     { horizon_dark.inactive, horizon_dark.bg, window_border },
     { horizon_dark.active, horizon_dark.focus, horizon_dark.focus },
 
