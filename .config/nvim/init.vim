@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 Plug 'alvan/vim-closetag'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
@@ -96,8 +97,7 @@ nnoremap <c-q> :wq! <cr>
 set mouse=a
 set clipboard=unnamedplus
 
-nnoremap <c-n> :NERDTreeFocus <cr>
-nnoremap <C-m-n> :NERDTreeToggle <cr>
+nnoremap <c-n> :NvimTreeToggle <cr>
 
 nnoremap <c-p> :Files <cr>
 nnoremap <c-t> :Buffers <cr>
@@ -112,3 +112,4 @@ nnoremap <s-tab> :bp! <cr>
 nnoremap <c-b> :bd! <cr>
 
 source $HOME/.config/nvim/coc.vim
+luafile $HOME/.config/nvim/lua_tree.lua
