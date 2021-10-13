@@ -59,8 +59,8 @@ super + {_,shift + }{h,j,k,l}
  
  
 # focus the node for the given path jump
-super + {p,comma,period}
-    bspc node -f @{parent,first,second}
+super + {comma,period}
+    bspc node -f @{first,second}
  
 # focus the next/previous node in the current desktop
 super + {_,shift + }c
@@ -127,3 +127,6 @@ alt + super + {h,j,k,l}
 
 super + b
     brave-browser
+
+super + p
+    ~/.local/bin/audio-toggler
