@@ -18,7 +18,7 @@ Plug 'wadackel/vim-dogrun'
 " Statusline
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
-Plug 'itchyny/lightline.vim'
+" Plug 'itchyny/lightline.vim'
 Plug 'cseelus/vim-colors-lucid'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'rafalbromirski/vim-aurora'
@@ -29,7 +29,11 @@ Plug 'arcticicestudio/nord-vim', { 'as': 'nord' }
 Plug 'neoclide/coc.nvim'
 Plug 'diepm/vim-rest-console'
 Plug 'ntk148v/vim-horizon'
-Plug 'Brettm12345/moonlight.vim'
+" Plug 'Brettm12345/moonlight.vim'
+Plug 'shaunsingh/moonlight.nvim'
+Plug 'hoob3rt/lualine.nvim'
+Plug 'akinsho/bufferline.nvim'
+Plug 'glepnir/dashboard-nvim'
 call plug#end()
 
 set tabstop=2
@@ -71,12 +75,10 @@ set background=dark
 let g:gruvbox_contrast_dark = 'hard'
 " let g:airline_theme = 'onedark'
 
-let g:lightline = {}
-let g:lightline.colorscheme = 'palenight'
-let g:lightline.separator = { 'left': "\ue0b0", 'right': "\ue0b2" } " powerline fonts
-let g:lightline.subseparator = { 'left': "\ue0b1", 'right': "\ue0b3" } " powerline fonts
-
-colorscheme moonlight
+" let g:lightline = {}
+" let g:lightline.colorscheme = 'palenight'
+" let g:lightline.separator = { 'left': "\ue0b0", 'right': "\ue0b2" } " powerline fonts
+" Jlet g:lightline.subseparator = { 'left': "\ue0b1", 'right': "\ue0b3" } " powerline fonts
 
 let ayucolor='mirage'
 
@@ -113,3 +115,6 @@ nnoremap <c-b> :bd! <cr>
 
 source $HOME/.config/nvim/coc.vim
 luafile $HOME/.config/nvim/lua_tree.lua
+luafile $HOME/.config/nvim/lualine.lua
+luafile $HOME/.config/nvim/moonlight.lua
+luafile $HOME/.config/nvim/bufferline.lua
