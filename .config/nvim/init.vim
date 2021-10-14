@@ -8,8 +8,10 @@ Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'kaicataldo/material.vim'
 Plug 'psliwka/vim-smoothie'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'joshdick/onedark.vim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'romgrk/doom-one.vim'
@@ -33,7 +35,7 @@ Plug 'ntk148v/vim-horizon'
 Plug 'shaunsingh/moonlight.nvim'
 Plug 'hoob3rt/lualine.nvim'
 Plug 'akinsho/bufferline.nvim'
-Plug 'glepnir/dashboard-nvim'
+Plug 'mhinz/vim-startify'
 call plug#end()
 
 set tabstop=2
@@ -104,6 +106,9 @@ nnoremap <c-n> :NvimTreeToggle <cr>
 nnoremap <c-p> :Files <cr>
 nnoremap <c-t> :Buffers <cr>
 
+nnoremap <c-p> :Telescope find_files<cr>
+nnoremap <c-t> :Telescope buffers<cr>
+
 lua require'colorizer'.setup()
 
 set noshowmode
@@ -113,7 +118,9 @@ nnoremap <tab> :bn! <cr>
 nnoremap <s-tab> :bp! <cr>
 nnoremap <c-b> :bd! <cr>
 
+" Some plugins configs
 source $HOME/.config/nvim/coc.vim
+source $HOME/.config/nvim/startify.vim
 luafile $HOME/.config/nvim/lua_tree.lua
 luafile $HOME/.config/nvim/lualine.lua
 luafile $HOME/.config/nvim/moonlight.lua
