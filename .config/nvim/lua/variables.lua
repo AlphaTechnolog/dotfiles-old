@@ -5,6 +5,7 @@ vim.o.number = true
 vim.o.wrap = false
 vim.o.clipboard = 'unnamedplus'
 vim.o.showmode = false
+vim.o.mouse = 'a'
 
 vim.cmd [[ autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 ]]
 vim.cmd [[ autocmd FileType c setlocal tabstop=4 shfitwidth=4 softtabstop=4 ]]
