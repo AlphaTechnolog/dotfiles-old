@@ -38,6 +38,8 @@ Plug 'akinsho/bufferline.nvim'
 Plug 'mhinz/vim-startify'
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
+Plug 'numtostr/FTerm.nvim'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 call plug#end()
 
 set tabstop=2
@@ -122,9 +124,13 @@ nnoremap <c-b> :bd! <cr>
 
 " Some plugins configs
 source $HOME/.config/nvim/coc.vim
+" luafile $HOME/.config/nvim/moonlight.lua
+luafile $HOME/.config/nvim/tokyonight.lua
 source $HOME/.config/nvim/startify.vim
 luafile $HOME/.config/nvim/lua_tree.lua
 luafile $HOME/.config/nvim/lualine.lua
-luafile $HOME/.config/nvim/moonlight.lua
 luafile $HOME/.config/nvim/bufferline.lua
 source $HOME/.config/nvim/markdown_preview.vim
+
+" Toggle terminal
+nnoremap <silent> <c-m-t> :lua require('FTerm').toggle() <cr>
