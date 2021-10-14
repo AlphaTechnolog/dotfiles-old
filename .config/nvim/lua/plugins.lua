@@ -26,4 +26,5 @@ return require('packer').startup(function()
     'nvim-telescope/telescope-media-files.nvim',
     requires = { {'nvim-lua/popup.nvim'} }
   }
+	use 'shaunsingh/moonlight.nvim'
 end)
