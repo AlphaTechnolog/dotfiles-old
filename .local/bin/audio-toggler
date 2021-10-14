@@ -3,10 +3,4 @@
 # This script requires playerctl, make sure you have installed it
 # in your system
 
-cmd=pause
-
-if [[ $(playerctl status) == 'Paused' ]]; then
-  cmd=play-pause
-fi
-
-playerctl $cmd
+playerctl play-pause

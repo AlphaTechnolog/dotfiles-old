@@ -82,10 +82,20 @@ static const struct Theme moonlight = {
     .focus = "#c099ff",
 };
 
+static const struct Theme tokyonight_storm = {
+    .inactive = "#3e4451",
+    .active = "#c0caf5",
+    .bg = "#24283b",
+    .focus = "#7aa2f7",
+};
+
 static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { tokyonight_storm.inactive, tokyonight_storm.bg, window_border },
+    { tokyonight_storm.active, tokyonight_storm.focus, tokyonight_storm.focus },
+
     { moonlight.inactive, moonlight.bg, window_border },
     { moonlight.active, moonlight.focus, moonlight.focus },
 
