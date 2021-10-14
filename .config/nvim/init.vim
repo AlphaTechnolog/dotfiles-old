@@ -36,6 +36,8 @@ Plug 'shaunsingh/moonlight.nvim'
 Plug 'hoob3rt/lualine.nvim'
 Plug 'akinsho/bufferline.nvim'
 Plug 'mhinz/vim-startify'
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
 call plug#end()
 
 set tabstop=2
@@ -125,3 +127,4 @@ luafile $HOME/.config/nvim/lua_tree.lua
 luafile $HOME/.config/nvim/lualine.lua
 luafile $HOME/.config/nvim/moonlight.lua
 luafile $HOME/.config/nvim/bufferline.lua
+source $HOME/.config/nvim/markdown_preview.vim
