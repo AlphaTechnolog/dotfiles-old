@@ -1,0 +1,10 @@
+require('variables')
+require('keymaps')
+require('plugins')
+require('colorscheme')
+require('lualine_config')
+require('nvim_tree')
+require('bufferline_config')
+require('auto_pairs_config')
+require('treesitter_config')
+vim.cmd [[ source $HOME/.config/nvim/coc.vim ]]
