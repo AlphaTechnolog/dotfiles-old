@@ -28,4 +28,5 @@ return require('packer').startup(function()
   }
 	use 'shaunsingh/moonlight.nvim'
 	use 'psliwka/vim-smoothie'
+  use 'vim-crystal/vim-crystal'
 end)
