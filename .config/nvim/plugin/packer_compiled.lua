@@ -81,6 +81,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
+  ["moonlight.nvim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/moonlight.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
@@ -88,6 +92,10 @@ _G.packer_plugins = {
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -100,6 +108,14 @@ _G.packer_plugins = {
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
+  ["telescope-media-files.nvim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

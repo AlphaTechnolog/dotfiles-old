@@ -1,4 +1,4 @@
-vim.bo.expandtab = true
+vim.bo.tabstop = 2
 vim.bo.shiftwidth = 2
 vim.bo.softtabstop = 2
 vim.o.number = true
@@ -18,3 +18,6 @@ vim.cmd [[ autocmd FileType typescriptreact setlocal tabstop=2 shiftwidth=2 soft
 vim.cmd [[ autocmd FileType typescriptreact setlocal tabstop=2 shiftwidth=2 softtabstop=2 ]]
 vim.cmd [[ autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2 ]]
 vim.cmd [[ autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2 ]]
+vim.cmd [[ autocmd FileType vue setlocal tabstop=2 shiftwidth=2 softtabstop=2 ]]
+
+vim.cmd [[ set shell=/bin/bash ]]

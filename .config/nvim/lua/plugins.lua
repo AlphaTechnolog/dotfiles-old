@@ -27,4 +27,5 @@ return require('packer').startup(function()
     requires = { {'nvim-lua/popup.nvim'} }
   }
 	use 'shaunsingh/moonlight.nvim'
+	use 'psliwka/vim-smoothie'
 end)
