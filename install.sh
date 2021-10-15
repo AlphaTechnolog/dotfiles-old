@@ -291,20 +291,12 @@ clone_dotfiles() {
     echo "==> mkdir -p $HOME/.local/bin/"
     mkdir -p $HOME/.local/bin
 
-    declare -a local__bin_scripts=(
-      "monitor-config",
-      "wl-random-wallpaper",
-      "wl-wallpapers-rotator",
-      "volume",
-      "percentage",
-      "brightness",
-      "checkupdates"
-    )
+		local__bin_scripts="monitor-config wl-random-wallpaper volume percentage brightness checkupdates audio-toggler"
 
     cd $directory/.dotfiles
     mkdir -p $HOME/.local/bin
 
-    for dependency in ${local__bin_scripts[@]}; do
+    for dependency in $local__bin_scripts; do
       echo "==> ln -s $PWD/.local/bin/$dependency $HOME/.local/bin/$dependency"
       prevented_process ln -s $PWD/.local/bin/$dependency $HOME/.local/bin/$dependency
     done
