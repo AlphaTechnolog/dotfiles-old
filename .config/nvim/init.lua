@@ -13,4 +13,5 @@ require('bufferline_config')
 require('auto_pairs_config')
 require('treesitter_config')
 require('colorizer_config')
+require('shade_config')
 vim.cmd [[ source $HOME/.config/nvim/coc.vim ]]

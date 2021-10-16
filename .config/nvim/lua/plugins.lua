@@ -34,4 +34,5 @@ return require('packer').startup(function()
   use 'EdenEast/nightfox.nvim'
   use 'yashguptaz/calvera-dark.nvim'
   use 'norcalli/nvim-colorizer.lua'
+  use 'sunjon/Shade.nvim'
 end)
