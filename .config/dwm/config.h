@@ -103,10 +103,20 @@ static const struct Theme nightfox = {
     .focus = "#719cd6"
 };
 
+static const struct Theme calvera_dark = {
+    .inactive = "#3e4451",
+    .active = "#FFFFFF",
+    .bg = "#0c0c1f",
+    .focus = "#C792EA",
+};
+
 static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { calvera_dark.inactive, calvera_dark.bg, window_border },
+    { calvera_dark.active, calvera_dark.focus, calvera_dark.focus },
+
     { nightfox.inactive, nightfox.bg, window_border },
     { nightfox.active, nightfox.focus, nightfox.focus },
 
