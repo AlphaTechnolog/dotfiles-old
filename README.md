@@ -10,8 +10,8 @@ This is my dotfiles for xmonad, xmobar, qtile, bspwm, sxhkd, spectrwm, polybar c
 
 To setup neovim you need install neovim >= 0.5.0
 
-To use my neovim configuration you must install [vim-plug](https://github.com/junegunn/vim-plug)
-, use the command `:PlugInstall`, and then, restart the editor.
+To use my neovim configuration you must install [packer](https://github.com/wbthomason/packer.nvim)
+, use the command `:PackerSync`, and then, restart the editor.
 
 ## Notes
 
