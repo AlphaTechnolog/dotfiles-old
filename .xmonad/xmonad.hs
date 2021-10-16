@@ -95,7 +95,9 @@ myFocusColor :: String
 -- Onedark
 -- myFocusColor  = "#46d9ff"   -- Border color of focused windows
 -- Moonlight
-myFocusColor  = "#82aaff"   -- Border color of focused windows
+-- myFocusColor  = "#82aaff"   -- Border color of focused windows
+-- Calvera Dark
+myFocusColor  = "#7878E7"   -- Border color of focused windows
 -- Gruvbox
 -- myFocusColor = "#458588"
 -- Dracula
@@ -119,8 +121,10 @@ myStartupHook = do
     spawnOnce "udiskie -t &"
     -- Onedark
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1e222a  --height 22 &"
+    -- Calvera Dark
+    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x0c0c1f  --height 22 &"
     -- Moonlight
-    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x212337 --height 22 &"
+    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x212337 --height 22 &"
     -- Horizon Dark
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x232530  --height 22 &"
     -- Doom one
@@ -470,7 +474,9 @@ main = do
               -- Onedark
               -- , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
               -- Moonlight
-              , ppCurrent = xmobarColor "#c099ff" "" . wrap "<box type=Bottom width=2 mb=2 color=#c099ff>" "</box>"         -- Current workspace
+              -- , ppCurrent = xmobarColor "#c099ff" "" . wrap "<box type=Bottom width=2 mb=2 color=#c099ff>" "</box>"         -- Current workspace
+	      -- Calvera Dark
+              , ppCurrent = xmobarColor "#7878E7" "" . wrap "<box type=Bottom width=2 mb=2 color=#7878E7>" "</box>"         -- Current workspace
               -- Horizon Dark
               -- , ppCurrent = xmobarColor "#ee64ac" "" . wrap "<box type=Bottom width=2 mb=2 color=#ee64ac>" "</box>"         -- Current workspace
               -- Material Ocean
@@ -488,7 +494,9 @@ main = do
               -- Onedark
               -- , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
               -- Moonlight
-              , ppVisible = xmobarColor "#c099ff" "" . clickable              -- Visible but not current workspace
+              -- , ppVisible = xmobarColor "#c099ff" "" . clickable              -- Visible but not current workspace
+	      -- Calvera Dark
+              , ppVisible = xmobarColor "#7878E7" "" . clickable              -- Visible but not current workspace
               -- Horizon Dark
               -- , ppVisible = xmobarColor "#ee64ac" "" . clickable              -- Visible but not current workspace
               -- Material Ocean
@@ -506,7 +514,9 @@ main = do
               -- Onedark
               -- , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
               -- Moonlight
-              , ppHidden = xmobarColor "#82aaff" "" . wrap "<box type=Top width=2 mt=2 color=#82aaff>" "</box>" . clickable -- Hidden workspaces
+              -- , ppHidden = xmobarColor "#82aaff" "" . wrap "<box type=Top width=2 mt=2 color=#82aaff>" "</box>" . clickable -- Hidden workspaces
+	      -- Calvera Dark
+              , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
               -- Horizon Dark
               -- , ppHidden = xmobarColor "#26bbd9" "" . wrap "<box type=Top width=2 mt=2 color=#26bbd9>" "</box>" . clickable -- Hidden workspaces
               -- Material Ocean
@@ -524,7 +534,9 @@ main = do
               -- Onedark
               -- , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
               -- Moonlight
-              , ppHiddenNoWindows = xmobarColor "#82aaff" ""  . clickable     -- Hidden workspaces (no windows)
+              -- , ppHiddenNoWindows = xmobarColor "#82aaff" ""  . clickable     -- Hidden workspaces (no windows)
+	      -- Calvera Dark
+              , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
               -- Horizon Dark
               -- , ppHiddenNoWindows = xmobarColor "#26bbd9" ""  . clickable     -- Hidden workspaces (no windows)
               -- Material Ocean
@@ -542,7 +554,9 @@ main = do
               -- Onedark
               -- , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
               -- Moonlight
-              , ppTitle = xmobarColor "#c8d3f5" "" . shorten 60               -- Title of active window
+              -- , ppTitle = xmobarColor "#c8d3f5" "" . shorten 60               -- Title of active window
+	      -- Calvera Dark
+              , ppTitle = xmobarColor "#7878E7" "" . shorten 60               -- Title of active window
               -- Horizon Dark
               -- , ppTitle = xmobarColor "#d5d8da" "" . shorten 60               -- Title of active window
               -- Material Ocean
