@@ -36,9 +36,8 @@ return require('packer').startup(function()
   use 'sunjon/Shade.nvim'
   use 'numToStr/FTerm.nvim'
   use 'folke/twilight.nvim'
-  use 'yamatsum/nvim-cursorline'
   use 'jghauser/mkdir.nvim'
-  use 'lukas-reineke/indent-blankline.nvim'
+  -- use 'lukas-reineke/indent-blankline.nvim'
   use 'numToStr/Comment.nvim'
   use 'karb94/neoscroll.nvim'
 end)
