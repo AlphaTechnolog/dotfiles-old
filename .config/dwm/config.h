@@ -90,13 +90,19 @@ static const struct Theme tokyonight_storm = {
 };
 
 static const struct Theme codedark = {
-    .inactive = "",
+    .inactive = "#3e4451",
+    .active = "#d4d4d4",
+    .bg = "#1e1e1e",
+    .focus = "#569cd6",
 };
 
 static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { codedark.inactive, codedark.bg, window_border },
+    { codedark.active, codedark.focus, codedark.focus },
+
     { moonlight.inactive, moonlight.bg, window_border },
     { moonlight.active, moonlight.focus, moonlight.focus },
 
