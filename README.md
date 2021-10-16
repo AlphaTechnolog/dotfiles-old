@@ -74,7 +74,7 @@ requirements listed here:
 
 - Bibata-Modern-Ice (The cursor)
 - Papirus Icon Theme (The icon theme, select the purple style in your console: $ papirus-folders -C purple)
-- arc-dark
+- Material-Black-Plum
 
 ## Some requirements
 
