@@ -107,7 +107,7 @@ static const struct Theme calvera_dark = {
     .inactive = "#3e4451",
     .active = "#FFFFFF",
     .bg = "#0c0c1f",
-    .focus = "#C792EA",
+    .focus = "#7878E7",
 };
 
 static const char window_border[] = "#000000";
