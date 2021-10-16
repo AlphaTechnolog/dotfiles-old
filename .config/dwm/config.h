@@ -89,6 +89,10 @@ static const struct Theme tokyonight_storm = {
     .focus = "#7aa2f7",
 };
 
+static const struct Theme codedark = {
+    .inactive = "",
+};
+
 static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {

@@ -8,8 +8,8 @@ vim.o.showmode = false
 vim.o.mouse = 'a'
 
 vim.cmd [[ autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab ]]
-vim.cmd [[ autocmd FileType c setlocal tabstop=4 shfitwidth=4 expandtab ]]
-vim.cmd [[ autocmd FileType c++ setlocal tabstop=4 shiftwidth=4 expandtab ]]
+vim.cmd [[ autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab ]]
+vim.cmd [[ autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab ]]
 vim.cmd [[ autocmd FileType php setlocal tabstop=4 shiftwidth=4 expandtab ]]
 vim.cmd [[ autocmd FileType lua setlocal tabstop=2 shiftwidth=2 expandtab ]]
 vim.cmd [[ autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 expandtab ]]
