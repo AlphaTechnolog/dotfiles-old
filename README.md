@@ -73,7 +73,7 @@ This config replace the gtk files to my gtk files, you must install the gtk
 requirements listed here:
 
 - Bibata-Modern-Ice (The cursor)
-- Papirus Icon Theme (The icon theme, select the teal style in your console: $ papirus-folders -C teal)
+- Papirus Icon Theme (The icon theme, select the purple style in your console: $ papirus-folders -C purple)
 - arc-dark
 
 ## Some requirements
