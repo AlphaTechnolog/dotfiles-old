@@ -27,7 +27,6 @@ return require('packer').startup(function()
     requires = { {'nvim-lua/popup.nvim'} }
   }
 	use 'shaunsingh/moonlight.nvim'
-	use 'psliwka/vim-smoothie'
   use 'vim-crystal/vim-crystal'
   use 'Mofiqul/vscode.nvim'
   use 'joshdick/onedark.vim'
@@ -40,4 +39,6 @@ return require('packer').startup(function()
   use 'yamatsum/nvim-cursorline'
   use 'jghauser/mkdir.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
+  use 'numToStr/Comment.nvim'
+  use 'karb94/neoscroll.nvim'
 end)
