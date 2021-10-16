@@ -161,7 +161,6 @@ static const Rule rules[] = {
 
     // class      instance    title       tags mask     isfloating   monitor 
     { "Gimp",     NULL,       NULL,       0,            1,           -1 },
-    { "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 // ---------------------------------- Layouts ----------------------------------
@@ -281,7 +280,7 @@ static Key keys[] = {
     { MODKEY, XK_Return, spawn, SHCMD("alacritty") },
 
     // Browser
-    { MODKEY, XK_b, spawn, SHCMD("brave-browser") },
+    { MODKEY, XK_b, spawn, SHCMD("firefox") },
 
     // Audio Toggler
     { MODKEY, XK_p, spawn, SHCMD("~/.local/bin/audio-toggler") },
