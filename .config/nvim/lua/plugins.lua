@@ -37,4 +37,5 @@ return require('packer').startup(function()
   use 'sunjon/Shade.nvim'
   use 'numToStr/FTerm.nvim'
   use 'folke/twilight.nvim'
+  use 'yamatsum/nvim-cursorline'
 end)
