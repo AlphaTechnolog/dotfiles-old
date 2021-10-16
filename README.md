@@ -72,7 +72,7 @@ At finished the configuration change in the login screen your session to xmonad 
 This config replace the gtk files to my gtk files, you must install the gtk
 requirements listed here:
 
-- cz-Hickson-White (The cursor)
+- Bibata-Modern-Ice (The cursor)
 - Papirus Icon Theme (The icon theme, select the teal style in your console: $ papirus-folders -C teal)
 - dt-dark-theme (It is encountered in the distrotube repository!)
 
