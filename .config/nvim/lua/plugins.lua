@@ -38,4 +38,6 @@ return require('packer').startup(function()
   use 'numToStr/FTerm.nvim'
   use 'folke/twilight.nvim'
   use 'yamatsum/nvim-cursorline'
+  use 'jghauser/mkdir.nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
 end)
