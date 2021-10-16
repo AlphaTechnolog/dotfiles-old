@@ -32,4 +32,5 @@ return require('packer').startup(function()
   use 'Mofiqul/vscode.nvim'
   use 'joshdick/onedark.vim'
   use 'EdenEast/nightfox.nvim'
+  use 'yashguptaz/calvera-dark.nvim'
 end)

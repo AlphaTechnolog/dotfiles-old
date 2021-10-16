@@ -109,10 +109,10 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    # family: Sauce Code Pro Nerd Font
+    family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    family: Hack NF
+    # family: Hack NF
     # family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
@@ -132,10 +132,10 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Sauce Code Pro Nerd Font
+    family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    family: Hack NF
+    # family: Hack NF
     # family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
@@ -155,10 +155,10 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Sauce Code Pro Nerd Font
+    family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    family: Hack NF
+    # family: Hack NF
     # family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
@@ -179,10 +179,10 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Sauce Code Pro Nerd Font
+    family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    family: Hack NF
+    # family: Hack NF
     # family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
@@ -198,10 +198,10 @@ font:
     style: Bold Italic
 
   # Point size
-  # size: 12
+  size: 12
   # size: 13.0
   # size: 11.5
-  size: 11.0
+  # size: 11.0
   # size: 10.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
@@ -322,31 +322,31 @@ schemes:
   nightfox: &nightfox
     # Default colors
     primary:
-      background: '0x192330'
-      foreground: '0xcdcecf'
+      background: '#192330'
+      foreground: '#cdcecf'
     # Normal colors
     normal:
-      black:   '0x393b44'
-      red:     '0xc94f6d'
-      green:   '0x81b29a'
-      yellow:  '0xdbc074'
-      blue:    '0x719cd6'
-      magenta: '0x9d79d6'
-      cyan:    '0x63cdcf'
-      white:   '0xdfdfe0'
+      black:   '#393b44'
+      red:     '#c94f6d'
+      green:   '#81b29a'
+      yellow:  '#dbc074'
+      blue:    '#719cd6'
+      magenta: '#9d79d6'
+      cyan:    '#63cdcf'
+      white:   '#dfdfe0'
     # Bright colors
     bright:
-      black:   '0x475072'
-      red:     '0xd6616b'
-      green:   '0x58cd8b'
-      yellow:  '0xffe37e'
-      blue:    '0x84cee4'
-      magenta: '0xb8a1e3'
-      cyan:    '0x59f0ff'
-      white:   '0xf2f2f2'
+      black:   '#475072'
+      red:     '#d6616b'
+      green:   '#58cd8b'
+      yellow:  '#ffe37e'
+      blue:    '#84cee4'
+      magenta: '#b8a1e3'
+      cyan:    '#59f0ff'
+      white:   '#f2f2f2'
     indexed_colors:
-      - { index: 16, color: '0xf4a261' }
-      - { index: 17, color: '0xd67ad2' }  # Ayu mirage
+      - { index: 16, color: '#f4a261' }
+      - { index: 17, color: '#d67ad2' }  # Ayu mirage
   ayu-mirage: &ayu-mirage
     primary:
       background: '#212733'
@@ -563,6 +563,31 @@ schemes:
       magenta: '#c678dd'
       cyan:    '#56b6c2'
       white:   '#d4d4d4'
+  # Calvera Dark
+  calvera_dark: &calvera_dark
+    primary:
+      background: "#0c0c1f"
+      foreground: "#B0BEC5"
+    cursor:
+      text: CellBackground
+      cursor: "#AAB4EC"
+    normal:
+      black: "#000000"
+      red: "#E97A7A"
+      green: "#ADCEA1"
+      blue: "#82AAFF"
+      magenta: "#C792EA"
+      cyan: "#7878E7"
+      white: "#FFFFFF"
+    bright:
+      black: "#717CB4"
+      red: "#FF5370"
+      green: "#ADCEA1"
+      yellow: "#D6B295"
+      blue: "#82AAFF"
+      magenta: "#FF9CAC"
+      cyan: "#7878E7"
+      white: "#B0BEC5"
   # Onedark
   onedark: &onedark
     primary:
@@ -822,7 +847,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *nightfox
+colors: *calvera_dark
 
 # Visual Bell
 #

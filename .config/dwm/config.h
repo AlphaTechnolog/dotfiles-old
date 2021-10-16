@@ -96,10 +96,20 @@ static const struct Theme codedark = {
     .focus = "#569cd6",
 };
 
+static const struct Theme nightfox = {
+    .inactive = "#3e4451",
+    .active = "#cdcecf",
+    .bg = "#192330",
+    .focus = "#719cd6"
+};
+
 static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { nightfox.inactive, nightfox.bg, window_border },
+    { nightfox.active, nightfox.focus, nightfox.focus },
+
     { codedark.inactive, codedark.bg, window_border },
     { codedark.active, codedark.focus, codedark.focus },
 
