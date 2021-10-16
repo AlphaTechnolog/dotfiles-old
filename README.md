@@ -74,7 +74,7 @@ requirements listed here:
 
 - Bibata-Modern-Ice (The cursor)
 - Papirus Icon Theme (The icon theme, select the teal style in your console: $ papirus-folders -C teal)
-- dt-dark-theme (It is encountered in the distrotube repository!)
+- arc-dark
 
 ## Some requirements
 
