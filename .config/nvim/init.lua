@@ -12,4 +12,5 @@ require('nvim_tree')
 require('bufferline_config')
 require('auto_pairs_config')
 require('treesitter_config')
+require('autocmds')
 vim.cmd [[ source $HOME/.config/nvim/coc.vim ]]
