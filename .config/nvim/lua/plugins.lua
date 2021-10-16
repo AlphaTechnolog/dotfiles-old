@@ -30,4 +30,6 @@ return require('packer').startup(function()
 	use 'psliwka/vim-smoothie'
   use 'vim-crystal/vim-crystal'
   use 'Mofiqul/vscode.nvim'
+  use 'joshdick/onedark.vim'
+  use 'EdenEast/nightfox.nvim'
 end)

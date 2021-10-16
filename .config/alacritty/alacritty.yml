@@ -109,7 +109,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    # family: Sauce Code Pro Nerd Font
+    family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
@@ -118,7 +118,7 @@ font:
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -132,7 +132,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Sauce Code Pro Nerd Font
+    family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
@@ -141,7 +141,7 @@ font:
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -155,7 +155,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Sauce Code Pro Nerd Font
+    family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
@@ -164,7 +164,7 @@ font:
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -179,7 +179,7 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Sauce Code Pro Nerd Font
+    family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
@@ -188,7 +188,7 @@ font:
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -198,7 +198,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 11.5
+  size: 12
   # size: 13.0
   # size: 11.0
   # size: 11.5
@@ -208,7 +208,7 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: -4
+    y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -318,7 +318,35 @@ schemes:
       magenta: '#929BE5'
       cyan: '#73C1A9'
       white: '#9ea3c0'
-  # Ayu mirage
+  # Nightfox
+  nightfox: &nightfox
+    # Default colors
+    primary:
+      background: '0x192330'
+      foreground: '0xcdcecf'
+    # Normal colors
+    normal:
+      black:   '0x393b44'
+      red:     '0xc94f6d'
+      green:   '0x81b29a'
+      yellow:  '0xdbc074'
+      blue:    '0x719cd6'
+      magenta: '0x9d79d6'
+      cyan:    '0x63cdcf'
+      white:   '0xdfdfe0'
+    # Bright colors
+    bright:
+      black:   '0x475072'
+      red:     '0xd6616b'
+      green:   '0x58cd8b'
+      yellow:  '0xffe37e'
+      blue:    '0x84cee4'
+      magenta: '0xb8a1e3'
+      cyan:    '0x59f0ff'
+      white:   '0xf2f2f2'
+    indexed_colors:
+      - { index: 16, color: '0xf4a261' }
+      - { index: 17, color: '0xd67ad2' }  # Ayu mirage
   ayu-mirage: &ayu-mirage
     primary:
       background: '#212733'
@@ -575,6 +603,46 @@ schemes:
       magenta: '#c678dd'
       cyan:    '#56b6c2'
       white:   '#828791'
+  # Soft onedark
+  soft-onedark: &soft-onedark
+    primary:
+      background: '#282c34'
+      foreground: '#abb2bf'
+      bright_foreground: '#e6efff'
+
+    cursor:
+      text: CellBackground
+      cursor: '#528bff'
+
+    normal:
+      black:   '#1e2127'
+      red:     '#e06c75'
+      green:   '#98c379'
+      yellow:  '#d19a66'
+      blue:    '#61afef'
+      magenta: '#c678dd'
+      cyan:    '#56b6c2'
+      white:   '#828791'
+
+    bright:
+      black:   '#5c6370'
+      red:     '#e06c75'
+      green:   '#98c379'
+      yellow:  '#d19a66'
+      blue:    '#61afef'
+      magenta: '#c678dd'
+      cyan:    '#56b6c2'
+      white:   '#e6efff'
+
+    dim:
+      black:   '#1e2127'
+      red:     '#e06c75'
+      green:   '#98c379'
+      yellow:  '#d19a66'
+      blue:    '#61afef'
+      magenta: '#c678dd'
+      cyan:    '#56b6c2'
+      white:   '#828791'
   gruvbox: &gruvbox
     primary:
       # hard contrast: background = '#1d2021'
@@ -754,7 +822,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *codedark
+colors: *nightfox
 
 # Visual Bell
 #
