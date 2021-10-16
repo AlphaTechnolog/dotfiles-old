@@ -35,4 +35,6 @@ return require('packer').startup(function()
   use 'yashguptaz/calvera-dark.nvim'
   use 'norcalli/nvim-colorizer.lua'
   use 'sunjon/Shade.nvim'
+  use 'numToStr/FTerm.nvim'
+  use 'folke/twilight.nvim'
 end)
