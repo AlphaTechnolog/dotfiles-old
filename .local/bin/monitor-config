@@ -13,7 +13,3 @@ if [[ $connected_monitor > 1 ]]; then
   xrandr --output LVDS-1 --off --output HDMI-1 --mode 1360x768 --primary
   # xrandr --output HDMI-1 --mode 1360x768 --primary --right-of LVDS-1 --output LVDS-1 --mode 1366x768
 fi
-
-if [[ -f $HOME/.local/bin/granth_resolution ]]; then
-  bash $HOME/.local/bin/granth_resolution
-fi
