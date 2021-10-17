@@ -40,4 +40,6 @@ return require('packer').startup(function()
   -- use 'lukas-reineke/indent-blankline.nvim'
   use 'numToStr/Comment.nvim'
   use 'karb94/neoscroll.nvim'
+  use 'tjdevries/colorbuddy.vim'
+  use 'Th3Whit3Wolf/onebuddy'
 end)

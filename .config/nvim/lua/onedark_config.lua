@@ -1,3 +1,1 @@
-vim.cmd [[ set termguicolors ]]
-
-vim.cmd [[ colorscheme onedark ]]
+require('colorbuddy').colorscheme('onebuddy')
