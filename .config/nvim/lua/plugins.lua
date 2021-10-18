@@ -42,4 +42,5 @@ return require('packer').startup(function()
   use 'karb94/neoscroll.nvim'
   use 'tjdevries/colorbuddy.vim'
   use 'Th3Whit3Wolf/onebuddy'
+  use 'marko-cerovac/material.nvim'
 end)

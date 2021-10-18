@@ -109,7 +109,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Sauce Code Pro Nerd Font
+    # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
@@ -118,7 +118,7 @@ font:
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    # family: CaskaydiaCove NF
+    family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -132,7 +132,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Sauce Code Pro Nerd Font
+    # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
@@ -141,7 +141,7 @@ font:
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    # family: CaskaydiaCove NF
+    family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -155,7 +155,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Sauce Code Pro Nerd Font
+    # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
@@ -164,7 +164,7 @@ font:
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    # family: CaskaydiaCove NF
+    family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -179,7 +179,7 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Sauce Code Pro Nerd Font
+    # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
@@ -188,7 +188,7 @@ font:
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    # family: CaskaydiaCove NF
+    family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -198,9 +198,9 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 12
+  # size: 12
   # size: 13.0
-  # size: 11.5
+  size: 11.5
   # size: 11.0
   # size: 10.0
 
@@ -242,30 +242,34 @@ schemes:
   material-ocean: &material-ocean
     # Default colors
     primary:
-      background: '0x0f101a'
-      foreground: '0xc5c9de'
+      background: '#0f101a'
+      foreground: '#c5c9de'
+
+    cursor:
+      text: CellBackground
+      cursor: '#ffd47e'
 
     # Normal colors
     normal:
-      black:   '0x181a29'
-      red:     '0xF07178'
-      green:   '0xcdea9f'
-      yellow:  '0xffd47e'
-      blue:    '0x93bbff'
-      magenta: '0xd3a7ee'
-      cyan:    '0x98e4ff'
-      white:   '0xbfd5de'
+      black:   '#181a29'
+      red:     '#F07178'
+      green:   '#cdea9f'
+      yellow:  '#ffd47e'
+      blue:    '#93bbff'
+      magenta: '#d3a7ee'
+      cyan:    '#98e4ff'
+      white:   '#bfd5de'
 
     # Bright colors
     bright:
-      black:   '0x282a40'
-      red:     '0xeb7f84'
-      green:   '0xe0ffad'
-      yellow:  '0xffee7e'
-      blue:    '0xa3c5ff'
-      magenta: '0xd6afed'
-      cyan:    '0x98fffd'
-      white:   '0xd1e5ed'
+      black:   '#282a40'
+      red:     '#eb7f84'
+      green:   '#e0ffad'
+      yellow:  '#ffee7e'
+      blue:    '#a3c5ff'
+      magenta: '#d6afed'
+      cyan:    '#98fffd'
+      white:   '#d1e5ed'
   # Gotham
   gotham: &gotham
     primary:
@@ -402,32 +406,7 @@ schemes:
       magenta: '#f17676'
       cyan:    '#9debcf'
       white:   '#ffffff'
-  # Material Ocean
-  material-ocean: &material-ocean
-    primary:
-      background: '#0f101a'
-      foreground: '#c5c9de'
-    cursor:
-      text: CellBackground
-      cursor: '#a151d3'
-    normal:
-      black:   '#181a29'
-      red:     '#F07178'
-      green:   '#cdea9f'
-      yellow:  '#ffd47e'
-      blue:    '#93bbff'
-      magenta: '#d3a7ee'
-      cyan:    '#98e4ff'
-      white:   '#bfd5de'
-    bright:
-      black:   '#282a40'
-      red:     '#eb7f84'
-      green:   '#e0ffad'
-      yellow:  '#ffee7e'
-      blue:    '#a3c5ff'
-      magenta: '#d6afed'
-      cyan:    '#98fffd'
-      white:   '#d1e5ed'
+  # Nord
   nord: &nord
     primary:
       background: '#2E3440'
@@ -876,7 +855,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *calvera_dark
+colors: *material-ocean
 
 # Visual Bell
 #
@@ -1166,8 +1145,3 @@ key_bindings:
   - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
   - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
   - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
-
-cursor:
-  thickness: 0
-  style:
-    shape: Beam
