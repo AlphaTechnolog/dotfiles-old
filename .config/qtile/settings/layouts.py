@@ -11,8 +11,8 @@ from .theme import colors, theme
 
 layout_conf = {
     'border_focus': colors['focus' if theme != 'dark-grey' else 'inactive'][0],
-    'border_width': 1,
-    'margin': 8
+    'border_width': 2,
+    'margin': 10
 }
 
 layouts = [
