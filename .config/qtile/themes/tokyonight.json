@@ -20,8 +20,8 @@
         "#7aa2f7"
     ],
     "active": [
-        "#7aa2f7",
-        "#7aa2f7"
+        "#f1ffff",
+        "#f1ffff"
     ],
     "inactive": [
         "#3e4451",
@@ -36,15 +36,15 @@
         "#7aa2f7"
     ],
     "color2": [
-        "#f7768e",
-        "#f7768e"
+        "#7dcfff",
+        "#7dcfff"
     ],
     "color3": [
         "#7aa2f7",
         "#7aa2f7"
     ],
     "color4": [
-        "#f7768e",
-        "#f7768e"
+        "#7dcfff",
+        "#7dcfff"
     ]
 }
