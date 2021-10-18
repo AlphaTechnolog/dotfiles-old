@@ -1,7 +1,7 @@
 // -------------------------------- Appearance ---------------------------------
 
 // border pixel of windows
-static const unsigned int borderpx  = 1;
+static const unsigned int borderpx  = 2;
 // gaps between windows 
 static const unsigned int gappx = 6;
 // snap pixel 
@@ -89,6 +89,13 @@ static const struct Theme moonlight = {
     .focus = "#c099ff",
 };
 
+static const struct Theme tokyonight = {
+    .inactive = "#3e4451",
+    .active = "#c0caf5",
+    .bg = "#1a1b26",
+    .focus = "#7aa2f7",
+};
+
 static const struct Theme tokyonight_storm = {
     .inactive = "#3e4451",
     .active = "#c0caf5",
@@ -121,6 +128,9 @@ static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { tokyonight.inactive, tokyonight.bg, window_border },
+    { tokyonight.active, tokyonight.focus, tokyonight.focus },
+
     { material_ocean.inactive, material_ocean.bg, window_border },
     { material_ocean.active, material_ocean.focus, material_ocean.focus },
 
