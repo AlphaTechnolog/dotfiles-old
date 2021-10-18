@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/configuration/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/configuration/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/configuration/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/configuration/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/configuration/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/alphatechnolog/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/alphatechnolog/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/alphatechnolog/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/alphatechnolog/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/alphatechnolog/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -69,69 +69,121 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/Comment.nvim"
+  },
+  ["FTerm.nvim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/FTerm.nvim"
+  },
+  ["Shade.nvim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/Shade.nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
+  },
+  ["calvera-dark.nvim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/calvera-dark.nvim"
   },
   ["coc.nvim"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/coc.nvim"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/coc.nvim"
+  },
+  ["colorbuddy.vim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/colorbuddy.vim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+  },
+  ["material.nvim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/material.nvim"
+  },
+  ["mkdir.nvim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/mkdir.nvim"
   },
   ["moonlight.nvim"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/moonlight.nvim"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/moonlight.nvim"
+  },
+  ["neoscroll.nvim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/neoscroll.nvim"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/nightfox.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+  },
+  onebuddy = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/onebuddy"
+  },
+  ["onedark.vim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/onedark.vim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/popup.nvim"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
   ["telescope-media-files.nvim"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/tokyonight.nvim"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/tokyonight.nvim"
+  },
+  ["twilight.nvim"] = {
+    loaded = true,
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/twilight.nvim"
   },
   ["vim-crystal"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/vim-crystal"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/vim-crystal"
   },
-  ["vim-smoothie"] = {
+  ["vscode.nvim"] = {
     loaded = true,
-    path = "/home/configuration/.local/share/nvim/site/pack/packer/start/vim-smoothie"
+    path = "/home/alphatechnolog/.local/share/nvim/site/pack/packer/start/vscode.nvim"
   }
 }
 
