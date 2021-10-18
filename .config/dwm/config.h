@@ -114,11 +114,11 @@ static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
-    { moonlight.inactive, moonlight.bg, window_border },
-    { moonlight.active, moonlight.focus, moonlight.focus },
-
     { calvera_dark.inactive, calvera_dark.bg, window_border },
     { calvera_dark.active, calvera_dark.focus, calvera_dark.focus },
+
+    { moonlight.inactive, moonlight.bg, window_border },
+    { moonlight.active, moonlight.focus, moonlight.focus },
 
     { nightfox.inactive, nightfox.bg, window_border },
     { nightfox.active, nightfox.focus, nightfox.focus },
