@@ -33,6 +33,13 @@ struct Theme {
     char *focus;
 };
 
+static const struct Theme material_ocean = {
+    .inactive = "#4c566a",
+    .active = "#ffffff",
+    .bg = "#0f101a",
+    .focus = "#d3a7ee",
+};
+
 static const struct Theme nord = {
     .inactive = "#4c566a",
     .active = "#ffffff",
@@ -114,6 +121,9 @@ static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { material_ocean.inactive, material_ocean.bg, window_border },
+    { material_ocean.active, material_ocean.focus, material_ocean.focus },
+
     { calvera_dark.inactive, calvera_dark.bg, window_border },
     { calvera_dark.active, calvera_dark.focus, calvera_dark.focus },
 
