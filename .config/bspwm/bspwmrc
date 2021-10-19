@@ -45,7 +45,9 @@ bspc config focus_follows_pointer true
 # bspc config normal_border_color "#212337"
 # bspc config focused_border_color "#c099ff"
 # CodeDark
+# bspc config normal_border_color "#212337"
+# bspc config focused_border_color "#569cd6"
 bspc config normal_border_color "#212337"
-bspc config focused_border_color "#569cd6"
+bspc config focused_border_color "#7aa2f7"
 
 test -f $ROOT/polybar-init.sh && bash $ROOT/polybar-init.sh
