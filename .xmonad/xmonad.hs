@@ -544,7 +544,7 @@ main = do
               -- Moonlight
               -- , ppHiddenNoWindows = xmobarColor "#82aaff" ""  . clickable     -- Hidden workspaces (no windows)
 	      -- Calvera Dark
-              , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
+              , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
 	      -- Tokyonight
               -- , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
               -- Horizon Dark
