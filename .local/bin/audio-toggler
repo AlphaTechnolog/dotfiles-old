@@ -4,3 +4,8 @@
 # in your system
 
 playerctl play-pause
+
+# Trying with cmus-remote, some times I use cmus
+if [[ $? != 0 ]]; then
+  cmus-remote --pause
+fi
