@@ -73,8 +73,8 @@ This config replace the gtk files to my gtk files, you must install the gtk
 requirements listed here:
 
 - Breeze_Snow (The cursor)
-- Papirus Icon Theme (The icon theme, select the purple style in your console: $ papirus-folders -C purple)
-- Material-Black-Plum
+- Papirus Icon Theme (The icon theme, select the purple style in your console: $ papirus-folders -C orange)
+- Material-Black-Colors
 
 ## Some requirements
 
