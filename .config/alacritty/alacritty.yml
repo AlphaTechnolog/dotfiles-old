@@ -457,7 +457,7 @@ schemes:
   # Horizon Dark
   horizon-dark: &horizon-dark
     primary:
-      background: '#232530'
+      background: '#1c1e26'
       foreground: '#e0e0e0'
     normal:
       black:   '#16161c'
@@ -851,7 +851,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *gruvbox
+colors: *horizon-dark
 
 # Visual Bell
 #
