@@ -13,8 +13,8 @@ local colors = {
   darkblue = '#7878E7',
   green    = '#ADCEA1',
   orange   = '#D6B295',
-  violet   = '#C792EA',
-  magenta  = '#C792EA',
+  violet   = '#7878E7',
+  magenta  = '#7878E7',
   blue     = '#7878E7',
   red      = '#E97A7A',
 }
@@ -113,7 +113,7 @@ ins_left {
       t = colors.red,
     }
     vim.api.nvim_command('hi! LualineMode guifg=' .. mode_color[vim.fn.mode()] .. ' guibg=' .. colors.bg)
-    return ''
+    return ''
   end,
   color = 'LualineMode',
   padding = { right = 1 },
