@@ -851,7 +851,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *horizon-dark
+colors: *dracula
 
 # Visual Bell
 #
