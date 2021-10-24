@@ -44,4 +44,5 @@ return require('packer').startup(function()
   use 'Th3Whit3Wolf/onebuddy'
   use 'marko-cerovac/material.nvim'
   use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
+  use 'ntk148v/vim-horizon'
 end)
