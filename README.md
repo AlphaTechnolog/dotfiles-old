@@ -67,6 +67,12 @@ The steps are listed in it script!
 
 At finished the configuration change in the login screen your session to xmonad or qtile!
 
+## Xmonad systray
+
+To make systray spacing works in xmobar, you must change
+the file `.config/xmobar/xmobarrc.hs` in the line `73`
+, replace `alphatechnolog` to your uid
+
 ## GTK
 
 This config replace the gtk files to my gtk files, you must install the gtk

@@ -70,7 +70,7 @@ Config {   font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.
                         -- Time and date
                     , Run Date "<fn=2>\xf017</fn>  %b %d %Y - (%H:%M) " "date" 50
                         -- Script that dynamically adjusts xmobar padding depending on number of trayer icons.
-                    , Run Com "/home/dt/.config/xmobar/trayer-padding-icon.sh" [] "trayerpad" 20
+                    , Run Com "/home/alphatechnolog/.config/xmobar/trayer-padding-icon.sh" [] "trayerpad" 20
                         -- Prints out the left side items such as workspaces, layout, etc.
                     , Run UnsafeStdinReader
                     ]
