@@ -24,4 +24,5 @@ require('fterm_config')
 require('comment_config')
 require('neoscroll_config')
 require('eob')
+require('neovide_config')
 vim.cmd [[ source $HOME/.config/nvim/coc.vim ]]
