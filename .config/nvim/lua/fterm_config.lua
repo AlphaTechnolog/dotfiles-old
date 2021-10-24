@@ -1,5 +1,5 @@
 require'FTerm'.setup {
-  border = 'double'
+  border = 'single'
 }
 
 local map = vim.api.nvim_set_keymap
