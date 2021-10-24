@@ -1,5 +1,5 @@
 require('lualine').setup {
   options = {
-    theme = 'dracula-nvim'
+    theme = 'calvera-nvim'
   }
 }
