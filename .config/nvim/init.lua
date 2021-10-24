@@ -23,4 +23,5 @@ require('colorizer_config')
 require('fterm_config')
 require('comment_config')
 require('neoscroll_config')
+require('eob')
 vim.cmd [[ source $HOME/.config/nvim/coc.vim ]]
