@@ -1145,4 +1145,3 @@ key_bindings:
 cursor:
   style:
     shape: Beam
-  thickness: 0
