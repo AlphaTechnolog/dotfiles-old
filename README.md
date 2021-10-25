@@ -128,20 +128,20 @@ My apps are:
 
 ### Qtile
 
-![qtile](./screenshots/qtile.png)
+![qtile](./screenshots/qtile.screenshot.png)
 
 ### Xmonad
 
-![xmonad](./screenshots/xmonad.png)
+![xmonad](./screenshots/xmonad.screenshot.png)
 
 ### Dwm
 
-![dwm](./screenshots/dwm.png)
+![dwm](./screenshots/dwm.screenshot.png)
 
 ### Bspwm
 
-![bspwm](./screenshots/bspwm.png)
+![bspwm](./screenshots/bspwm.screenshot.png)
 
 ### Spectrwm
 
-![spectrwm](./screenshots/spectrwm.png)
+![spectrwm](./screenshots/spectrwm.screenshot.png)
