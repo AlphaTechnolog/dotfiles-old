@@ -4,7 +4,7 @@ This is my dotfiles for xmonad, xmobar, qtile, bspwm, sxhkd, spectrwm, polybar c
 
 ## Simple but elegant
 
-![bspwm](./screenshots/bspwm.png)
+![banner](./screenshots/banner.png)
 
 ## Neovim Setup
 
@@ -129,24 +129,19 @@ My apps are:
 ### Qtile
 
 ![qtile](./screenshots/qtile.png)
-![qtile-2](./screenshots/qtile-2.png)
 
 ### Xmonad
 
 ![xmonad](./screenshots/xmonad.png)
-![xmonad-2](./screenshots/xmonad-2.png)
 
 ### Dwm
 
 ![dwm](./screenshots/dwm.png)
-![dwm-2](./screenshots/dwm-2.png)
 
 ### Bspwm
 
 ![bspwm](./screenshots/bspwm.png)
-![bspwm-2](./screenshots/bspwm-2.png)
 
 ### Spectrwm
 
 ![spectrwm](./screenshots/spectrwm.png)
-![spectrwm-2](./screenshots/spectrwm-2.png)
