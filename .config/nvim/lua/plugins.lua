@@ -45,4 +45,5 @@ return require('packer').startup(function()
   use 'ntk148v/vim-horizon'
   use 'Mofiqul/dracula.nvim'
   use {"akinsho/toggleterm.nvim"}
+  use "overcache/NeoSolarized"
 end)
