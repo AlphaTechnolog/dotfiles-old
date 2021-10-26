@@ -124,10 +124,20 @@ static const struct Theme calvera_dark = {
     .focus = "#7878E7",
 };
 
+static const struct Theme solarized_dark = {
+    .inactive = "#3e4451",
+    .active = "#FFFFFF",
+    .bg = "#002b36",
+    .focus = "#2aa198",
+};
+
 static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { solarized_dark.inactive, solarized_dark.bg, window_border },
+    { solarized_dark.active, solarized_dark.focus, solarized_dark.focus },
+
     { calvera_dark.inactive, calvera_dark.bg, window_border },
     { calvera_dark.active, calvera_dark.focus, calvera_dark.focus },
 
