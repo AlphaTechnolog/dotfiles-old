@@ -1,8 +1,9 @@
 static const Block blocks[] = {
 //   Icon    Command                          Update Interval     Update Signal
-    { "  ", "~/.local/bin/checkupdates | wc -l",                 400,               0 },
-    { "",    "~/.local/bin/brightness",                           2,                0 },
-    { "",    "~/.local/bin/volume",                               2,                0 },
+    { "  ", "checkupdates | wc -l",                 60,               0 },
+    { "",    "brightness",                           2,                0 },
+    { "",    "volume",                               2,                0 },
+    { "",    "battery",                              60,               0 },
     { "",    "date '+ %d/%m/%Y   %H:%M%p'",        5,                0 },
 };
 

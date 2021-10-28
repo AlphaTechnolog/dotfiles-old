@@ -1,7 +1,7 @@
 
-xmonad.hs:482:1: warning: [-Wtabs]
+xmonad.hs:486:1: warning: [-Wtabs]
     Tab character found here, and in 10 further locations.
     Please use spaces instead.
     |
-482 |               -- Calvera Dark
+486 |               -- Calvera Dark
     | ^^^^^^^^

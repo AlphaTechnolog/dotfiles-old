@@ -3,7 +3,7 @@
 // border pixel of windows
 static const unsigned int borderpx  = 2;
 // gaps between windows 
-static const unsigned int gappx = 6;
+static const unsigned int gappx = 14;
 // snap pixel 
 static const unsigned int snap = 32;
 // 0: sloppy systray follows selected monitor, >0: pin systray to monitor X 
@@ -135,6 +135,9 @@ static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { tokyonight_storm.inactive, tokyonight_storm.bg, window_border },
+    { tokyonight_storm.active, tokyonight_storm.focus, tokyonight_storm.focus },
+
     { solarized_dark.inactive, solarized_dark.bg, window_border },
     { solarized_dark.active, solarized_dark.focus, solarized_dark.focus },
 
@@ -158,9 +161,6 @@ static const char *colors[][3] = {
 
     { codedark.inactive, codedark.bg, window_border },
     { codedark.active, codedark.focus, codedark.focus },
-
-    { tokyonight_storm.inactive, tokyonight_storm.bg, window_border },
-    { tokyonight_storm.active, tokyonight_storm.focus, tokyonight_storm.focus },
 
     { doom_one.inactive, doom_one.bg, window_border },
     { doom_one.active, doom_one.focus, doom_one.focus },
@@ -202,8 +202,8 @@ static const int resizehints = 1; // 1 means respect size hints in tiled resizal
 #include "layouts.c"
 static const Layout layouts[] = {
     // symbol   arrange function
-    { "[M]",    monocle }, // first entry is default 
-    { "[]",     tile },
+    { "[]",     tile }, // first entry is default
+    { "[M]",    monocle },
     { "[F]",    NULL }, // no layout function means floating behavior 
     { "[C]",    tcl },
     { "[G]",    grid },
