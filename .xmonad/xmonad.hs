@@ -93,9 +93,9 @@ myNormColor   = "#282c34"   -- Border color of normal windows
 
 myFocusColor :: String
 -- Onedark
--- myFocusColor  = "#46d9ff"   -- Border color of focused windows
+myFocusColor  = "#46d9ff"   -- Border color of focused windows
 -- Moonlight
-myFocusColor  = "#82aaff"   -- Border color of focused windows
+-- myFocusColor  = "#82aaff"   -- Border color of focused windows
 -- Calvera Dark
 -- myFocusColor  = "#7878E7"   -- Border color of focused windows
 -- Tokyonight Day
@@ -126,13 +126,13 @@ myStartupHook = do
     spawnOnce "$HOME/.local/bin/monitor-config"
     spawnOnce "udiskie -t &"
     -- Onedark
-    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1e222a  --height 22 &"
+    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1e222a  --height 22 &"
     -- Calvera Dark
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x0c0c1f  --height 22 &"
     -- Tokyonight Day
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0xe1e2e7  --height 22 &"
     -- Moonlight
-    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x212337 --height 22 &"
+    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x212337 --height 22 &"
     -- Horizon Dark
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1c1e26  --height 22 &"
     -- Doom one
@@ -480,9 +480,9 @@ main = do
               { ppOutput = \x -> hPutStrLn xmproc0 x                          -- xmobar on monitor 1
                               >> hPutStrLn xmproc1 x                          -- xmobar on monitor 2
               -- Onedark
-              -- , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
+              , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
               -- Moonlight
-              , ppCurrent = xmobarColor "#c099ff" "" . wrap "<box type=Bottom width=2 mb=2 color=#c099ff>" "</box>"         -- Current workspace
+              -- , ppCurrent = xmobarColor "#c099ff" "" . wrap "<box type=Bottom width=2 mb=2 color=#c099ff>" "</box>"         -- Current workspace
 	      -- Calvera Dark
               -- , ppCurrent = xmobarColor "#7878E7" "" . wrap "<box type=Bottom width=2 mb=2 color=#7878E7>" "</box>"         -- Current workspace
               -- Tokyonight Day
@@ -504,9 +504,9 @@ main = do
               -- Gruvbox
               -- , ppCurrent = xmobarColor "#b16286" "" . wrap "<box type=Bottom width=2 mb=2 color=#b16286>" "</box>"
               -- Onedark
-              -- , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
+              , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
               -- Moonlight
-              , ppVisible = xmobarColor "#c099ff" "" . clickable              -- Visible but not current workspace
+              -- , ppVisible = xmobarColor "#c099ff" "" . clickable              -- Visible but not current workspace
 	      -- Calvera Dark
               -- , ppVisible = xmobarColor "#7878E7" "" . clickable              -- Visible but not current workspace
               -- Tokyonight Day
@@ -528,9 +528,9 @@ main = do
               -- Gruvbox
               -- , ppVisible = xmobarColor "#b16286" "" . clickable              -- Visible but not current workspace
               -- Onedark
-              -- , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
+              , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
               -- Moonlight
-              , ppHidden = xmobarColor "#82aaff" "" . wrap "<box type=Top width=2 mt=2 color=#82aaff>" "</box>" . clickable -- Hidden workspaces
+              -- , ppHidden = xmobarColor "#82aaff" "" . wrap "<box type=Top width=2 mt=2 color=#82aaff>" "</box>" . clickable -- Hidden workspaces
 	      -- Calvera Dark
               -- , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
               -- Tokyonight Day
@@ -552,9 +552,9 @@ main = do
               -- Gruvbox
               -- , ppHidden = xmobarColor "#458588" "" . wrap "<box type=Top width=2 mt=2 color=#458588>" "</box>" . clickable -- Hidden workspaces
               -- Onedark
-              -- , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
+              , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
               -- Moonlight
-              , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
+              -- , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
 	      -- Calvera Dark
               -- , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
               -- Tokyonight Day
@@ -576,9 +576,9 @@ main = do
               -- Gruvbox
               -- , ppHiddenNoWindows = xmobarColor "#458588" ""  . clickable     -- Hidden workspaces (no windows)
               -- Onedark
-              -- , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
+              , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
               -- Moonlight
-              , ppTitle = xmobarColor "#c8d3f5" "" . shorten 60               -- Title of active window
+              -- , ppTitle = xmobarColor "#c8d3f5" "" . shorten 60               -- Title of active window
 	      -- Calvera Dark
               -- Tokyonight Day
               -- , ppTitle = xmobarColor "#2e7de9" "" . shorten 60               -- Title of active window
