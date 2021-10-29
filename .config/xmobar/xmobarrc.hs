@@ -14,8 +14,8 @@ Config {   font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.
        -- , bgColor      = "#0c0c1f"
        -- , fgColor      = "#B0BEC5"
        -- Moonlight colors:
-       -- , bgColor      = "#212337"
-       -- , fgColor      = "#c099ff"
+       , bgColor      = "#212337"
+       , fgColor      = "#c099ff"
        -- Horizon dark colors:
        -- , bgColor      = "#1c1e26"
        -- , fgColor      = "#e95678"
@@ -35,9 +35,9 @@ Config {   font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.
        -- , bgColor      = "#222433"
        -- , fgColor      = "#9ea3c0"
        -- Tokyonight colors
-       , bgColor      = "#24283b" -- This for storm
+       -- , bgColor      = "#24283b" -- This for storm
        -- , bgColor      = "#1a1b26"
-       , fgColor      = "#c0caf5"
+       -- , fgColor      = "#c0caf5"
        -- --------------------------
        -- Dracula colors
        -- , bgColor      = "#282a36"
@@ -84,7 +84,7 @@ Config {   font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.
        -- Onedark
        -- , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#ecbe7b><fc=#ecbe7b><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#ff6c6b><fc=#ff6c6b><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#a9a1e1><fc=#a9a1e1><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#98be65><fc=#98be65>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#46d9ff><fc=#46d9ff>%date%</fc></box> %trayerpad%"
        -- Moonlight
-       -- , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#ffc777><fc=#ffc777><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#ff757f><fc=#ff757f><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#c099ff><fc=#c099ff><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#c3e88d><fc=#c3e88d>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#b4f9f8><fc=#b4f9f8>%date%</fc></box> %trayerpad%"
+       , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#ffc777><fc=#ffc777><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#ff757f><fc=#ff757f><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#c099ff><fc=#c099ff><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#c3e88d><fc=#c3e88d>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#b4f9f8><fc=#b4f9f8>%date%</fc></box> %trayerpad%"
        -- Calvera Dark
        -- , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#D6B295><fc=#D6B295><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#E97A7A><fc=#E97A7A><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#7878E7><fc=#7878E7><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#ADCEA1><fc=#ADCEA1>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#82AAFF><fc=#82AAFF>%date%</fc></box> %trayerpad%"
        -- Horizon Dark
@@ -102,5 +102,5 @@ Config {   font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.
        -- Ayu mirage
        -- , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#fdcc60><fc=#fdcc60><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#f08778><fc=#f08778><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#929BE5><fc=#929BE5><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#53bf97><fc=#53bf97>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#60b8d6><fc=#60b8d6>%date%</fc></box> %trayerpad%"
        -- Tokyonight
-       , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#e0af68><fc=#e0af68><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#f7768e><fc=#f7768e><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#bb9af7><fc=#bb9af7><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#9ece6a><fc=#9ece6a>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#7dcfff><fc=#7dcfff>%date%</fc></box> %trayerpad%"
+       -- , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#e0af68><fc=#e0af68><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#f7768e><fc=#f7768e><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#bb9af7><fc=#bb9af7><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#9ece6a><fc=#9ece6a>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#7dcfff><fc=#7dcfff>%date%</fc></box> %trayerpad%"
        }
