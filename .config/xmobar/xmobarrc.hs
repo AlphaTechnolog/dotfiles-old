@@ -14,8 +14,8 @@ Config {   font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.
        -- , bgColor      = "#192330"
        -- , fgColor      = "#9d79d6"
        -- Calvera Dark colors:
-       -- , bgColor      = "#0c0c1f"
-       -- , fgColor      = "#B0BEC5"
+       , bgColor      = "#0c0c1f"
+       , fgColor      = "#B0BEC5"
        -- Moonlight colors:
        -- , bgColor      = "#212337"
        -- , fgColor      = "#c099ff"
@@ -38,9 +38,9 @@ Config {   font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.
        -- , bgColor      = "#222433"
        -- , fgColor      = "#9ea3c0"
        -- Tokyonight colors
-       , bgColor      = "#24283b" -- This for storm
+       -- , bgColor      = "#24283b" -- This for storm
        -- , bgColor      = "#1a1b26"
-       , fgColor      = "#c0caf5"
+       -- , fgColor      = "#c0caf5"
        -- --------------------------
        -- Dracula colors
        -- , bgColor      = "#282a36"
