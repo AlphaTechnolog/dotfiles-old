@@ -113,12 +113,12 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
-    # family: JetBrains Mono Nerd Font
+    family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -136,12 +136,12 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
-    # family: JetBrains Mono Nerd Font
+    family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -159,12 +159,12 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
-    # family: JetBrains Mono Nerd Font
+    family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -183,12 +183,12 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
-    # family: JetBrains Mono Nerd Font
+    family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -198,7 +198,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 11
+  size: 12
   # size: 14.5
   # size: 12.5
   # size: 13.0
@@ -885,7 +885,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *tokyonight-storm
+colors: *calvera_dark
 
 # Visual Bell
 #
