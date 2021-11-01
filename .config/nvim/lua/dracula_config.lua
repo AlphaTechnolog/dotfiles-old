@@ -1,2 +1,7 @@
-vim.cmd [[ set termguicolors ]]
-vim.cmd [[ colorscheme dracula ]]
+vim.cmd[[
+if has('termguicolors')
+  set termguicolors
+endif
+
+colorscheme dracula
+]]

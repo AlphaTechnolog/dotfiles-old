@@ -43,7 +43,7 @@ return require('packer').startup(function()
   use 'marko-cerovac/material.nvim'
   use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
   use 'ntk148v/vim-horizon'
-  use 'Mofiqul/dracula.nvim'
   use {"akinsho/toggleterm.nvim"}
   use "overcache/NeoSolarized"
+  use 'Mofiqul/dracula.nvim'
 end)
