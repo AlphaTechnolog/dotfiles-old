@@ -99,7 +99,7 @@ myFocusColor :: String
 -- Moonlight
 -- myFocusColor  = "#82aaff"   -- Border color of focused windows
 -- Calvera Dark
-myFocusColor  = "#7878E7"   -- Border color of focused windows
+-- myFocusColor  = "#7878E7"   -- Border color of focused windows
 -- Tokyonight Day
 -- myFocusColor  = "#2e7de9"   -- Border color of focused windows
 -- Tokyonight
@@ -107,7 +107,7 @@ myFocusColor  = "#7878E7"   -- Border color of focused windows
 -- Gruvbox
 -- myFocusColor = "#458588"
 -- Dracula
--- myFocusColor = "#caa9fa"
+myFocusColor = "#caa9fa"
 -- Ayu mirage
 -- myFocusColor = "#60b8d6"
 -- Material Ocean
@@ -132,7 +132,7 @@ myStartupHook = do
     -- Nightfox
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x192330  --height 22 &"
     -- Calvera Dark
-    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x0c0c1f  --height 22 &"
+    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x0c0c1f  --height 22 &"
     -- Tokyonight Day
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0xe1e2e7  --height 22 &"
     -- Moonlight
@@ -150,7 +150,7 @@ myStartupHook = do
     -- Ayu mirage
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x212733  --height 22 &"
     -- Dracula
-    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282a36  --height 22 &"
+    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282a36  --height 22 &"
     -- Tokyonight
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1a1b26  --height 22 &"
     -- Gruvbox
@@ -490,7 +490,7 @@ main = do
               -- Moonlight
               -- , ppCurrent = xmobarColor "#c099ff" "" . wrap "<box type=Bottom width=2 mb=2 color=#c099ff>" "</box>"         -- Current workspace
 	      -- Calvera Dark
-              , ppCurrent = xmobarColor "#7878E7" "" . wrap "<box type=Bottom width=2 mb=2 color=#7878E7>" "</box>"         -- Current workspace
+              -- , ppCurrent = xmobarColor "#7878E7" "" . wrap "<box type=Bottom width=2 mb=2 color=#7878E7>" "</box>"         -- Current workspace
               -- Tokyonight Day
               -- , ppCurrent = xmobarColor "#2e7de9" "" . wrap "<box type=Bottom width=2 mb=2 color=#2e7de9>" "</box>"         -- Current workspace
 	      -- Tokyonight
@@ -506,7 +506,7 @@ main = do
               -- Ayu mirage
               -- , ppCurrent = xmobarColor "#60b8d6" "" . wrap "<box type=Bottom width=2 mb=2 color=#60b8d6>" "</box>"         -- Current workspace
               -- Dracula
-              -- , ppCurrent = xmobarColor "#caa9fa" "" . wrap "<box type=Bottom width=2 mb=2 color=#caa9fa>" "</box>"         -- Current workspace
+              , ppCurrent = xmobarColor "#caa9fa" "" . wrap "<box type=Bottom width=2 mb=2 color=#caa9fa>" "</box>"         -- Current workspace
               -- Gruvbox
               -- , ppCurrent = xmobarColor "#b16286" "" . wrap "<box type=Bottom width=2 mb=2 color=#b16286>" "</box>"
               -- Onedark
@@ -516,7 +516,7 @@ main = do
               -- Moonlight
               -- , ppVisible = xmobarColor "#c099ff" "" . clickable              -- Visible but not current workspace
 	      -- Calvera Dark
-              , ppVisible = xmobarColor "#7878E7" "" . clickable              -- Visible but not current workspace
+              -- , ppVisible = xmobarColor "#7878E7" "" . clickable              -- Visible but not current workspace
               -- Tokyonight Day
               -- , ppVisible = xmobarColor "#2e7de9" "" . clickable              -- Visible but not current workspace
 	      -- Tokyonight
@@ -532,7 +532,7 @@ main = do
               -- Ayu mirage
               -- , ppVisible = xmobarColor "#60b8d6" "" . clickable              -- Visible but not current workspace
               -- Dracula
-              -- , ppVisible = xmobarColor "#caa9fa" "" . clickable              -- Visible but not current workspace
+              , ppVisible = xmobarColor "#caa9fa" "" . clickable              -- Visible but not current workspace
               -- Gruvbox
               -- , ppVisible = xmobarColor "#b16286" "" . clickable              -- Visible but not current workspace
               -- Onedark
@@ -542,7 +542,7 @@ main = do
               -- Moonlight
               -- , ppHidden = xmobarColor "#82aaff" "" . wrap "<box type=Top width=2 mt=2 color=#82aaff>" "</box>" . clickable -- Hidden workspaces
 	      -- Calvera Dark
-              , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
+              -- , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
               -- Tokyonight Day
               -- , ppHidden = xmobarColor "#a9b1d6" "" . wrap "<box type=Top width=2 mt=2 color=#a9b1d6>" "</box>" . clickable -- Hidden workspaces
 	      -- Tokyonight
@@ -558,7 +558,7 @@ main = do
               -- Ayu mirage
               -- , ppHidden = xmobarColor "#60b8d6" "" . wrap "<box type=Top width=2 mt=2 color=#60b8d6>" "</box>" . clickable -- Hidden workspaces
               -- Dracula
-              -- , ppHidden = xmobarColor "#9aedfe" "" . wrap "<box type=Top width=2 mt=2 color=#9aedfe>" "</box>" . clickable -- Hidden workspaces
+              , ppHidden = xmobarColor "#9aedfe" "" . wrap "<box type=Top width=2 mt=2 color=#9aedfe>" "</box>" . clickable -- Hidden workspaces
               -- Gruvbox
               -- , ppHidden = xmobarColor "#458588" "" . wrap "<box type=Top width=2 mt=2 color=#458588>" "</box>" . clickable -- Hidden workspaces
               -- Onedark
@@ -568,7 +568,7 @@ main = do
               -- Moonlight
               -- , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
 	      -- Calvera Dark
-              , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
+              -- , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
               -- Tokyonight Day
               -- , ppHiddenNoWindows = xmobarColor "#a9b1d6" ""  . clickable     -- Hidden workspaces (no windows)
 	      -- Tokyonight
@@ -584,7 +584,7 @@ main = do
               -- Ayu mirage
               -- , ppHiddenNoWindows = xmobarColor "#53bf97" ""  . clickable     -- Hidden workspaces (no windows)
               -- Dracula
-              -- , ppHiddenNoWindows = xmobarColor "#9aedfe" ""  . clickable     -- Hidden workspaces (no windows)
+              , ppHiddenNoWindows = xmobarColor "#9aedfe" ""  . clickable     -- Hidden workspaces (no windows)
               -- Gruvbox
               -- , ppHiddenNoWindows = xmobarColor "#458588" ""  . clickable     -- Hidden workspaces (no windows)
               -- Onedark
@@ -594,7 +594,7 @@ main = do
               -- Moonlight
               -- , ppTitle = xmobarColor "#c8d3f5" "" . shorten 60               -- Title of active window
 	      -- Calvera Dark
-              , ppTitle = xmobarColor "#7878E7" "" . shorten 60               -- Title of active window
+              -- , ppTitle = xmobarColor "#7878E7" "" . shorten 60               -- Title of active window
               -- Tokyonight Day
               -- , ppTitle = xmobarColor "#2e7de9" "" . shorten 60               -- Title of active window
 	      -- Tokyonight
@@ -610,7 +610,7 @@ main = do
               -- Ayu mirage
               -- , ppTitle = xmobarColor "#60b8d6" "" . shorten 60               -- Title of active window
               -- Dracula
-              -- , ppTitle = xmobarColor "#bfbfbf" "" . shorten 60               -- Title of active window
+              , ppTitle = xmobarColor "#bfbfbf" "" . shorten 60               -- Title of active window
               -- Gruvbox
               -- , ppTitle = xmobarColor "#a89984" "" . shorten 60               -- Title of active window
               , ppSep =  "<fc=#666666> <fn=1>|</fn> </fc>"                    -- Separator character
