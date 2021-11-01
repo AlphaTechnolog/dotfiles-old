@@ -117,8 +117,8 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    family: Mononoki Nerd Font
+    # family: Caskaydia Cove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -140,8 +140,8 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    family: Mononoki Nerd Font
+    # family: Caskaydia Cove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -163,8 +163,8 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    family: Mononoki Nerd Font
+    # family: Caskaydia Cove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -187,8 +187,8 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    family: Mononoki Nerd Font
+    # family: Caskaydia Cove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -210,7 +210,7 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: -2
+    y: 1
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -418,13 +418,13 @@ schemes:
     # Normal colors
     normal:
       black:   '#212733' #
-      red:     '#f08778' #
-      green:   '#53bf97' #
+      red:     '#F28779' #
+      green:   '#BAE67E' #
       yellow:  '#fdcc60' #
-      blue:    '#60b8d6' # 
-      magenta: '#ec7171' #
-      cyan:    '#98e6ca' #
-      white:   '#fafafa' #
+      blue:    '#73D0FF' # 
+      magenta: '#F28779' #
+      cyan:    '#95E6CB' #
+      white:   '#D4BFFF' #
 
     # Brightened
     bright:
@@ -480,14 +480,14 @@ schemes:
 
     # Brightened
     bright:
-      black: '#686868'
-      red: '#f58c7d'
-      green: '#58c49c'
-      yellow: '#ffd165'
-      blue: '#65bddb'
-      magenta: '#f17676'
-      cyan: '#9debcf'
-      white: '#ffffff'
+      black:   '#212733' #
+      red:     '#F28779' #
+      green:   '#BAE67E' #
+      yellow:  '#fdcc60' #
+      blue:    '#73D0FF' # 
+      magenta: '#F28779' #
+      cyan:    '#95E6CB' #
+      white:   '#D4BFFF' #
   # Horizon Dark
   horizon-dark: &horizon-dark
     primary:
@@ -885,7 +885,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *dracula
+colors: *ayu-mirage
 
 # Visual Bell
 #

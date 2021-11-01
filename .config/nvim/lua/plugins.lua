@@ -46,4 +46,5 @@ return require('packer').startup(function()
   use {"akinsho/toggleterm.nvim"}
   use "overcache/NeoSolarized"
   use 'Mofiqul/dracula.nvim'
+  use 'Shatur/neovim-ayu' 
 end)
