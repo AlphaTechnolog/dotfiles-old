@@ -1,1 +1,1 @@
-vim.o.guifont = "CodeNewRoman NF:h12.5"
+vim.o.guifont = "CaskaydiaCove NF:h13"
