@@ -47,4 +47,6 @@ return require('packer').startup(function()
   use "overcache/NeoSolarized"
   use 'Mofiqul/dracula.nvim'
   use 'Shatur/neovim-ayu' 
+  use 'NTBBloodbath/doom-one.nvim'
+  use 'simrat39/symbols-outline.nvim'
 end)

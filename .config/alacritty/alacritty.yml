@@ -885,7 +885,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *onedark
+colors: *doom-one
 
 # Visual Bell
 #

@@ -1,26 +1,26 @@
 local keymap = vim.api.nvim_set_keymap
 
-function makeWindowNavigation()
+local function makeWindowNavigation()
   local keys={'h', 'j', 'k', 'l'}
   for i, key in ipairs(keys) do
     keymap('n', '<c-' .. key .. '>', '<c-w>' .. key, { noremap = true })
   end
 end
 
-function makeMultipleKeybindindsSameAction(mode, keys, action, noremap)
+local function makeMultipleKeybindindsSameAction(mode, keys, action, noremap)
   for i, key in ipairs(keys) do
     keymap(mode, key, action, { noremap = noremap })
   end
 end
 
-function makeMultipleKeybinds(mode, keys, actions, noremap)
+local function makeMultipleKeybinds(mode, keys, actions, noremap)
   for i, key in ipairs(keys) do
-    action = actions[i]
+    local action = actions[i]
     keymap(mode, key, action, { noremap = noremap })
   end
 end
 
-function makeEscAbbrev()
+local function makeEscAbbrev()
   makeMultipleKeybindindsSameAction(
     'i',
     {'jk', 'kj', 'jj', 'kk'},
@@ -29,7 +29,7 @@ function makeEscAbbrev()
   )
 end
 
-function makeBuffersNavigation()
+local function makeBuffersNavigation()
   makeMultipleKeybinds(
     'n',
     {'<Tab>', '<S-Tab>'},
@@ -40,18 +40,22 @@ function makeBuffersNavigation()
   keymap('n', '<c-b>', ':bd!<cr>', { noremap = true })
 end
 
-function makeTreeMaps()
+local function makeTreeMaps()
   keymap('n', '<c-n>', ':NvimTreeToggle<cr>', { noremap = true })
   keymap('n', '<c-m-n>', ':NvimTreeFocus<cr>', { noremap = true })
 end
 
-function makeTelescopeMaps()
+local function makeTelescopeMaps()
 	makeMultipleKeybinds(
 		'n',
 		{'<c-p>', '<c-t>'},
 		{':Telescope find_files<cr>', ':Telescope buffers<cr>'},
 		true
 	)
+end
+
+local function symbolNavigationMaps()
+  keymap('n', '<c-o>', ':SymbolsOutlineOpen<cr>', { noremap = true })
 end
 
 keymap('n', '<c-s>', ':w<cr>', { noremap = true })
@@ -62,3 +66,4 @@ makeWindowNavigation()
 makeBuffersNavigation()
 makeTreeMaps()
 makeTelescopeMaps()
+symbolNavigationMaps()
