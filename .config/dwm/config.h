@@ -3,7 +3,7 @@
 // border pixel of windows
 static const unsigned int borderpx  = 2;
 // gaps between windows 
-static const unsigned int gappx = 14;
+static const unsigned int gappx = 6;
 // snap pixel 
 static const unsigned int snap = 32;
 // 0: sloppy systray follows selected monitor, >0: pin systray to monitor X 
@@ -135,14 +135,14 @@ static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { calvera_dark.inactive, calvera_dark.bg, window_border },
+    { calvera_dark.active, calvera_dark.focus, calvera_dark.focus },
+
     { doom_one.inactive, doom_one.bg, window_border },
     { doom_one.active, doom_one.focus, doom_one.focus },
 
     { dracula.inactive, dracula.bg, window_border },
     { dracula.active, dracula.focus, dracula.focus },
-
-    { calvera_dark.inactive, calvera_dark.bg, window_border },
-    { calvera_dark.active, calvera_dark.focus, calvera_dark.focus },
 
     { tokyonight_storm.inactive, tokyonight_storm.bg, window_border },
     { tokyonight_storm.active, tokyonight_storm.focus, tokyonight_storm.focus },

@@ -99,7 +99,7 @@ myFocusColor :: String
 -- Moonlight
 -- myFocusColor  = "#82aaff"   -- Border color of focused windows
 -- Calvera Dark
--- myFocusColor  = "#7878E7"   -- Border color of focused windows
+myFocusColor  = "#7878E7"   -- Border color of focused windows
 -- Tokyonight Day
 -- myFocusColor  = "#2e7de9"   -- Border color of focused windows
 -- Tokyonight
@@ -107,7 +107,7 @@ myFocusColor :: String
 -- Gruvbox
 -- myFocusColor = "#458588"
 -- Dracula
-myFocusColor = "#caa9fa"
+-- myFocusColor = "#caa9fa"
 -- Ayu mirage
 -- myFocusColor = "#60b8d6"
 -- Material Ocean
@@ -132,7 +132,7 @@ myStartupHook = do
     -- Nightfox
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x192330  --height 22 &"
     -- Calvera Dark
-    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x0c0c1f  --height 22 &"
+    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x0c0c1f  --height 22 &"
     -- Tokyonight Day
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0xe1e2e7  --height 22 &"
     -- Moonlight
@@ -140,7 +140,7 @@ myStartupHook = do
     -- Horizon Dark
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1c1e26  --height 22 &"
     -- Doom one
-    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 22 &"
+    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 22 &"
     -- Material Ocean
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x0f101a  --height 22 &"
     -- Gotham
@@ -193,12 +193,12 @@ myAppGrid = [ ("Audacity", "audacity")
 
 --Makes setting the spacingRaw simpler to write. The spacingRaw module adds a configurable amount of space around windows.
 mySpacing :: Integer -> l a -> XMonad.Layout.LayoutModifier.ModifiedLayout Spacing l a
-mySpacing i = spacingRaw False (Border i i i i) True (Border i i i i) True
+mySpacing i = spacingRaw True (Border i i i i) True (Border i i i i) True
 
 -- Below is a variation of the above except no borders are applied
 -- if fewer than two windows. So a single window has no gaps.
-mySpacing' :: Integer -> l a -> XMonad.Layout.LayoutModifier.ModifiedLayout Spacing l a
-mySpacing' i = spacingRaw True (Border i i i i) True (Border i i i i) True
+-- mySpacing' :: Integer -> l a -> XMonad.Layout.LayoutModifier.ModifiedLayout Spacing l a
+-- mySpacing' i = spacingRaw True (Border i i i i) True (Border i i i i) True
 
 -- Defining a bunch of layouts, many that I don't use.
 -- limitWindows n sets maximum number of windows displayed for layout.
@@ -206,80 +206,19 @@ mySpacing' i = spacingRaw True (Border i i i i) True (Border i i i i) True
 tall     = renamed [Replace "tall"]
            $ smartBorders
            $ windowNavigation
-           $ addTabs shrinkText myTabTheme
            $ subLayout [] (smartBorders Simplest)
            $ limitWindows 12
-           $ mySpacing 6
-           $ ResizableTall 1 (3/100) (1/2) []
-magnify  = renamed [Replace "magnify"]
-           $ smartBorders
-           $ windowNavigation
-           $ addTabs shrinkText myTabTheme
-           $ subLayout [] (smartBorders Simplest)
-           $ magnifier
-           $ limitWindows 12
-           $ mySpacing 6
+           $ mySpacing 4
            $ ResizableTall 1 (3/100) (1/2) []
 monocle  = renamed [Replace "monocle"]
            $ smartBorders
            $ windowNavigation
-           $ addTabs shrinkText myTabTheme
            $ subLayout [] (smartBorders Simplest)
            $ limitWindows 20 Full
 floats   = renamed [Replace "floats"]
            $ smartBorders
            $ limitWindows 20 simplestFloat
-grid     = renamed [Replace "grid"]
-           $ smartBorders
-           $ windowNavigation
-           $ addTabs shrinkText myTabTheme
-           $ subLayout [] (smartBorders Simplest)
-           $ limitWindows 12
-           $ mySpacing 6
-           $ mkToggle (single MIRROR)
-           $ Grid (16/10)
-spirals  = renamed [Replace "spirals"]
-           $ smartBorders
-           $ windowNavigation
-           $ addTabs shrinkText myTabTheme
-           $ subLayout [] (smartBorders Simplest)
-           $ mySpacing' 8
-           $ spiral (6/7)
-threeCol = renamed [Replace "threeCol"]
-           $ smartBorders
-           $ windowNavigation
-           $ addTabs shrinkText myTabTheme
-           $ subLayout [] (smartBorders Simplest)
-           $ limitWindows 7
-           $ ThreeCol 1 (3/100) (1/2)
-threeRow = renamed [Replace "threeRow"]
-           $ smartBorders
-           $ windowNavigation
-           $ addTabs shrinkText myTabTheme
-           $ subLayout [] (smartBorders Simplest)
-           $ limitWindows 7
-           -- Mirror takes a layout and rotates it by 90 degrees.
-           -- So we are applying Mirror to the ThreeCol layout.
-           $ Mirror
-           $ ThreeCol 1 (3/100) (1/2)
-tabs     = renamed [Replace "tabs"]
-           -- I cannot add spacing to this layout because it will
-           -- add spacing between window and tabs which looks bad.
-           $ tabbed shrinkText myTabTheme
-tallAccordion  = renamed [Replace "tallAccordion"]
-           $ Accordion
-wideAccordion  = renamed [Replace "wideAccordion"]
-           $ Mirror Accordion
 
--- setting colors for tabs layout and tabs sublayout.
-myTabTheme = def { fontName            = myFont
-                 , activeColor         = "#46d9ff"
-                 , inactiveColor       = "#313846"
-                 , activeBorderColor   = "#46d9ff"
-                 , inactiveBorderColor = "#282c34"
-                 , activeTextColor     = "#282c34"
-                 , inactiveTextColor   = "#d0d0d0"
-                 }
 
 -- Theme for showWName which prints current workspace when you change workspaces.
 myShowWNameTheme :: SWNConfig
@@ -297,17 +236,9 @@ myLayoutHook = avoidStruts
     $ T.toggleLayouts floats
     $ mkToggle (NBFULL ?? NOBORDERS ?? EOT) myDefaultLayout
   where
-    myDefaultLayout = withBorder myBorderWidth tall
-                      ||| magnify
-                      ||| noBorders monocle
+    myDefaultLayout = noBorders monocle
+                      ||| withBorder myBorderWidth tall
                       ||| floats
-                      ||| noBorders tabs
-                      ||| grid
-                      ||| spirals
-                      ||| threeCol
-                      ||| threeRow
-                      ||| tallAccordion
-                      ||| wideAccordion
 
 -- myWorkspaces = [" net ", " dev ", " term ", " fs ", " ref ", " misc ", " mus ", " chat ", " conf "]
 -- myWorkspaces = ["   ", "   ", "   ", "   ", "   ", "   ", "   ", " ﭮ  ", " 漣  "]
@@ -484,13 +415,13 @@ main = do
               { ppOutput = \x -> hPutStrLn xmproc0 x                          -- xmobar on monitor 1
                               >> hPutStrLn xmproc1 x                          -- xmobar on monitor 2
               -- Onedark
-              , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
+              -- , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
               -- Nightfox
               -- , ppCurrent = xmobarColor "#719cd6" "" . wrap "<box type=Bottom width=2 mb=2 color=#719cd6>" "</box>"         -- Current workspace
               -- Moonlight
               -- , ppCurrent = xmobarColor "#c099ff" "" . wrap "<box type=Bottom width=2 mb=2 color=#c099ff>" "</box>"         -- Current workspace
 	      -- Calvera Dark
-              -- , ppCurrent = xmobarColor "#7878E7" "" . wrap "<box type=Bottom width=2 mb=2 color=#7878E7>" "</box>"         -- Current workspace
+              , ppCurrent = xmobarColor "#7878E7" "" . wrap "<box type=Bottom width=2 mb=2 color=#7878E7>" "</box>"         -- Current workspace
               -- Tokyonight Day
               -- , ppCurrent = xmobarColor "#2e7de9" "" . wrap "<box type=Bottom width=2 mb=2 color=#2e7de9>" "</box>"         -- Current workspace
 	      -- Tokyonight
@@ -510,13 +441,13 @@ main = do
               -- Gruvbox
               -- , ppCurrent = xmobarColor "#b16286" "" . wrap "<box type=Bottom width=2 mb=2 color=#b16286>" "</box>"
               -- Onedark
-              , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
+              -- , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
               -- Nightfox
               -- , ppVisible = xmobarColor "#719cd6" "" . clickable              -- Visible but not current workspace
               -- Moonlight
               -- , ppVisible = xmobarColor "#c099ff" "" . clickable              -- Visible but not current workspace
 	      -- Calvera Dark
-              -- , ppVisible = xmobarColor "#7878E7" "" . clickable              -- Visible but not current workspace
+              , ppVisible = xmobarColor "#7878E7" "" . clickable              -- Visible but not current workspace
               -- Tokyonight Day
               -- , ppVisible = xmobarColor "#2e7de9" "" . clickable              -- Visible but not current workspace
 	      -- Tokyonight
@@ -536,13 +467,13 @@ main = do
               -- Gruvbox
               -- , ppVisible = xmobarColor "#b16286" "" . clickable              -- Visible but not current workspace
               -- Onedark
-              , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
+              -- , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
               -- Nightfox
               -- , ppHidden = xmobarColor "#9d79d6" "" . wrap "<box type=Top width=2 mt=2 color=#9d79d6>" "</box>" . clickable -- Hidden workspaces
               -- Moonlight
               -- , ppHidden = xmobarColor "#82aaff" "" . wrap "<box type=Top width=2 mt=2 color=#82aaff>" "</box>" . clickable -- Hidden workspaces
 	      -- Calvera Dark
-              -- , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
+              , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
               -- Tokyonight Day
               -- , ppHidden = xmobarColor "#a9b1d6" "" . wrap "<box type=Top width=2 mt=2 color=#a9b1d6>" "</box>" . clickable -- Hidden workspaces
 	      -- Tokyonight
@@ -562,13 +493,13 @@ main = do
               -- Gruvbox
               -- , ppHidden = xmobarColor "#458588" "" . wrap "<box type=Top width=2 mt=2 color=#458588>" "</box>" . clickable -- Hidden workspaces
               -- Onedark
-              , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
+              -- , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
               -- Nightfox
               -- , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
               -- Moonlight
               -- , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
 	      -- Calvera Dark
-              -- , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
+              , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
               -- Tokyonight Day
               -- , ppHiddenNoWindows = xmobarColor "#a9b1d6" ""  . clickable     -- Hidden workspaces (no windows)
 	      -- Tokyonight
@@ -588,13 +519,13 @@ main = do
               -- Gruvbox
               -- , ppHiddenNoWindows = xmobarColor "#458588" ""  . clickable     -- Hidden workspaces (no windows)
               -- Onedark
-              , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
+              -- , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
               -- Nightfox
               -- , ppTitle = xmobarColor "#719cd6" "" . shorten 60               -- Title of active window
               -- Moonlight
               -- , ppTitle = xmobarColor "#c8d3f5" "" . shorten 60               -- Title of active window
 	      -- Calvera Dark
-              -- , ppTitle = xmobarColor "#7878E7" "" . shorten 60               -- Title of active window
+              , ppTitle = xmobarColor "#7878E7" "" . shorten 60               -- Title of active window
               -- Tokyonight Day
               -- , ppTitle = xmobarColor "#2e7de9" "" . shorten 60               -- Title of active window
 	      -- Tokyonight
