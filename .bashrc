@@ -52,6 +52,7 @@ if [ -d "$HOME/Applications" ] ;
 fi
 
 export PATH="$PATH:/opt/crystal/bin:/opt/node/bin"
+export PATH="$PATH:$(yarn global bin 2>/dev/null)"
 
 ### CHANGE TITLE OF TERMINALS
 case ${TERM} in
@@ -108,6 +109,9 @@ ex ()
 alias doas="doas --"
 alias vim="nvim"
 alias vi="vim"
+
+# git
+alias g="copier -c github_token 2>&1 > /dev/null && git"
 
 # navigation
 up () {
