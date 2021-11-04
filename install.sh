@@ -158,7 +158,6 @@ install_required_programs() {
     "volumeicon",
     "rofi",
     "nvim",
-    "alacritty",
     "picom",
     "xmonad",
     "xmobar",
@@ -173,7 +172,8 @@ install_required_programs() {
   declare -a to_manually_install_dependencies=(
     "brave-browser",
     "colorscript",
-    "bash-insulter"
+    "bash-insulter",
+    "kitty"
   )
 
   if confirm "Do you want to install the required programs with apt and git, if not, I list all packages you will install" 1; then

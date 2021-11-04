@@ -95,7 +95,7 @@ It can be available in the [Nerd Fonts Download Page](https://www.nerdfonts.com/
 
 Conky already have this, but in this guide I present it for you!
 
-- S-RET : alacritty
+- S-RET : kitty
 - S-b : brave-browser
 - S-SPC-RET : rofi
 - S-w : close active window
