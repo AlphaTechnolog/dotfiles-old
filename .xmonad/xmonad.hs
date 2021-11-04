@@ -238,7 +238,6 @@ myLayoutHook = avoidStruts
   where
     myDefaultLayout = noBorders monocle
                       ||| withBorder myBorderWidth tall
-                      ||| floats
 
 -- myWorkspaces = [" net ", " dev ", " term ", " fs ", " ref ", " misc ", " mus ", " chat ", " conf "]
 -- myWorkspaces = ["   ", "   ", "   ", "   ", "   ", "   ", "   ", " ﭮ  ", " 漣  "]
