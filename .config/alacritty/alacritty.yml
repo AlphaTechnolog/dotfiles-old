@@ -198,7 +198,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 13
+  size: 13.5
   # size: 14.5
   # size: 12.5
   # size: 13.0
@@ -210,7 +210,7 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: -2
+    y: 1
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -1175,6 +1175,3 @@ key_bindings:
   - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
   - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
   - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
-
-cursor:
-  thickness: 0

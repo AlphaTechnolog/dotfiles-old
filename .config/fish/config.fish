@@ -18,6 +18,8 @@ set TERM "xterm-256color"                         # Sets the terminal type
 set EDITOR "emacsclient -t -a ''"                 # $EDITOR use Emacs in terminal
 set VISUAL "emacsclient -c -a emacs"              # $VISUAL use Emacs in GUI mode
 set PATH "$PATH:/opt/node/bin:/opt/crystal/bin"
+set yarnpath (yarn global bin 2>/dev/null)
+set PATH "$PATH:$yarnpath"
 
 ### SET MANPAGER
 ### Uncomment only one of these!
@@ -208,6 +210,8 @@ end
 
 ### ALIASES ###
 alias clear='tput reset; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo'
+
+alias g="copier -c github_token 2>&1 > /dev/null && git"
 
 # root privilegies
 alias doas="doas --"
