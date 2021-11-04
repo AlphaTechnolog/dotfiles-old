@@ -50,11 +50,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "b", lazy.spawn('brave-browser')),
 
     # Terminal
-    ([mod], "Return", lazy.spawn("alacritty")),
-
-    # Editor
-    ([mod], "e", lazy.spawn("emacs")),
-    ([mod], "v", lazy.spawn("alacritty -e nvim")),
+    ([mod], "Return", lazy.spawn("kitty")),
 
     # ------------ Hardware Configs ------------
 
