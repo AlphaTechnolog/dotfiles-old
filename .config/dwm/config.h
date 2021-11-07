@@ -139,43 +139,43 @@ static const char *colors[][3] = {
     { calvera_dark.focus, calvera_dark.bg, calvera_dark.focus },
 
     { doom_one.inactive, doom_one.bg, window_border },
-    { doom_one.active, doom_one.focus, doom_one.focus },
+    { doom_one.focus, doom_one.bg, doom_one.focus },
 
     { dracula.inactive, dracula.bg, window_border },
-    { dracula.active, dracula.focus, dracula.focus },
+    { dracula.focus, dracula.bg, dracula.focus },
 
     { tokyonight_storm.inactive, tokyonight_storm.bg, window_border },
-    { tokyonight_storm.active, tokyonight_storm.focus, tokyonight_storm.focus },
+    { tokyonight_storm.focus, tokyonight_storm.bg, tokyonight_storm.focus },
 
     { solarized_dark.inactive, solarized_dark.bg, window_border },
-    { solarized_dark.active, solarized_dark.focus, solarized_dark.focus },
+    { solarized_dark.focus, solarized_dark.bg, solarized_dark.focus },
 
     { moonlight.inactive, moonlight.bg, window_border },
-    { moonlight.active, moonlight.focus, moonlight.focus },
+    { moonlight.focus, moonlight.bg, moonlight.focus },
 
     { horizon_dark.inactive, horizon_dark.bg, window_border },
-    { horizon_dark.active, horizon_dark.focus, horizon_dark.focus },
+    { horizon_dark.focus, horizon_dark.bg, horizon_dark.focus },
 
     { tokyonight.inactive, tokyonight.bg, window_border },
-    { tokyonight.active, tokyonight.focus, tokyonight.focus },
+    { tokyonight.focus, tokyonight.bg, tokyonight.focus },
 
     { material_ocean.inactive, material_ocean.bg, window_border },
-    { material_ocean.active, material_ocean.focus, material_ocean.focus },
+    { material_ocean.focus, material_ocean.bg, material_ocean.focus },
 
     { nightfox.inactive, nightfox.bg, window_border },
-    { nightfox.active, nightfox.focus, nightfox.focus },
+    { nightfox.focus, nightfox.bg, nightfox.focus },
 
     { codedark.inactive, codedark.bg, window_border },
-    { codedark.active, codedark.focus, codedark.focus },
+    { codedark.focus, codedark.bg, codedark.focus },
 
     { ayu_mirage.inactive, ayu_mirage.bg, window_border },
-    { ayu_mirage.active, ayu_mirage.focus, ayu_mirage.focus },
+    { ayu_mirage.focus, ayu_mirage.bg, ayu_mirage.focus },
 
     { onedark.inactive, onedark.bg, window_border },
-    { onedark.active, onedark.focus,  onedark.focus  },
+    { onedark.focus, onedark.bg,  onedark.focus  },
 
     { nord.inactive, nord.bg, window_border },
-    { nord.active, nord.focus,  nord.focus  },
+    { nord.focus, nord.bg,  nord.focus  },
 };
 
 // -------------------------------- Workspaces ---------------------------------
