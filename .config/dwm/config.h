@@ -305,6 +305,7 @@ static Key keys[] = {
 
     // rofi
     { MODKEY|ShiftMask, XK_Return, spawn, SHCMD("rofi -show drun") },
+    { MODKEY, XK_s, spawn, SHCMD("~/.local/bin/spanish-kb-copier") },
 
     // Terminal
     { MODKEY, XK_Return, spawn, SHCMD("kitty") },
