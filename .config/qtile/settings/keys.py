@@ -45,6 +45,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
 
     # Menu
     ([mod, "shift"], "Return", lazy.spawn("rofi -show drun")),
+    ([mod], "s", lazy.spawn(local_bin("spanish-kb-copier"))),
 
     # Browser
     ([mod], "b", lazy.spawn('brave-browser')),
