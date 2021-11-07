@@ -1,0 +1,16 @@
+#!/bin/bash
+
+a=á
+e=é
+i=í
+o=ó
+u=ú
+n=ñ
+
+choice="$(rofi -sep "|" -dmenu -i -p '' <<< "$a|$e|$i|$o|$u|$n")"
+
+copy() {
+  echo -n $1 | xclip -sel clip
+}
+
+copy $choice
