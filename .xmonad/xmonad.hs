@@ -282,6 +282,7 @@ myKeys =
 --        , ("M-S-<Return>", spawn "dmenu_run -i -p \"Run: \"") -- Dmenu
           , ("M-S-<Return>", spawn "rofi -show drun") -- Rofi
           , ("M-p", spawn "~/.local/bin/audio-toggler") -- Audio Toggler
+          , ("M-s", spawn "~/.local/bin/spanish-kb-copier") -- Spanish Symbols Copier
 
     -- KB_GROUP Useful programs to have a keybinding for launch
         , ("M-<Return>", spawn (myTerminal))
