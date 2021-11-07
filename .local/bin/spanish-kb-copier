@@ -7,7 +7,15 @@ o=ó
 u=ú
 n=ñ
 
-choice="$(rofi -sep "|" -dmenu -i -p '' <<< "$a|$e|$i|$o|$u|$n")"
+_a=Á
+_e=É
+_i=Í
+_o=Ó
+_u=Ú
+
+entries="$a $e $i $o $u $_a $_e $_i $_o $_u $n"
+
+choice="$(rofi -sep "|" -dmenu -i -p '' <<< $(echo $entries | tr ' ' '|'))"
 
 copy() {
   echo -n $1 | xclip -sel clip
