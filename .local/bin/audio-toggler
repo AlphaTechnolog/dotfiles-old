@@ -1,11 +1,49 @@
 #!/bin/bash
 
-# This script requires playerctl, make sure you have installed it
+# This script requires playerctl and cmus-remote, make sure you have installed it
 # in your system
 
-playerctl play-pause
+error() {
+  echo $1
+  exit 1
+}
 
-# Trying with cmus-remote, some times I use cmus
-if [[ $? != 0 ]]; then
-  cmus-remote --pause
-fi
+check_dependencies() {
+  local dependencies="playerctl cmus-remote"
+  for dep in $dependencies; do
+    if ! which $dep 2>&1 > /dev/null; then
+      error "Cannot found $dep, make sure you have installed it!"
+    fi
+  done
+}
+
+toggler() {
+  echo "  Trying with playerctl"
+  if ! playerctl play-pause 2>&1 > /dev/null; then
+    echo "  Cannot use playerctl, trying with cmus-remote (sometimes I use cmus-remote)"
+    if ! cmus-remote --pause 2>&1 > /dev/null; then
+      echo "    Cannot use cmus-remote!"
+      return 1
+    else
+      echo "    Done (with cmus-remote (\$ cmus-remote --pause))"
+    fi
+  else
+    echo "  Done (with playerctl (\$ playerctl play-pause))."
+  fi
+
+  return 0
+}
+
+main() {
+  echo "Checking dependencies..."
+  check_dependencies
+  echo "Done."
+  echo "Toggling audio..."
+  if toggler; then
+    echo "Done."
+  else
+    echo "Cannot toggle audio, \`toggler\` returns incorrect statuscode"
+  fi
+}
+
+main
