@@ -130,3 +130,6 @@ super + b
 
 super + p
     ~/.local/bin/audio-toggler
+
+super + s
+    ~/.local/bin/spanish-kb-copier
