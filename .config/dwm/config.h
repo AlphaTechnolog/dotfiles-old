@@ -136,7 +136,7 @@ static const char window_border[] = "#000000";
 static const char *colors[][3] = {
     // fg                 bg             border   
     { calvera_dark.inactive, calvera_dark.bg, window_border },
-    { calvera_dark.active, calvera_dark.focus, calvera_dark.focus },
+    { calvera_dark.focus, calvera_dark.bg, calvera_dark.focus },
 
     { doom_one.inactive, doom_one.bg, window_border },
     { doom_one.active, doom_one.focus, doom_one.focus },
