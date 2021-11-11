@@ -49,4 +49,5 @@ return require('packer').startup(function()
   use 'Shatur/neovim-ayu' 
   use 'NTBBloodbath/doom-one.nvim'
   use 'simrat39/symbols-outline.nvim'
+  use 'Mangeshrex/uwu.vim'
 end)
