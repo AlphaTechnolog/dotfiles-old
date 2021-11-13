@@ -15,6 +15,7 @@ Config {   font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.
        -- , fgColor      = "#9d79d6"
        -- Calvera Dark colors:
        , bgColor      = "#0c0c1f"
+       , alpha = 160
        , fgColor      = "#B0BEC5"
        -- Moonlight colors:
        -- , bgColor      = "#212337"

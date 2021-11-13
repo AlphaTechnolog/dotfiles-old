@@ -1,5 +1,6 @@
 #!/bin/bash
 
+xset led
 dwmblocks &
 picom -b
 ibus exit

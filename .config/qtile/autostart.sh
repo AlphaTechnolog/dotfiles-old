@@ -1,5 +1,6 @@
 #!/bin/sh
 
+xset led
 picom -b
 volumeicon &
 ibus exit

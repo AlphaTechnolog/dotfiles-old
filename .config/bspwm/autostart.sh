@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+xset led
 sxhkd &
 picom -b
 ibus exit
