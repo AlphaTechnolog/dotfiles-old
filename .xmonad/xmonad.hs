@@ -76,7 +76,7 @@ myTerminal :: String
 myTerminal = "kitty"    -- Sets default terminal
 
 myBrowser :: String
-myBrowser = "brave-browser"  -- Sets brave-browser as browser
+myBrowser = "google-chrome"  -- Sets google-chrome as browser
 
 myEmacs :: String
 myEmacs = "emacs"  -- Makes emacs keybindings easier to type

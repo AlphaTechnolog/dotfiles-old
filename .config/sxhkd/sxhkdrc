@@ -126,7 +126,7 @@ alt + super + {h,j,k,l}
     ~/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
 
 super + b
-    brave-browser
+    google-chrome
 
 super + p
     ~/.local/bin/audio-toggler

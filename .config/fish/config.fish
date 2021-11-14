@@ -41,11 +41,11 @@ end
 ### END OF VI MODE ###
 
 ### AUTOCOMPLETE AND HIGHLIGHT COLORS ###
-set fish_color_normal brcyan
+set fish_color_normal brgreen
 set fish_color_autosuggestion '#7d7d7d'
-set fish_color_command brcyan
+set fish_color_command brgreen
 set fish_color_error '#ff6c6b'
-set fish_color_param brcyan
+set fish_color_param brblue
 
 ### SPARK ###
 set -g spark_version 1.0.0
