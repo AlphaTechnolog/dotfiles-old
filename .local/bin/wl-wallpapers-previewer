@@ -1,16 +1,130 @@
 #!/usr/bin/env python3
 
-from pynput.keyboard import Listener
+import os
+from typing import TypeVar
+from pynput.keyboard import Listener, Key
+from sys import stderr, stdout
+from wl.commands.set import Set
+from wl.scripts.arguments import arguments
+from wl.core.wallpapers import wallpapers
+from wl.resources.config import config
+from colorama import init, Fore
+from pathlib import Path
+
+init(autoreset=True)
+
+F = TypeVar('F')
+C = TypeVar('C')
 
 
-def handle_key_press(key):
-    print(key)
-    if key == 'q':
-        return False
+class UI:
+    def clear(self):
+        os.system('clear' if os.name != 'nt' else 'cls')
+
+    def centered_print(self, message: str):
+        rows, columns = os.popen('stty size', 'r').read().split()
+        print(message.center(int(columns)))
+
+    def header(self):
+        self.clear()
+        self.centered_print('Wl wallpapers previewer')
+        print()
+        self.centered_print('- Press "q" to exit')
+        self.centered_print('- Press "l" to get the next wallpaper preview')
+        self.centered_print('- Press "h" to get the previous wallpaper preview')
+
+    def get_wallpaper(self) -> str:
+        parsed_config = config.parse()
+        wallpaper = parsed_config['wallpaper'] or None
+        if wallpaper is not None:
+            wallpaper = Path(wallpaper).name
+
+        return wallpaper
+
+    def render_wallpapers(self):
+        wallpaper = self.get_wallpaper()
+        self.render_wallpapers_list(used_wallpaper_name=wallpaper)
+
+    def render_wallpapers_list(self, used_wallpaper_name: str or None = None):
+        print()
+        for i, wallpaper in enumerate(wallpapers.get_wallpapers()):
+            if wallpaper == used_wallpaper_name and used_wallpaper_name is not None:
+                print(f'{Fore.BLUE}{wallpaper}{Fore.RESET}', end='')
+            else:
+                print(wallpaper, end='')
+            if i != (len(wallpapers.get_wallpapers()) - 1):
+                print(', ', end='')
+
+
+ui = UI()
+
+
+class Logger:
+    def _base(self, prefix: str, msg: str, to_exit: bool = False, file: F = stdout, color: str = Fore.RESET):
+        print(f'{color}[{prefix}] {msg}{Fore.RESET}', file=file)
+        if to_exit:
+            os.exit(1)
+
+    def success(self, msg: str):
+        self._base(prefix='S', msg=msg, color=Fore.GREEN)
+
+    def error(self, msg: str):
+        self._base(prefix='F', msg=msg, to_exit=True, file=stderr, color=Fore.RED)
+
+    def warn(self, msg: str):
+        self._base(prefix='W', msg=msg, file=stderr, color=Fore.YELLOW)
+
+    def info(self, msg: str):
+        self._base(prefix='I', msg=msg, file=stderr, color=Fore.BLUE)
+
+logger = Logger()
+
+
+def navigation_wallpaper_index(calculator: C, initial_index: int or str = 0) -> int:
+    wall_ls = wallpapers.get_wallpapers()
+    wall = ui.get_wallpaper()
+    index = calculator(wall_ls.index(wall))
+    if index == len(wall_ls):
+        index = initial_index if initial_index != 'last' else len(wall_ls) - 1
+
+    return wall_ls[index]
+
+
+def next_wallpaper():
+    new_wallpaper_name = navigation_wallpaper_index(lambda index: index + 1)
+    Set(arguments(wallpaper=new_wallpaper_name))
+
+
+def prev_wallpaper():
+    new_wallpaper_name = navigation_wallpaper_index(lambda index: index - 1, initial_index='last')
+    Set(arguments(wallpaper=new_wallpaper_name))
+
+
+def handle_key(key: str):
+    if key == 'l':
+        next_wallpaper()
+    elif key == 'h':
+        prev_wallpaper()
+    ui.header()
+    ui.render_wallpapers()
+
+
+def handle_key_press(key) -> bool or None:
+    try:
+        if key.char == 'q':
+            return False
+
+        char = key.char
+        handle_key(char)
+    except AttributeError:
+        ui.header()
+        ui.render_wallpapers()
+        logger.warn('Invalid key, you pressed an special key, please only use alphanumeric keys')
 
 
 def main():
-    with Listener(on_press=handle_key_press) as listener:
+    with Listener(on_release=handle_key_press) as listener:
+        ui.header()
         listener.join()
 
 

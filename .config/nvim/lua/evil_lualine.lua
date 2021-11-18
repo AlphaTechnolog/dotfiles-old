@@ -6,17 +6,17 @@ local lualine = require 'lualine'
 -- Color table for highlights
 -- stylua: ignore
 local colors = {
-  bg       = '#0c0c1f',
-  fg       = '#B0BEC5',
-  yellow   = '#D6B295',
-  cyan     = '#7878E7',
-  darkblue = '#82AAFF',
-  green    = '#ADCEA1',
-  orange   = '#D6B295',
-  violet   = '#C792EA',
-  magenta  = '#7878E7',
-  blue     = '#82AAFF',
-  red      = '#FF5370',
+  bg       = '#1e222a',
+  fg       = '#abb2bf',
+  yellow   = '#d19a66',
+  cyan     = '#56b6c2',
+  darkblue = '#61afef',
+  green    = '#98c379',
+  orange   = '#d19a66',
+  violet   = '#c678dd',
+  magenta  = '#56b6c2',
+  blue     = '#61afef',
+  red      = '#e06c75',
 }
 
 local conditions = {
@@ -113,7 +113,7 @@ ins_left {
       t = colors.red,
     }
     vim.api.nvim_command('hi! LualineMode guifg=' .. mode_color[vim.fn.mode()] .. ' guibg=' .. colors.bg)
-    return ''
+    return ''
   end,
   color = 'LualineMode',
   padding = { right = 1 },

@@ -10,14 +10,16 @@ from .theme import colors, theme
 
 
 layout_conf = {
-    'border_focus': colors['focus' if theme != 'dark-grey' else 'inactive'][0],
+    # 'border_focus': colors['focus' if theme != 'dark-grey' else 'inactive'][0],
+    'border_focus': colors['dark'][0],
+    'border_normal': colors['dark'][0],
     'border_width': 2,
-    'margin': 12,
+    'margin': 6,
 }
 
 layouts = [
-    layout.Max(),
     layout.MonadTall(**layout_conf),
+    layout.Max(),
     layout.MonadWide(**layout_conf),
     layout.Bsp(**layout_conf),
     layout.Matrix(columns=2, **layout_conf),

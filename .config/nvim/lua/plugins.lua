@@ -3,6 +3,10 @@ vim.cmd [[ packadd packer.nvim ]]
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim'
+  use 'AlphaTechnolog/onedarker.nvim'
+  use 'sainnhe/gruvbox-material'
+  use 'whatyouhide/vim-gotham'
+  use 'sainnhe/edge'
   use {
     'hoob3rt/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
@@ -13,11 +17,12 @@ return require('packer').startup(function()
   }
 	use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 	use {'windwp/nvim-autopairs'}
+  use {'jiangmiao/auto-pairs'}
 	use {
 		'nvim-telescope/telescope.nvim',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-	use {'neoclide/coc.nvim', branch = 'release'}
+	-- use {'neoclide/coc.nvim', branch = 'release'}
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'

@@ -1,9 +1,9 @@
 // -------------------------------- Appearance ---------------------------------
 
 // border pixel of windows
-static const unsigned int borderpx  = 2;
+static const unsigned int borderpx  = 1;
 // gaps between windows 
-static const unsigned int gappx = 6;
+static const unsigned int gappx = 12;
 // snap pixel 
 static const unsigned int snap = 32;
 // 0: sloppy systray follows selected monitor, >0: pin systray to monitor X 
@@ -78,7 +78,7 @@ static const struct Theme ayu_mirage = {
 static const struct Theme horizon_dark = {
     .inactive = "#3e4451",
     .active = "#e0e0e0",
-    .bg = "#232530",
+    .bg = "#1c1e26",
     .focus = "#ee64ac",
 };
 
@@ -135,6 +135,15 @@ static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { onedark.inactive, onedark.bg, window_border },
+    { onedark.focus, onedark.bg,  onedark.focus  },
+
+    { tokyonight.inactive, tokyonight.bg, window_border },
+    { tokyonight.focus, tokyonight.bg, tokyonight.focus },
+
+    { horizon_dark.inactive, horizon_dark.bg, window_border },
+    { horizon_dark.focus, horizon_dark.bg, horizon_dark.focus },
+
     { calvera_dark.inactive, calvera_dark.bg, window_border },
     { calvera_dark.focus, calvera_dark.bg, calvera_dark.focus },
 
@@ -153,12 +162,6 @@ static const char *colors[][3] = {
     { moonlight.inactive, moonlight.bg, window_border },
     { moonlight.focus, moonlight.bg, moonlight.focus },
 
-    { horizon_dark.inactive, horizon_dark.bg, window_border },
-    { horizon_dark.focus, horizon_dark.bg, horizon_dark.focus },
-
-    { tokyonight.inactive, tokyonight.bg, window_border },
-    { tokyonight.focus, tokyonight.bg, tokyonight.focus },
-
     { material_ocean.inactive, material_ocean.bg, window_border },
     { material_ocean.focus, material_ocean.bg, material_ocean.focus },
 
@@ -170,9 +173,6 @@ static const char *colors[][3] = {
 
     { ayu_mirage.inactive, ayu_mirage.bg, window_border },
     { ayu_mirage.focus, ayu_mirage.bg, ayu_mirage.focus },
-
-    { onedark.inactive, onedark.bg, window_border },
-    { onedark.focus, onedark.bg,  onedark.focus  },
 
     { nord.inactive, nord.bg, window_border },
     { nord.focus, nord.bg,  nord.focus  },
@@ -225,7 +225,7 @@ static const Layout layouts[] = {
 
 // Commands
 static char dmenumon[2] = "0";
-static const char *termcmd[]  = { "kitty", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 static const char *dmenucmd[] = {
     "dmenu_run", "-m", dmenumon,
     "-fn", dmenufont,
@@ -308,7 +308,7 @@ static Key keys[] = {
     { MODKEY, XK_s, spawn, SHCMD("~/.local/bin/spanish-kb-copier") },
 
     // Terminal
-    { MODKEY, XK_Return, spawn, SHCMD("kitty") },
+    { MODKEY, XK_Return, spawn, SHCMD("alacritty") },
 
     // Browser
     { MODKEY, XK_b, spawn, SHCMD("google-chrome") },

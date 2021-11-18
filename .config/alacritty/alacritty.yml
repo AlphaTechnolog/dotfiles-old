@@ -13,6 +13,7 @@ env:
   TERM: xterm-256color
 
 window:
+  opacity: 0.80
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
@@ -109,16 +110,16 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    # family: Sauce Code Pro Nerd Font
+    family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
-    # family: Monofur Nerd Font
-    # family: TerminessTTF Nerd Font
+    # family: LiterationMono Nerd Font Mono
+    # family: Agave Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -132,16 +133,16 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Sauce Code Pro Nerd Font
+    family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
-    # family: Monofur Nerd Font
-    # family: TerminessTTF Nerd Font
+    # family: LiterationMono Nerd Font Mono
+    # family: Agave Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -155,20 +156,20 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Sauce Code Pro Nerd Font
+    family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
-    # family: Monofuritalic Nerd Font Mono
-    # family: TerminessTTF Nerd Font
+    # family: LiterationMono Nerd Font Mono
+    # family: Agave Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
-    # family: Operator Mono
+    # family: Operator Mono Book
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -179,16 +180,16 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: Sauce Code Pro Nerd Font
+    family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
-    # family: Monofuritalic Nerd Font Mono
-    # family: TerminessTTF Nerd Font
+    # family: LiterationMono Nerd Font Mono
+    # family: Agave Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove NF
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -198,7 +199,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 12.5
+  size: 12
   # size: 14.5
   # size: 12.5
   # size: 13.0
@@ -210,7 +211,7 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: 0
+    y: 1
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -626,6 +627,69 @@ schemes:
       magenta: "#FF9CAC"
       cyan: "#7878E7"
       white: "#B0BEC5"
+  # Uwu
+  uwu: &uwu
+    # Default colors
+    primary:
+      background: '#131A1C'
+      foreground: '#C5C8C9'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: CellBackground
+      cursor: '#232a2c'
+
+    # Normal colors
+    normal:
+      black:   '#1b2224'
+      red:     '#e74c4c'
+      green:   '#6bb05d'
+      yellow:  '#e59e67'
+      blue:    '#53A7BF'
+      magenta: '#ef7cbb'
+      cyan:    '#51a39f'
+      white:   '#c4c4c4'
+
+    # Bright colors
+    bright:
+      black:   '#232a2c'
+      red:     '#c26f6f'
+      green:   '#8dc776'
+      yellow:  '#e7ac7e'
+      blue:    '#6CBAD1'
+      magenta: '#d3869b'
+      cyan:    '#6db0ad'
+      white:   '#bfbfbf'
+  # Onedarker
+  onedarker: &onedarker
+    primary:
+      background: '#1e222a'
+      foreground: '#abb2bf'
+      bright_foreground: '#abb2bf'
+
+    cursor:
+      text: CellBackground
+      cursor: '#5BA3DE'
+
+    normal:
+      black:   '#272C36'
+      red:     '#D96871'
+      green:   '#8FB872'
+      yellow:  '#C48360'
+      blue:    '#5BA3DE'
+      magenta: '#bb71d1'
+      cyan:    '#50a9b5'
+      white:   '#5c6370'
+
+    bright:
+      black:   '#272C36'
+      red:     '#D96871'
+      green:   '#8FB872'
+      yellow:  '#C48360'
+      blue:    '#5BA3DE'
+      magenta: '#bb71d1'
+      cyan:    '#50a9b5'
+      white:   '#5c6370'
   # Onedark
   onedark: &onedark
     primary:
@@ -706,6 +770,30 @@ schemes:
       magenta: '#c678dd'
       cyan:    '#56b6c2'
       white:   '#828791'
+  edge-dark-neon:  &edge-dark-neon
+    primary:
+      background: "#2b2d3a"
+      foreground: "#c5cdd9"
+  
+    normal:
+      black: "#363a4e"
+      red: "#ec7279"
+      green: "#a0c980"
+      yellow: "#deb974"
+      blue: "#6cb6eb"
+      magenta: "#d38aea"
+      cyan: "#5dbbc1"
+      white: "#c5cdd9"
+  
+    bright:
+      black: "#363a4e"
+      red: "#ec7279"
+      green: "#a0c980"
+      yellow: "#deb974"
+      blue: "#6cb6eb"
+      magenta: "#d38aea"
+      cyan: "#5dbbc1"
+      white: "#c5cdd9"
   gruvbox: &gruvbox
     primary:
       # hard contrast: background = '#1d2021'
@@ -885,7 +973,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *onedark
+colors: *onedarker
 
 # Visual Bell
 #
@@ -1175,7 +1263,3 @@ key_bindings:
   - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
   - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
   - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
-
-cursor:
-  style:
-    shape: Beam

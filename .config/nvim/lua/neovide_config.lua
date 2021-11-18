@@ -1,1 +1,1 @@
-vim.o.guifont = "CaskaydiaCove NF:h13"
+vim.o.guifont = "SauceCodePro Nerd Font:h12.5"
