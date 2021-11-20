@@ -58,6 +58,11 @@ local function symbolNavigationMaps()
   keymap('n', '<c-o>', ':SymbolsOutlineOpen<cr>', { noremap = true })
 end
 
+local function neovideFullscreen()
+  keymap('n', '<c-f>', ':let g:neovide_fullscreen=v:true<cr>', { noremap = true })
+  keymap('n', '<c-m-f>', ':let g:neovide_fullscreen=v:false<cr>', { noremap = true })
+end
+
 keymap('n', '<c-s>', ':w<cr>', { noremap = true })
 keymap('n', '<c-q>', ':wq!<cr>', { noremap = true })
 
@@ -67,3 +72,4 @@ makeBuffersNavigation()
 makeTreeMaps()
 makeTelescopeMaps()
 symbolNavigationMaps()
+neovideFullscreen()

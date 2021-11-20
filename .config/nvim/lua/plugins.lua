@@ -17,12 +17,11 @@ return require('packer').startup(function()
   }
 	use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 	use {'windwp/nvim-autopairs'}
-  use {'jiangmiao/auto-pairs'}
 	use {
 		'nvim-telescope/telescope.nvim',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-	-- use {'neoclide/coc.nvim', branch = 'release'}
+	use {'neoclide/coc.nvim', branch = 'release'}
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'

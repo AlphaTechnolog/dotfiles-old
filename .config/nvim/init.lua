@@ -26,8 +26,8 @@ require('onedarker_config')
 -- require('evil_lualine')
 -- ;;;
 require('nvim_tree')
--- require('bufferline_config')
--- require('auto_pairs_config')
+require('bufferline_config')
+require('auto_pairs_config')
 require('treesitter_config')
 require('colorizer_config')
 require('fterm_config')
@@ -36,7 +36,7 @@ require('neoscroll_config')
 require('eob')
 require('neovide_config')
 require('toggleterm_config')
--- vim.cmd [[ source $HOME/.config/nvim/coc.vim ]]
+vim.cmd [[ source $HOME/.config/nvim/coc.vim ]]
 require('symbols_outline_config')
 -- ;;
 require('keymaps')
