@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+tint2 &
+xset b off
+xset led on
+picom -b
+wl restore
