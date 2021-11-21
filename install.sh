@@ -489,12 +489,12 @@ setup_wallpaper() {
     error "Error at try to open $dotfiles_path: No such file or directory"
   fi
 
-  echo "==> /usr/local/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers"
-  prevented_process /usr/local/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers
+  echo "==> /usr/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers"
+  prevented_process /usr/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers
 
   if confirm "Do you want to setup a default wl wallpaper 66.jpeg? " 1; then
-    echo "==> /usr/local/bin/wl set 66.jpeg"
-    prevented_process /usr/local/bin/wl set 66.jpeg
+    echo "==> /usr/bin/wl set 66.jpeg"
+    prevented_process /usr/bin/wl set 66.jpeg
   fi
 
   press_enter_to_continue

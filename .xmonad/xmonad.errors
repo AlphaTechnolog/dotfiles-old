@@ -1,7 +1,301 @@
 
-xmonad.hs:424:1: warning: [-Wtabs]
-    Tab character found here, and in 10 further locations.
-    Please use spaces instead.
-    |
-424 |               -- Calvera Dark
-    | ^^^^^^^^
+xmonad.hs:9:1: error:
+    Could not find module ‘XMonad.Actions.CopyWindow’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+  |
+9 | import XMonad.Actions.CopyWindow (kill1)
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:10:1: error:
+    Could not find module ‘XMonad.Actions.CycleWS’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+10 | import XMonad.Actions.CycleWS (Direction1D(..), moveTo, shiftTo, WSType(..), nextScreen, prevScreen)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:11:1: error:
+    Could not find module ‘XMonad.Actions.GridSelect’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+11 | import XMonad.Actions.GridSelect
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:12:1: error:
+    Could not find module ‘XMonad.Actions.MouseResize’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+12 | import XMonad.Actions.MouseResize
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:13:1: error:
+    Could not find module ‘XMonad.Actions.Promote’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+13 | import XMonad.Actions.Promote
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:14:1: error:
+    Could not find module ‘XMonad.Actions.RotSlaves’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+14 | import XMonad.Actions.RotSlaves (rotSlavesDown, rotAllDown)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:15:1: error:
+    Could not find module ‘XMonad.Actions.WindowGo’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+15 | import XMonad.Actions.WindowGo (runOrRaise)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:16:1: error:
+    Could not find module ‘XMonad.Actions.WithAll’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+16 | import XMonad.Actions.WithAll (sinkAll, killAll)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:17:1: error:
+    Could not find module ‘XMonad.Actions.Search’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+17 | import qualified XMonad.Actions.Search as S
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:28:1: error:
+    Could not find module ‘XMonad.Hooks.DynamicLog’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+28 | import XMonad.Hooks.DynamicLog (dynamicLogWithPP, wrap, xmobarPP, xmobarColor, shorten, PP(..))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:29:1: error:
+    Could not find module ‘XMonad.Hooks.EwmhDesktops’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+29 | import XMonad.Hooks.EwmhDesktops  -- for some fullscreen events, also for xcomposite in obs.
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:30:1: error:
+    Could not find module ‘XMonad.Hooks.ManageDocks’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+30 | import XMonad.Hooks.ManageDocks (avoidStruts, docksEventHook, manageDocks, ToggleStruts(..))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:31:1: error:
+    Could not find module ‘XMonad.Hooks.ManageHelpers’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+31 | import XMonad.Hooks.ManageHelpers (isFullscreen, doFullFloat, doCenterFloat)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:32:1: error:
+    Could not find module ‘XMonad.Hooks.ServerMode’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+32 | import XMonad.Hooks.ServerMode
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:33:1: error:
+    Could not find module ‘XMonad.Hooks.SetWMName’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+33 | import XMonad.Hooks.SetWMName
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:34:1: error:
+    Could not find module ‘XMonad.Hooks.WorkspaceHistory’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+34 | import XMonad.Hooks.WorkspaceHistory
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:37:1: error:
+    Could not find module ‘XMonad.Layout.Accordion’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+37 | import XMonad.Layout.Accordion
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:38:1: error:
+    Could not find module ‘XMonad.Layout.GridVariants’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+38 | import XMonad.Layout.GridVariants (Grid(Grid))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:39:1: error:
+    Could not find module ‘XMonad.Layout.SimplestFloat’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+39 | import XMonad.Layout.SimplestFloat
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:40:1: error:
+    Could not find module ‘XMonad.Layout.Spiral’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+40 | import XMonad.Layout.Spiral
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:41:1: error:
+    Could not find module ‘XMonad.Layout.ResizableTile’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+41 | import XMonad.Layout.ResizableTile
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:42:1: error:
+    Could not find module ‘XMonad.Layout.Tabbed’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+42 | import XMonad.Layout.Tabbed
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:43:1: error:
+    Could not find module ‘XMonad.Layout.ThreeColumns’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+43 | import XMonad.Layout.ThreeColumns
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:46:1: error:
+    Could not find module ‘XMonad.Layout.LayoutModifier’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+46 | import XMonad.Layout.LayoutModifier
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:47:1: error:
+    Could not find module ‘XMonad.Layout.LimitWindows’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+47 | import XMonad.Layout.LimitWindows (limitWindows, increaseLimit, decreaseLimit)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:48:1: error:
+    Could not find module ‘XMonad.Layout.Magnifier’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+48 | import XMonad.Layout.Magnifier
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:49:1: error:
+    Could not find module ‘XMonad.Layout.MultiToggle’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+49 | import XMonad.Layout.MultiToggle (mkToggle, single, EOT(EOT), (??))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:50:1: error:
+    Could not find module ‘XMonad.Layout.MultiToggle.Instances’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+50 | import XMonad.Layout.MultiToggle.Instances (StdTransformers(NBFULL, MIRROR, NOBORDERS))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:51:1: error:
+    Could not find module ‘XMonad.Layout.NoBorders’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+51 | import XMonad.Layout.NoBorders
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:52:1: error:
+    Could not find module ‘XMonad.Layout.Renamed’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+52 | import XMonad.Layout.Renamed
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:53:1: error:
+    Could not find module ‘XMonad.Layout.ShowWName’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+53 | import XMonad.Layout.ShowWName
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:54:1: error:
+    Could not find module ‘XMonad.Layout.Simplest’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+54 | import XMonad.Layout.Simplest
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:55:1: error:
+    Could not find module ‘XMonad.Layout.Spacing’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+55 | import XMonad.Layout.Spacing
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:56:1: error:
+    Could not find module ‘XMonad.Layout.SubLayouts’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+56 | import XMonad.Layout.SubLayouts
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:57:1: error:
+    Could not find module ‘XMonad.Layout.WindowArranger’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+57 | import XMonad.Layout.WindowArranger (windowArrange, WindowArrangerMsg(..))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:58:1: error:
+    Could not find module ‘XMonad.Layout.WindowNavigation’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+58 | import XMonad.Layout.WindowNavigation
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:59:1: error:
+    Could not find module ‘XMonad.Layout.ToggleLayouts’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+59 | import qualified XMonad.Layout.ToggleLayouts as T (toggleLayouts, ToggleLayout(Toggle))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:60:1: error:
+    Could not find module ‘XMonad.Layout.MultiToggle’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+60 | import qualified XMonad.Layout.MultiToggle as MT (Toggle(..))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:63:1: error:
+    Could not find module ‘XMonad.Util.Dmenu’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+63 | import XMonad.Util.Dmenu
+   | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:64:1: error:
+    Could not find module ‘XMonad.Util.EZConfig’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+64 | import XMonad.Util.EZConfig (additionalKeysP)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:65:1: error:
+    Could not find module ‘XMonad.Util.NamedScratchpad’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+65 | import XMonad.Util.NamedScratchpad
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:66:1: error:
+    Could not find module ‘XMonad.Util.Run’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+66 | import XMonad.Util.Run (runProcessWithInput, safeSpawn, spawnPipe)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:67:1: error:
+    Could not find module ‘XMonad.Util.SpawnOnce’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+67 | import XMonad.Util.SpawnOnce
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

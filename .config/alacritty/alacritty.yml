@@ -12,8 +12,10 @@ env:
   # available, otherwise `xterm-256color` is used.
   TERM: xterm-256color
 
+background_opacity: 0.92
+
 window:
-  opacity: 1
+  opacity: 0.92
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
