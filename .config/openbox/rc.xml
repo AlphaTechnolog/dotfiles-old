@@ -405,6 +405,16 @@
         <command>alacritty</command>
       </action>
     </keybind>
+    <!-- Spanish kb copier -->
+    <keybind key="W-s">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Spanish KB Copier</name>
+        </startupnotify>
+        <command>spanish-kb-copier</command>
+      </action>
+    </keybind>
     <!-- Audio toggler -->
     <keybind key="W-p">
       <action name="Execute">
