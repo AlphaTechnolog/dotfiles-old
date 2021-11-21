@@ -112,15 +112,15 @@
     <number>9</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>WWW</name>
-      <name>DEV</name>
-      <name>TERM</name>
-      <name>FS</name>
-      <name>REF</name>
-      <name>MISC</name>
-      <name>MUSIC</name>
-      <name>CHAT</name>
-      <name>CONF</name>
+      <name>www</name>
+      <name>dev</name>
+      <name>term</name>
+      <name>fs</name>
+      <name>ref</name>
+      <name>misc</name>
+      <name>music</name>
+      <name>chat</name>
+      <name>conf</name>
     </names>
     <popupTime>875</popupTime>
   </desktops>
