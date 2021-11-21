@@ -8,8 +8,12 @@ Config {   font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.
                            , "xft:Font Awesome 5 Brands:pixelsize=12"
                            ]
        -- Onedark colors:
-       , bgColor      = "#1e2127"
-       , fgColor      = "#e06c75"
+       -- , bgColor      = "#1e2127"
+       -- , fgColor      = "#e06c75"
+       -- Onedarker colors:
+       , bgColor = "#1e222a"
+       , fgColor = "#bb71d1"
+       , alpha = 50
        -- Nightfox colors:
        -- , bgColor      = "#192330"
        -- , fgColor      = "#9d79d6"

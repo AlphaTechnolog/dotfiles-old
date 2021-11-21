@@ -73,7 +73,7 @@ myModMask :: KeyMask
 myModMask = mod4Mask        -- Sets modkey to super/windows key
 
 myTerminal :: String
-myTerminal = "kitty"    -- Sets default terminal
+myTerminal = "alacritty"    -- Sets default terminal
 
 myBrowser :: String
 myBrowser = "google-chrome"  -- Sets google-chrome as browser
@@ -86,7 +86,7 @@ myEditor :: String
 myEditor = myTerminal ++ " -e vim "    -- Sets vim as editor
 
 myBorderWidth :: Dimension
-myBorderWidth = 2           -- Sets border width for windows
+myBorderWidth = 0           -- Sets border width for windows
 
 myNormColor :: String
 myNormColor   = "#282c34"   -- Border color of normal windows
@@ -237,8 +237,8 @@ myLayoutHook = avoidStruts
     $ T.toggleLayouts floats
     $ mkToggle (NBFULL ?? NOBORDERS ?? EOT) myDefaultLayout
   where
-    myDefaultLayout = noBorders monocle
-                      ||| withBorder myBorderWidth tall
+    myDefaultLayout = withBorder myBorderWidth tall
+                      |||  noBorders monocle
 
 -- myWorkspaces = [" net ", " dev ", " term ", " fs ", " ref ", " misc ", " mus ", " chat ", " conf "]
 -- myWorkspaces = ["   ", "   ", "   ", "   ", "   ", "   ", "   ", " ﭮ  ", " 漣  "]
