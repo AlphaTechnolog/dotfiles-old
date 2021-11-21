@@ -1,7 +1,9 @@
 // -------------------------------- Appearance ---------------------------------
 
+// height of bar
+static const int user_bh = 27;
 // border pixel of windows
-static const unsigned int borderpx  = 1;
+static const unsigned int borderpx  = 0;
 // gaps between windows 
 static const unsigned int gappx = 12;
 // snap pixel 
@@ -21,7 +23,7 @@ static const int topbar = 1;
 
 // ---------------------------------- Fonts ------------------------------------
 
-static const char *fonts[] = { "UbuntuMono Nerd Font:size=11:weight=bold:antialias=true:autohint:true" };
+static const char *fonts[] = { "UbuntuMono Nerd Font:size=11.5:weight=bold:antialias=true:autohint:true" };
 static const char dmenufont[] = "UbuntuMono Nerd Font:size=12:antialias=true:autohint=true";
 
 // ---------------------------------- Colors -----------------------------------
