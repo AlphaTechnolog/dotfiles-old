@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -216,7 +217,6 @@
         <to>9</to>
       </action>
     </keybind>
-
     <!-- Send Window to Workspace N -->
     <keybind key="W-S-1">
       <action name="SendToDesktop">
@@ -272,12 +272,10 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-
     <!-- Close Window -->
     <keybind key="W-w">
       <action name="Close"/>
     </keybind>
-
     <!-- Keybindings for window switching -->
     <keybind key="W-j">
       <action name="NextWindow">
@@ -297,7 +295,6 @@
         </finalactions>
       </action>
     </keybind>
-
     <!-- Keybindings for window tiling -->
     <!-- Full Screen -->
     <keybind key="W-Up">
@@ -373,7 +370,6 @@
         <width>50%</width>
       </action>
     </keybind>
-
     <!-- Keybindings for running applications -->
     <!-- Menu  -->
     <keybind key="W-S-Return">
@@ -491,7 +487,6 @@
         <command>brightnessctl set 10%-</command>
       </action>
     </keybind>
-
     <keybind key="W-S-r">
       <action name="Execute">
         <startupnotify>
@@ -501,8 +496,6 @@
         <command>openbox --restart</command>
       </action>
     </keybind>
-
-
     <keybind key="W-A-r">
       <action name="Execute">
         <startupnotify>
@@ -512,7 +505,6 @@
         <command>openbox --reconfigure</command>
       </action>
     </keybind>
-
     <keybind key="W-S-q">
       <action name="Execute">
         <startupnotify>
@@ -522,7 +514,6 @@
         <command>openbox --exit</command>
       </action>
     </keybind>
-
     <keybind key="W-x">
       <action name="Execute">
         <startupnotify>
@@ -930,9 +921,6 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <application class='*'>
-      <decor>no</decor>
-    </application>
     <application name="arcolinux-logout">
       <position force="no">
         <monitor>1</monitor>

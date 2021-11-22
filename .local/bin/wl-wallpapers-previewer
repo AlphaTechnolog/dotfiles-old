@@ -109,10 +109,10 @@ def handle_key(key: str):
     ui.render_wallpapers()
 
 
-def handle_key_press(key) -> bool or None:
+def handle_key_press(key):
     try:
         if key.char == 'q':
-            return False
+            exit(0)
 
         char = key.char
         handle_key(char)
