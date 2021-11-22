@@ -921,6 +921,9 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
+    <application name="*">
+      <decor>no</decor>
+    </application>
     <application name="arcolinux-logout">
       <position force="no">
         <monitor>1</monitor>
