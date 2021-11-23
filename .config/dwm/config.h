@@ -1,7 +1,7 @@
 // -------------------------------- Appearance ---------------------------------
 
 // height of bar
-static const int user_bh = 23;
+static const int user_bh = 22;
 // border pixel of windows
 static const unsigned int borderpx  = 0;
 // gaps between windows 
@@ -23,7 +23,7 @@ static const int topbar = 1;
 
 // ---------------------------------- Fonts ------------------------------------
 
-static const char *fonts[] = { "UbuntuMono Nerd Font:size=11.5:weight=bold:antialias=true:autohint:true" };
+static const char *fonts[] = { "UbuntuMono Nerd Font:size=11:weight=bold:antialias=true:autohint:true" };
 static const char dmenufont[] = "UbuntuMono Nerd Font:size=12:antialias=true:autohint=true";
 
 // ---------------------------------- Colors -----------------------------------
@@ -138,46 +138,46 @@ static const char window_border[] = "#000000";
 static const char *colors[][3] = {
     // fg                 bg             border   
     { onedark.inactive, onedark.bg, window_border },
-    { onedark.focus, onedark.bg,  onedark.focus  },
+    { onedark.active, onedark.focus,  onedark.focus  },
 
     { tokyonight.inactive, tokyonight.bg, window_border },
-    { tokyonight.focus, tokyonight.bg, tokyonight.focus },
+    { tokyonight.active, tokyonight.focus, tokyonight.focus },
 
     { horizon_dark.inactive, horizon_dark.bg, window_border },
-    { horizon_dark.focus, horizon_dark.bg, horizon_dark.focus },
+    { horizon_dark.active, horizon_dark.focus, horizon_dark.focus },
 
     { calvera_dark.inactive, calvera_dark.bg, window_border },
-    { calvera_dark.focus, calvera_dark.bg, calvera_dark.focus },
+    { calvera_dark.active, calvera_dark.focus, calvera_dark.focus },
 
     { doom_one.inactive, doom_one.bg, window_border },
-    { doom_one.focus, doom_one.bg, doom_one.focus },
+    { doom_one.active, doom_one.focus, doom_one.focus },
 
     { dracula.inactive, dracula.bg, window_border },
-    { dracula.focus, dracula.bg, dracula.focus },
+    { dracula.active, dracula.focus, dracula.focus },
 
     { tokyonight_storm.inactive, tokyonight_storm.bg, window_border },
-    { tokyonight_storm.focus, tokyonight_storm.bg, tokyonight_storm.focus },
+    { tokyonight_storm.active, tokyonight_storm.focus, tokyonight_storm.focus },
 
     { solarized_dark.inactive, solarized_dark.bg, window_border },
-    { solarized_dark.focus, solarized_dark.bg, solarized_dark.focus },
+    { solarized_dark.active, solarized_dark.focus, solarized_dark.focus },
 
     { moonlight.inactive, moonlight.bg, window_border },
-    { moonlight.focus, moonlight.bg, moonlight.focus },
+    { moonlight.active, moonlight.focus, moonlight.focus },
 
     { material_ocean.inactive, material_ocean.bg, window_border },
-    { material_ocean.focus, material_ocean.bg, material_ocean.focus },
+    { material_ocean.active, material_ocean.focus, material_ocean.focus },
 
     { nightfox.inactive, nightfox.bg, window_border },
-    { nightfox.focus, nightfox.bg, nightfox.focus },
+    { nightfox.active, nightfox.focus, nightfox.focus },
 
     { codedark.inactive, codedark.bg, window_border },
-    { codedark.focus, codedark.bg, codedark.focus },
+    { codedark.active, codedark.focus, codedark.focus },
 
     { ayu_mirage.inactive, ayu_mirage.bg, window_border },
-    { ayu_mirage.focus, ayu_mirage.bg, ayu_mirage.focus },
+    { ayu_mirage.active, ayu_mirage.focus, ayu_mirage.focus },
 
     { nord.inactive, nord.bg, window_border },
-    { nord.focus, nord.bg,  nord.focus  },
+    { nord.active, nord.focus, nord.focus  },
 };
 
 // -------------------------------- Workspaces ---------------------------------
