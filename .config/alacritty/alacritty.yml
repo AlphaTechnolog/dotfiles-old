@@ -662,7 +662,7 @@ schemes:
   # Onedarker
   onedarker: &onedarker
     primary:
-      background: '#1e222a'
+      background: '#1E2028'
       foreground: '#abb2bf'
       bright_foreground: '#abb2bf'
 
@@ -1004,7 +1004,7 @@ colors: *onedarker
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.92
+background_opacity: 1
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

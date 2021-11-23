@@ -49,6 +49,13 @@ static const struct Theme nord = {
     .focus = "#81a1c1"
 };
 
+static const struct Theme onedarker = {
+    .inactive = "#5c6370",
+    .active = "#e6efff",
+    .bg = "#1E2028",
+    .focus = "#5BA3DE",
+};
+
 static const struct Theme onedark = {
     .inactive = "#5c6370",
     .active = "#e6efff",
@@ -137,6 +144,9 @@ static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { onedarker.inactive, onedarker.bg, window_border },
+    { onedarker.active, onedarker.focus,  onedarker.focus  },
+
     { onedark.inactive, onedark.bg, window_border },
     { onedark.active, onedark.focus,  onedark.focus  },
 
