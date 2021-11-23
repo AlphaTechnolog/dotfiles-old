@@ -237,8 +237,8 @@ myLayoutHook = avoidStruts
     $ T.toggleLayouts floats
     $ mkToggle (NBFULL ?? NOBORDERS ?? EOT) myDefaultLayout
   where
-    myDefaultLayout = withBorder myBorderWidth tall
-                      |||  noBorders monocle
+    myDefaultLayout = noBorders monocle
+                      |||  withBorder myBorderWidth tall
 
 -- myWorkspaces = [" net ", " dev ", " term ", " fs ", " ref ", " misc ", " mus ", " chat ", " conf "]
 -- myWorkspaces = ["   ", "   ", "   ", "   ", "   ", "   ", "   ", " ﭮ  ", " 漣  "]
