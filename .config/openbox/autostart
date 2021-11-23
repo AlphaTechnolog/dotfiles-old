@@ -1,7 +1,34 @@
-#!/usr/bin/env bash
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+# You can set picom to use either xrender or glx
+# Change if issues
+#autorandr horizontal
+
+# start ArcoLinux Welcome  App
+#dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 
 tint2 &
+#$HOME/.config/polybar/launch.sh &
+
+#(am-conky-session --autostart) &
+
+# install xcape - press super to get menu
+xcape -e 'Super_L=Super_L|space'
+
+## Turn off/on System Beep
 xset b off
-xset led on
-picom -b
+
+## Enable power management
+xfce4-power-manager &
+
+##Clipboard Manager
+(xfce4-clipman) &
+
+## XFCE4 Settings
+#xfsettingsd &
+
+xset led
 wl restore
+picom -b

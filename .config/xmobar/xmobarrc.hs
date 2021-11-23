@@ -11,8 +11,8 @@ Config {   font            = "xft:UbuntuMono Nerd Font:weight=bold:pixelsize=11.
        -- , bgColor      = "#1e2127"
        -- , fgColor      = "#e06c75"
        -- Onedarker colors:
-       , bgColor = "#1E2028"
-       , fgColor = "#bb71d1"
+       , bgColor = "#1C1F26"
+       , fgColor = "#61AFEF"
        , alpha = 50
        -- Nightfox colors:
        -- , bgColor      = "#192330"

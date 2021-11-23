@@ -52,7 +52,7 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>no</keepBorder>
+    <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Noto Sans</name>
@@ -113,15 +113,15 @@
     <number>9</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>www</name>
-      <name>dev</name>
-      <name>term</name>
-      <name>fs</name>
-      <name>ref</name>
-      <name>misc</name>
-      <name>music</name>
-      <name>chat</name>
-      <name>conf</name>
+      <name>WWW</name>
+      <name>DEV</name>
+      <name>TERM</name>
+      <name>FS</name>
+      <name>REF</name>
+      <name>MISC</name>
+      <name>MUSIC</name>
+      <name>CHAT</name>
+      <name>CONF</name>
     </names>
     <popupTime>875</popupTime>
   </desktops>
@@ -371,6 +371,26 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
+    <!-- Spanish kb copier -->
+    <keybind key="W-s">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Spanish KB Copier</name>
+        </startupnotify>
+        <command>spanish-kb-copier</command>
+      </action>
+    </keybind>
+    <!-- Audio toggler -->
+    <keybind key="W-p">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Audio toggler</name>
+        </startupnotify>
+        <command>audio-toggler</command>
+      </action>
+    </keybind>
     <!-- Menu  -->
     <keybind key="W-S-Return">
       <action name="Execute">
@@ -399,26 +419,6 @@
           <name>Terminal</name>
         </startupnotify>
         <command>alacritty</command>
-      </action>
-    </keybind>
-    <!-- Spanish kb copier -->
-    <keybind key="W-s">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Spanish KB Copier</name>
-        </startupnotify>
-        <command>spanish-kb-copier</command>
-      </action>
-    </keybind>
-    <!-- Audio toggler -->
-    <keybind key="W-p">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Audio Toggler</name>
-        </startupnotify>
-        <command>audio-toggler</command>
       </action>
     </keybind>
     <!-- Hardware -->
@@ -496,7 +496,7 @@
         <command>openbox --restart</command>
       </action>
     </keybind>
-    <keybind key="W-A-r">
+    <keybind key="W-S-r">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>

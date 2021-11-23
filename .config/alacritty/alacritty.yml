@@ -110,7 +110,7 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     # family: Sauce Code Pro Nerd Font
-    # family: CodeNewRoman Nerd Font
+    family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrains Mono Nerd Font
@@ -118,7 +118,7 @@ font:
     # family: LiterationMono Nerd Font Mono
     # family: Agave Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove Nerd Font
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -133,7 +133,7 @@ font:
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
     # family: Sauce Code Pro Nerd Font
-    # family: CodeNewRoman Nerd Font
+    family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrains Mono Nerd Font
@@ -141,7 +141,7 @@ font:
     # family: LiterationMono Nerd Font Mono
     # family: Agave Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove Nerd Font
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -156,7 +156,7 @@ font:
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
     # family: Sauce Code Pro Nerd Font
-    # family: CodeNewRoman Nerd Font
+    family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrains Mono Nerd Font
@@ -164,7 +164,7 @@ font:
     # family: LiterationMono Nerd Font Mono
     # family: Agave Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove Nerd Font
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -180,7 +180,7 @@ font:
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
     # family: Sauce Code Pro Nerd Font
-    # family: CodeNewRoman Nerd Font
+    family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrains Mono Nerd Font
@@ -188,7 +188,7 @@ font:
     # family: LiterationMono Nerd Font Mono
     # family: Agave Nerd Font
     # family: Mononoki Nerd Font
-    family: CaskaydiaCove NF
+    # family: CaskaydiaCove Nerd Font
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
@@ -198,7 +198,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 12.5
+  size: 12
   # size: 14.5
   # size: 12.5
   # size: 13.0
@@ -210,7 +210,7 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: -2
+    y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -662,7 +662,7 @@ schemes:
   # Onedarker
   onedarker: &onedarker
     primary:
-      background: '#1E2028'
+      background: '#1C1F26'
       foreground: '#abb2bf'
       bright_foreground: '#abb2bf'
 

@@ -52,7 +52,7 @@ static const struct Theme nord = {
 static const struct Theme onedarker = {
     .inactive = "#5c6370",
     .active = "#e6efff",
-    .bg = "#1E2028",
+    .bg = "#1C1F26",
     .focus = "#5BA3DE",
 };
 
