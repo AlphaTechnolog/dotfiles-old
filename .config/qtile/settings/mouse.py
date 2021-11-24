@@ -1,3 +1,11 @@
+# Gabriel Guerra (Thank you Antonio Sarosi)
+# -- Gabriel Guerra links --
+# http://github.com/AlphaTechnolog/
+# http://github.com/AlphaTechnolog/dotfiles
+# -- Antonio Sarosi links --
+# https://youtube.com/c/antoniosarosi
+# https://github.com/antoniosarosi/dotfiles
+
 from libqtile.config import Drag, Click
 from libqtile.command import lazy
 from .keys import mod

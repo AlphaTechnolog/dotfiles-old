@@ -90,7 +90,7 @@ scrolling:
   # Scroll to the bottom when new text is written to the terminal.
   #auto_scroll: false
 
-# Spaces per Tab (changes require restart)
+# FantasqueSansMono NF
 #
 # This setting defines the width of a tab in cells.
 #
@@ -110,12 +110,12 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     # family: Sauce Code Pro Nerd Font
-    family: CodeNewRoman Nerd Font
+    # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
-    # family: LiterationMono Nerd Font Mono
+    family: VictorMono NF
     # family: Agave Nerd Font
     # family: Mononoki Nerd Font
     # family: CaskaydiaCove Nerd Font
@@ -133,12 +133,12 @@ font:
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
     # family: Sauce Code Pro Nerd Font
-    family: CodeNewRoman Nerd Font
+    # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
-    # family: LiterationMono Nerd Font Mono
+    family: VictorMono NF
     # family: Agave Nerd Font
     # family: Mononoki Nerd Font
     # family: CaskaydiaCove Nerd Font
@@ -156,12 +156,12 @@ font:
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
     # family: Sauce Code Pro Nerd Font
-    family: CodeNewRoman Nerd Font
+    # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
-    # family: LiterationMono Nerd Font Mono
+    family: VictorMono NF
     # family: Agave Nerd Font
     # family: Mononoki Nerd Font
     # family: CaskaydiaCove Nerd Font
@@ -180,12 +180,12 @@ font:
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
     # family: Sauce Code Pro Nerd Font
-    family: CodeNewRoman Nerd Font
+    # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
-    # family: LiterationMono Nerd Font Mono
+    family: VictorMono NF
     # family: Agave Nerd Font
     # family: Mononoki Nerd Font
     # family: CaskaydiaCove Nerd Font
@@ -199,12 +199,6 @@ font:
 
   # Point size
   size: 12
-  # size: 14.5
-  # size: 12.5
-  # size: 13.0
-  # size: 11.5
-  # size: 11.0
-  # size: 10.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -1199,7 +1193,7 @@ live_config_reload: true
 #   - Minimize
 #   - Quit
 #   - ToggleFullscreen
-#   - SpawnNewInstance
+#   - FantasqueSansMono NF
 #   - ClearLogNotice
 #   - ReceiveChar
 #   - None
