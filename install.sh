@@ -492,9 +492,9 @@ setup_wallpaper() {
   echo "==> /usr/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers"
   prevented_process /usr/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers
 
-  if confirm "Do you want to setup a default wl wallpaper 95.jpeg? " 1; then
-    echo "==> /usr/bin/wl set 95.jpeg"
-    prevented_process /usr/bin/wl set 95.jpeg
+  if confirm "Do you want to setup a default wl wallpaper 45.jpeg? " 1; then
+    echo "==> /usr/bin/wl set 45.jpeg"
+    prevented_process /usr/bin/wl set 45.jpeg
   fi
 
   press_enter_to_continue
