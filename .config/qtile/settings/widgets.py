@@ -97,7 +97,7 @@ primary_widgets = [
         no_update_string='0',
         display_format='{updates}',
         update_interval=1800,
-        custom_command='~/.local/bin/checkupdates',
+        custom_command='checkupdates | wc -l',
         fontsize=11.8
     ),
 
