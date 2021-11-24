@@ -109,11 +109,11 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Sauce Code Pro Nerd Font
+    # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
-    # family: JetBrains Mono Nerd Font
+    family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: VictorMono NF
     # family: Agave Nerd Font
@@ -132,11 +132,11 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Sauce Code Pro Nerd Font
+    # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
-    # family: JetBrains Mono Nerd Font
+    family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: VictorMono NF
     # family: Agave Nerd Font
@@ -159,7 +159,7 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
-    # family: JetBrains Mono Nerd Font
+    family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: VictorMono NF
     # family: Agave Nerd Font
@@ -168,7 +168,7 @@ font:
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
-    family: Operator Mono Book
+    # family: Operator Mono
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -183,7 +183,7 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
-    # family: JetBrains Mono Nerd Font
+    family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: VictorMono NF
     # family: Agave Nerd Font
@@ -192,7 +192,7 @@ font:
     # family: Iosevka NF
     # family: FantasqueSansMono Nerd Font
     # family: Fira Code Nerd Font
-    family: Operator Mono
+    # family: Operator Mono
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
@@ -998,7 +998,7 @@ colors: *onedarker
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.60
+background_opacity: 0.80
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -1258,4 +1258,5 @@ key_bindings:
   - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
 
 cursor:
-  thickness: 0
+  style:
+    shape: Beam
