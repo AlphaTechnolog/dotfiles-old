@@ -36,7 +36,7 @@ require('neoscroll_config')
 require('eob')
 require('neovide_config')
 require('toggleterm_config')
--- vim.cmd [[ source $HOME/.config/nvim/coc.vim ]]
+vim.cmd [[ source $HOME/.config/nvim/coc.vim ]]
 require('symbols_outline_config')
 -- ;;
 require('keymaps')
