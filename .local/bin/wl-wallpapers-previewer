@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 import os
-from typing import TypeVar
-from pynput.keyboard import Listener, Key
+from typing import TypeVar, Callable
+from pynput.keyboard import Listener
 from sys import stderr, stdout
 from wl.commands.set import Set
 from wl.scripts.arguments import arguments
@@ -14,7 +14,6 @@ from pathlib import Path
 init(autoreset=True)
 
 F = TypeVar('F')
-C = TypeVar('C')
 
 
 class UI:
@@ -33,7 +32,7 @@ class UI:
         self.centered_print('- Press "l" to get the next wallpaper preview')
         self.centered_print('- Press "h" to get the previous wallpaper preview')
 
-    def get_wallpaper(self) -> str:
+    def get_wallpaper(self) -> str or None:
         parsed_config = config.parse()
         wallpaper = parsed_config['wallpaper'] or None
         if wallpaper is not None:
@@ -63,7 +62,7 @@ class Logger:
     def _base(self, prefix: str, msg: str, to_exit: bool = False, file: F = stdout, color: str = Fore.RESET):
         print(f'{color}[{prefix}] {msg}{Fore.RESET}', file=file)
         if to_exit:
-            os.exit(1)
+            exit(1)
 
     def success(self, msg: str):
         self._base(prefix='S', msg=msg, color=Fore.GREEN)
@@ -80,7 +79,7 @@ class Logger:
 logger = Logger()
 
 
-def navigation_wallpaper_index(calculator: C, initial_index: int or str = 0) -> int:
+def navigation_wallpaper_index(calculator: Callable, initial_index: int or str = 0) -> int:
     wall_ls = wallpapers.get_wallpapers()
     wall = ui.get_wallpaper()
     index = calculator(wall_ls.index(wall))
