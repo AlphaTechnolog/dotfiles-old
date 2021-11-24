@@ -41,17 +41,11 @@ local function makeBuffersNavigation()
 end
 
 local function makeTreeMaps()
-  keymap('n', '<c-n>', ':NvimTreeToggle<cr>', { noremap = true })
-  keymap('n', '<c-m-n>', ':NvimTreeFocus<cr>', { noremap = true })
+  keymap('n', '<space>n', ':NvimTreeToggle<cr>', { noremap = true })
 end
 
 local function makeTelescopeMaps()
-	makeMultipleKeybinds(
-		'n',
-		{'<c-p>', '<c-t>'},
-		{':Telescope find_files<cr>', ':Telescope buffers<cr>'},
-		true
-	)
+  keymap('n', '<c-p>', ':Telescope find_files<cr>', { noremap = true })
 end
 
 local function symbolNavigationMaps()
