@@ -1,8 +1,4 @@
-# Gabriel Guerra (Thank you Antonio Sarosi)
-# -- Gabriel Guerra links --
-# http://github.com/AlphaTechnolog/
-# http://github.com/AlphaTechnolog/dotfiles
-# -- Antonio Sarosi links --
+# Antonio Sarosi
 # https://youtube.com/c/antoniosarosi
 # https://github.com/antoniosarosi/dotfiles
 
@@ -14,16 +10,16 @@ from .theme import colors, theme
 
 
 layout_conf = {
-    # 'border_focus': colors['focus' if theme != 'dark-grey' else 'inactive'][0],
-    'border_focus': colors['dark'][0],
-    'border_normal': colors['dark'][0],
-    'border_width': 0,
-    'margin': 16,
+    'border_focus': colors['focus' if theme != 'dark-grey' else 'inactive'][0],
+    # 'border_focus': colors['dark'][0],
+    # 'border_normal': colors['dark'][0],
+    'border_width': 1,
+    'margin': 6,
 }
 
 layouts = [
-    layout.MonadTall(**layout_conf),
     layout.Max(),
+    layout.MonadTall(**layout_conf),
     layout.MonadWide(**layout_conf),
     layout.Bsp(**layout_conf),
     layout.Matrix(columns=2, **layout_conf),

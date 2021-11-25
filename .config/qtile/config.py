@@ -1,13 +1,10 @@
-# Gabriel Guerra (Thank you Antonio Sarosi)
-# -- Gabriel Guerra links --
-# http://github.com/AlphaTechnolog/
-# http://github.com/AlphaTechnolog/dotfiles
-# -- Antonio Sarosi links --
+# Qtile Config File
+# http://www.qtile.org/
+
+# Antonio Sarosi
 # https://youtube.com/c/antoniosarosi
 # https://github.com/antoniosarosi/dotfiles
 
-# Qtile Config File
-# http://www.qtile.org/
 
 from libqtile import hook
 

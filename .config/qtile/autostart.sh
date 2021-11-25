@@ -1,9 +1,11 @@
 #!/bin/sh
 
-xset led
+dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
 picom -b
 volumeicon &
-ibus exit
+ibus exit &
 udiskie -t &
-$HOME/.local/bin/monitor-config
-/usr/bin/wl restore
+cbatticon -u 5 &
+nm-applet &
+xset led
+wl restore

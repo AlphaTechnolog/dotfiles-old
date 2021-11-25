@@ -1,9 +1,7 @@
 // -------------------------------- Appearance ---------------------------------
 
-// height of bar
-static const int user_bh = 22;
 // border pixel of windows
-static const unsigned int borderpx  = 0;
+static const unsigned int borderpx  = 1;
 // gaps between windows 
 static const unsigned int gappx = 12;
 // snap pixel 

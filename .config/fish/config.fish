@@ -209,7 +209,7 @@ end
 
 
 ### ALIASES ###
-alias clear='tput reset; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo'
+# alias clear='tput reset; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo'
 
 alias g="copier -c github_token 2>&1 > /dev/null && git"
 
@@ -314,7 +314,7 @@ alias bupskel='cp -Rf /etc/skel ~/.skel-backup-(date +%Y.%m.%d-%H.%M.%S)'
 ### RANDOM COLOR SCRIPT ###
 # Get this script from my GitLab: gitlab.com/dwt1/shell-color-scripts
 # Or install it from the Arch User Repository: shell-color-scripts
-colorscript random
+# colorscript random
 
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source
