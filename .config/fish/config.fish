@@ -4,6 +4,7 @@ set fish_greeting ""
 
 set yarnpath (yarn global bin 2>/dev/null)
 set PATH "$PATH:$yarnpath:/opt/node/bin"
+set PATH "$PATH:$HOME/.local/bin"
 
 # Aliases
 

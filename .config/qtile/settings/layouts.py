@@ -12,7 +12,7 @@ from .theme import colors, theme
 layout_conf = {
     'border_focus': colors['focus' if theme != 'dark-grey' else 'inactive'][0],
     # 'border_focus': colors['dark'][0],
-    # 'border_normal': colors['dark'][0],
+    'border_normal': colors['dark'][0],
     'border_width': 1,
     'margin': 6,
 }
@@ -41,5 +41,5 @@ floating_layout = layout.Floating(
         Match(title='branchdialog'),
         Match(title='pinentry'),
     ],
-    border_focus=colors["color4"][0]
+    border_focus=colors['focus' if theme != 'dark-grey' else 'inactive'][0]
 )
