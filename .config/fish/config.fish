@@ -14,6 +14,7 @@ alias ls "exa --group-directories-first"
 alias tree "exa -T"
 alias vim='nvim'
 alias g="copier -c github_token 2>&1 > /dev/null && git"
+alias yr='yarn run --ignore-engines'
 
 # Prompt
 
