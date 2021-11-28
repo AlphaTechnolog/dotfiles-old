@@ -76,7 +76,7 @@ myTerminal :: String
 myTerminal = "alacritty"    -- Sets default terminal
 
 myBrowser :: String
-myBrowser = "google-chrome"  -- Sets google-chrome as browser
+myBrowser = "firefox"  -- Sets firefox as browser
 
 myEmacs :: String
 myEmacs = "emacs"  -- Makes emacs keybindings easier to type

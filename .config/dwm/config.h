@@ -321,7 +321,7 @@ static Key keys[] = {
     { MODKEY, XK_Return, spawn, SHCMD("alacritty") },
 
     // Browser
-    { MODKEY, XK_b, spawn, SHCMD("google-chrome") },
+    { MODKEY, XK_b, spawn, SHCMD("firefox") },
 
     // Audio Toggler
     { MODKEY, XK_p, spawn, SHCMD("~/.local/bin/audio-toggler") },
