@@ -2,6 +2,7 @@ vim.cmd [[ packadd packer.nvim ]]
 
 return require('packer').startup(function()
   use 'mg979/vim-visual-multi'
+  use 'edkolev/tmuxline.vim'
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim'
   use 'AlphaTechnolog/onedarker.nvim'

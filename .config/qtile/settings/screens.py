@@ -1,8 +1,4 @@
-# Gabriel Guerra (Thank you Antonio Sarosi)
-# -- Gabriel Guerra links --
-# http://github.com/AlphaTechnolog/
-# http://github.com/AlphaTechnolog/dotfiles
-# -- Antonio Sarosi links --
+# Antonio Sarosi
 # https://youtube.com/c/antoniosarosi
 # https://github.com/antoniosarosi/dotfiles
 
@@ -16,7 +12,7 @@ import subprocess
 
 
 def status_bar(widgets):
-    return bar.Bar(widgets, 18, opacity=1)
+    return bar.Bar(widgets, 24, opacity=0.90)
 
 
 screens = [Screen(top=status_bar(primary_widgets))]

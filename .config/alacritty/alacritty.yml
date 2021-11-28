@@ -109,8 +109,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Sauce Code Pro Nerd Font
-    # family: CodeNewRoman Nerd Font
+    # family: Sauce Code Pro Nerd Font
+    family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrainsMono Nerd Font
@@ -132,8 +132,8 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Sauce Code Pro Nerd Font
-    # family: CodeNewRoman Nerd Font
+    # family: Sauce Code Pro Nerd Font
+    family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrainsMono Nerd Font
@@ -155,8 +155,8 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Sauce Code Pro Nerd Font
-    # family: CodeNewRoman Nerd Font
+    # family: Sauce Code Pro Nerd Font
+    family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrainsMono Nerd Font
@@ -179,8 +179,8 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Sauce Code Pro Nerd Font
-    # family: CodeNewRoman Nerd Font
+    # family: Sauce Code Pro Nerd Font
+    family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack NF
     # family: JetBrainsMono Nerd Font
@@ -405,32 +405,30 @@ schemes:
       - { index: 17, color: '#d67ad2' }  # Ayu mirage
   ayu-mirage: &ayu-mirage
     primary:
-      background: '#212733'
-      foreground: '#cbccc6'
-      bright_foreground: '#f28779'
+      background: '#202734'
+      foreground: '#CBCCC6'
 
     # Normal colors
     normal:
-      black:   '#212733' #
-      red:     '#F28779' #
-      green:   '#BAE67E' #
-      yellow:  '#fdcc60' #
-      blue:    '#73D0FF' # 
-      magenta: '#F28779' #
-      cyan:    '#95E6CB' #
-      white:   '#D4BFFF' #
+      black: '#191E2A'
+      red: '#FF3333'
+      green: '#BAE67E'
+      yellow: '#FFA759'
+      blue: '#73D0FF'
+      magenta: '#FFD580'
+      cyan: '#95E6CB'
+      white: '#C7C7C7'
 
-    # Brightened
+    # Bright colors
     bright:
-      black:   '#686868'
-      red:     '#f58c7d'
-      green:   '#58c49c'
-      yellow:  '#ffd165'
-      blue:    '#65bddb'
-      magenta: '#f17676'
-      cyan:    '#9debcf'
-      white:   '#ffffff'
-  # Nord
+      black: '#686868'
+      red: '#F27983'
+      green: '#A6CC70'
+      yellow: '#FFCC66'
+      blue: '#5CCFE6'
+      magenta: '#FFEE99'
+      cyan: '#95E6CB'
+      white: '#FFFFFF'  # Nord
   nord: &nord
     primary:
       background: '#2E3440'
@@ -453,35 +451,6 @@ schemes:
       magenta: '#B48EAD'
       cyan:    '#8FBCBB'
       white:   '#ECEFF4'
-  # Ayu mirage
-  ayu-mirage: &ayu-mirage
-    # Default colors
-    primary:
-      background: '#1f2430'
-      foreground: '#cbccc6'
-      bright_foreground: '#f28779'
-
-    # Normal colors
-    normal:
-      black:   '#212733' #
-      red:     '#f08778' #
-      green:   '#53bf97' #
-      yellow:  '#fdcc60' #
-      blue:    '#60b8d6' #
-      magenta: '#ec7171' #
-      cyan:    '#98e6ca' #
-      white:   '#fafafa' #
-
-    # Brightened
-    bright:
-      black:   '#212733' #
-      red:     '#F28779' #
-      green:   '#BAE67E' #
-      yellow:  '#fdcc60' #
-      blue:    '#73D0FF' # 
-      magenta: '#F28779' #
-      cyan:    '#95E6CB' #
-      white:   '#D4BFFF' #
   # Horizon Dark
   horizon-dark: &horizon-dark
     primary:
@@ -966,7 +935,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *onedarker
+colors: *ayu-mirage
 
 # Visual Bell
 #
@@ -998,7 +967,7 @@ colors: *onedarker
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1
+background_opacity: 0.90
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
