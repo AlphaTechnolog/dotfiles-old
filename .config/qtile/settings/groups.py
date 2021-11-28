@@ -25,7 +25,7 @@ from .keys import mod, keys
 # nf-mdi-layers
 
 groups = [Group(i) for i in [
-    "   ", "   ", "   ", "   ", "   ", "   ", "   ", "  ﭮ ", "   ",
+    "   ", "   ", "   ", "   ", "   ", "   ", "   ", "  ﭮ ", "   ",
 ]]
 
 for i, group in enumerate(groups):
