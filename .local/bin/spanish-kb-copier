@@ -12,8 +12,9 @@ _e=É
 _i=Í
 _o=Ó
 _u=Ú
+_N=Ñ
 
-entries="$a $e $i $o $u $_a $_e $_i $_o $_u $n"
+entries="$a $e $i $o $u $_a $_e $_i $_o $_u $_N $n"
 
 choice="$(rofi -sep "|" -dmenu -i -p '' <<< $(echo $entries | tr ' ' '|'))"
 
