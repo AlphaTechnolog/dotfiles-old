@@ -59,6 +59,12 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec alacritty
 
+# spanish-kb-copier
+bindsym $mod+s exec --no-startup-id spanish-kb-copier
+
+# audio-toggler
+bindsym $mod+p exec --no-startup-id audio-toggler
+
 # kill focused window
 bindsym $mod+w kill
 
