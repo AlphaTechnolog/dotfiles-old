@@ -126,6 +126,10 @@ My apps are:
 
 ## Images galery
 
+### I3
+
+![i3](./screenshots/i3.screenshot.png)
+
 ### Qtile
 
 ![qtile](./screenshots/qtile.screenshot.png)
