@@ -165,6 +165,7 @@ install_required_programs() {
     "cbatticon",
     "udiskie",
     "bspwm",
+    "i3",
     "spectrwm",
     "polybar"
   )

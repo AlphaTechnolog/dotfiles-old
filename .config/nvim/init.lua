@@ -22,7 +22,7 @@ require('onedarker_config')
 -- require('ayu_config')
 -- require('solarized_config')
 -- ;;;
-require('lualine_config')
+-- require('lualine_config')
 -- require('evil_lualine')
 -- ;;;
 require('nvim_tree')
