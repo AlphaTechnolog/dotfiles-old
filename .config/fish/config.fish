@@ -9,7 +9,7 @@ set PATH "$PATH:$HOME/.local/bin"
 # Aliases
 
 alias grep "grep --color=auto"
-alias cat "bat --style=plain --paging=never"
+alias cat "bat --style=plain --paging=never --theme=TwoDark"
 alias ls "exa --group-directories-first"
 alias tree "exa -T"
 alias vim='nvim'
