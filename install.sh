@@ -4,7 +4,38 @@
 ############   Menu   ############
 ##################################
 
+update_config() {
+  local config_dir_path="$HOME/.config/dotfiles-installer"
+  local config_path="$config_dir_path/config"
+  if ! test -f $config_path; then
+    touch $config_path
+  fi
+
+  echo $1 > $config_path
+}
+
+source_config() {
+  local config_dir_path="$HOME/.config/dotfiles-installer"
+  local config_path="$config_dir_path/config"
+
+  source $config_path
+}
+
+setup_config() {
+  local config_dir_path="$HOME/.config/dotfiles-installer"
+  if ! test -d $config_dir_path; then
+    mkdir -p $config_dir_path
+  fi
+  local config_path="$config_dir_path/config"
+  if ! test -f $config_path; then
+    update_config "WL_PATH=/usr/bin/wl"
+  fi
+
+  source_config
+}
+
 main_menu() {
+  setup_config
   clear
 
   echo "##########################################"
@@ -475,6 +506,34 @@ make_dwm() {
   main_menu
 }
 
+exec_wl_cmd() {
+  cmd=$@
+  echo "==> $cmd"
+  $cmd
+  return $?
+}
+
+wl_cmd() {
+  while ! test -f $WL_PATH; do
+    printf "WL_PATH config variable is invalid in the config file $HOME/.config/dotfiles-installer/config, it binary does not exists, please give me another"
+    read wl_binary
+    update_config "WL_PATH=$wl_binary"
+    source_config
+  done
+  cmd="$WL_PATH $@"
+  while ! exec_wl_cmd $cmd; do
+    printf "Cannot use a wl command, please specify the path of the wl binary (e.g: /usr/bin/wl): "
+    read wl_binary
+    while ! test -f $wl_binary; do
+      printf "The file does not exists, please specify a valid wl binary path (e.g: /usr/bin/wl): "
+      read wl_binary
+    done
+    cmd="$wl_binary $@"
+    update_config "WL_PATH=$wl_binary"
+    source_config
+  done
+}
+
 setup_wallpaper() {
   clear
   title "Setup the wl wallpaper"
@@ -490,12 +549,10 @@ setup_wallpaper() {
     error "Error at try to open $dotfiles_path: No such file or directory"
   fi
 
-  echo "==> /usr/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers"
-  prevented_process /usr/bin/wl config -k wallpapers_folder -v $dotfiles_path/wallpapers
+  wl_cmd config -k wallpapers_folder -v $dotfiles_path/wallpapers
 
-  if confirm "Do you want to setup a default wl wallpaper 67.jpeg? " 1; then
-    echo "==> /usr/bin/wl set 67.jpeg"
-    prevented_process /usr/bin/wl set 67.jpeg
+  if confirm "Do you want to setup a default wl wallpaper (67.jpeg)? " 1; then
+    wl_cmd set 67.jpeg
   fi
 
   press_enter_to_continue
