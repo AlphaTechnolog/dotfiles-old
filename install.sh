@@ -551,8 +551,8 @@ setup_wallpaper() {
 
   wl_cmd config -k wallpapers_folder -v $dotfiles_path/wallpapers
 
-  if confirm "Do you want to setup a default wl wallpaper (67.jpeg)? " 1; then
-    wl_cmd set 67.jpeg
+  if confirm "Do you want to setup a default wl wallpaper (73.jpeg)? " 1; then
+    wl_cmd set 73.jpeg
   fi
 
   press_enter_to_continue
