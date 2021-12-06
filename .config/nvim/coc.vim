@@ -147,7 +147,5 @@ let g:coc_global_extensions = [
 			\ 'coc-css',
 			\ 'coc-tsserver',
 			\ 'coc-pyright',
-			\ 'coc-json',
-			\ 'coc-tailwindcss',
-			\ '@yaegassy/coc-intelephense'
+			\ 'coc-json'
 		\ ]

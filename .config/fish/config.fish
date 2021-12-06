@@ -36,6 +36,10 @@ source $HOME/.config/fish/spark.fish
 #   echo && echo
 # end
 
+function clear
+  tput reset
+end
+
 # Functions needed for !! and !$
 function __history_previous_command
   switch (commandline -t)

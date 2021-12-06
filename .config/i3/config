@@ -13,7 +13,7 @@ set $mod Mod4
 set $alt Mod1
 
 # gaps
-for_window [class="."] border pixel 1
+for_window [class="."] border pixel 2
 gaps inner 6
 smart_gaps on
 smart_borders on

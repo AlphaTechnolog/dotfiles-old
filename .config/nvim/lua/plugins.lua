@@ -6,6 +6,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim'
   use 'AlphaTechnolog/onedarker.nvim'
+  use 'AlphaTechnolog/oneh4ck.nvim'
   use 'sainnhe/gruvbox-material'
   use 'whatyouhide/vim-gotham'
   use 'sainnhe/edge'
