@@ -1,5 +1,8 @@
 set fish_greeting ""
 
+# exit from an interactive prompt mode
+status -i || exit
+
 # ENV
 
 set yarnpath (yarn global bin 2>/dev/null)
@@ -31,7 +34,9 @@ set -g theme_hostname always
 
 source $HOME/.config/fish/spark.fish
 
-# colorscript random
+# function fish_greeting
+#   colorscript random
+# end
 # 
 # function clear
 #   tput reset
