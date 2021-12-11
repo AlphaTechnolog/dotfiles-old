@@ -1,7 +1,5 @@
-vim.cmd [[ let g:coq_settings = { 'auto_start': v:true } ]]
-
 local lsp = require'lspconfig'
-local coq = require'coq'
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 local on_attach = function(client, bufnr)
   local function buf_set_keymap(...)
@@ -13,9 +11,10 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
 end
 
-lsp.tsserver.setup(coq.lsp_ensure_capabilities({
-  on_attach = on_attach
-}))
+lsp.tsserver.setup({
+  on_attach = on_attach,
+  capabilities = capabilities
+})
 
 lsp.diagnosticls.setup {
   on_attach = on_attach,
@@ -88,9 +87,12 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
-lsp.pylsp.setup(coq.lsp_ensure_capabilities({}))
+lsp.pylsp.setup({
+  capabilities = capabilities
+})
 
-lsp.vls.setup(coq.lsp_ensure_capabilities({
+lsp.vls.setup({
   cmd = {"/usr/bin/vls"},
-  filetypes = { 'vlang', 'vue' }
-}))
+  filetypes = { 'vlang', 'vue' },
+  capabilities = capabilities
+})
