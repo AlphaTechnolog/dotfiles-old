@@ -73,10 +73,10 @@ myModMask :: KeyMask
 myModMask = mod4Mask        -- Sets modkey to super/windows key
 
 myTerminal :: String
-myTerminal = "alacritty"    -- Sets default terminal
+myTerminal = "kitty"    -- Sets default terminal
 
 myBrowser :: String
-myBrowser = "firefox"  -- Sets firefox as browser
+myBrowser = "qutebrowser"  -- Sets qutebrowser as browser
 
 myEmacs :: String
 myEmacs = "emacs"  -- Makes emacs keybindings easier to type
@@ -181,7 +181,7 @@ mygridConfig colorizer = (buildDefaultGSConfig myColorizer)
 myAppGrid = [ ("Audacity", "audacity")
                  , ("Deadbeef", "deadbeef")
                  , ("Emacs", "emacs")
-                 , ("Firefox", "firefox")
+                 , ("Firefox", "qutebrowser")
                  , ("Geany", "geany")
                  , ("Geary", "geary")
                  , ("Gimp", "gimp")
@@ -266,7 +266,7 @@ myManageHook = composeAll
      , className =? "toolbar"         --> doFloat
      , className =? "Yad"             --> doCenterFloat
      , title =? "Oracle VM VirtualBox Manager"  --> doFloat
-     , (className =? "firefox" <&&> resource =? "Dialog") --> doFloat  -- Float Firefox Dialog
+     , (className =? "qutebrowser" <&&> resource =? "Dialog") --> doFloat  -- Float Firefox Dialog
      , isFullscreen -->  doFullFloat
      ]
 

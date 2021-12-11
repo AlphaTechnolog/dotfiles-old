@@ -244,7 +244,7 @@ static const Layout layouts[] = {
 
 // Commands
 static char dmenumon[2] = "0";
-static const char *termcmd[]  = { "alacritty", NULL };
+static const char *termcmd[]  = { "kitty", NULL };
 static const char *dmenucmd[] = {
     "dmenu_run", "-m", dmenumon,
     "-fn", dmenufont,
@@ -327,10 +327,10 @@ static Key keys[] = {
     { MODKEY, XK_s, spawn, SHCMD("~/.local/bin/spanish-kb-copier") },
 
     // Terminal
-    { MODKEY, XK_Return, spawn, SHCMD("alacritty") },
+    { MODKEY, XK_Return, spawn, SHCMD("kitty") },
 
     // Browser
-    { MODKEY, XK_b, spawn, SHCMD("firefox") },
+    { MODKEY, XK_b, spawn, SHCMD("qutebrowser") },
 
     // Audio Toggler
     { MODKEY, XK_p, spawn, SHCMD("~/.local/bin/audio-toggler") },

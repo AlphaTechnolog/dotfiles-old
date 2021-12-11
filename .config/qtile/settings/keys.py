@@ -56,10 +56,10 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "s", lazy.spawn(local_bin("spanish-kb-copier"))),
 
     # Browser
-    ([mod], "b", lazy.spawn('firefox')),
+    ([mod], "b", lazy.spawn('qutebrowser')),
 
     # Terminal
-    ([mod], "Return", lazy.spawn("alacritty")),
+    ([mod], "Return", lazy.spawn("kitty")),
 
     # ------------ Hardware Configs ------------
 
