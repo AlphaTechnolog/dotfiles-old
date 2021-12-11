@@ -1,7 +1,5 @@
+# greeting
 set fish_greeting ""
-
-# exit from an interactive prompt mode
-status -i || exit
 
 # ENV
 
@@ -71,6 +69,7 @@ function __history_previous_command_arguments
     commandline -i '$'
   end
 end
+
 # The bindings for !! and !$
 if [ $fish_key_bindings = fish_vi_key_bindings ];
   bind -Minsert ! __history_previous_command
