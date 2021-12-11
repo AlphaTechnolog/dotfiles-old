@@ -377,7 +377,7 @@ create_home_symlinks() {
     error "Error at try to read $dotfiles_path: No such file or directory"
   fi
 
-  to_paste=".bashrc .xmonad .gtkrc-2.0 .Xresources .tmux.conf"
+  to_paste=".bashrc .xmonad .gtkrc-2.0 .Xresources .tmux.conf .tmux.powerline.conf .tmux.powerline"
 
   for to_paste_item in ${to_paste[@]}; do
     if [[ -f $HOME/$to_paste_item ]]; then
