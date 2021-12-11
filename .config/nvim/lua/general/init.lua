@@ -1,0 +1,6 @@
+require'general.numbers'
+require'general.cursor'
+require'general.clipboard'
+require'general.mouse'
+require'general.tabsize'
+require'general.showmode'

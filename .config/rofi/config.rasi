@@ -3,7 +3,7 @@ configuration {
 	width: 50;
 	lines: 15;
 	columns: 1;
-	font: "CaskaydiaCove Nerd Font 14";
+	font: "Hack NF 14.5";
 	bw: 1;
 	location: 0;
 	padding: 5;
@@ -127,4 +127,4 @@ configuration {
 	me-accept-entry: "MouseDPrimary";
 	me-accept-custom: "Control+MouseDPrimary";
 }
-@theme "onedark"
+@theme "solarized"

@@ -34,8 +34,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 0
-    y: 0
+    x: 1
+    y: 1
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
@@ -112,8 +112,8 @@ font:
     # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    # family: Hack NF
-    family: JetBrainsMono Nerd Font
+    family: Hack NF
+    # family: JetBrainsMono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: VictorMono NF
     # family: Agave Nerd Font
@@ -135,8 +135,8 @@ font:
     # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    # family: Hack NF
-    family: JetBrainsMono Nerd Font
+    family: Hack NF
+    # family: JetBrainsMono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: VictorMono NF
     # family: Agave Nerd Font
@@ -158,8 +158,8 @@ font:
     # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    # family: Hack NF
-    family: JetBrainsMono Nerd Font
+    family: Hack NF
+    # family: JetBrainsMono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: VictorMono NF
     # family: Agave Nerd Font
@@ -182,8 +182,8 @@ font:
     # family: Sauce Code Pro Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    # family: Hack NF
-    family: JetBrainsMono Nerd Font
+    family: Hack NF
+    # family: JetBrainsMono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: VictorMono NF
     # family: Agave Nerd Font
@@ -198,13 +198,13 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 12
+  size: 14.5
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: -2
+    y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -964,7 +964,7 @@ schemes:
       white:   '#fdf6e3' # base3
 
 # Choose ONE color scheme from those available in the above list.
-colors: *oneh4ck
+colors: *solarized-dark
 
 # Visual Bell
 #
@@ -1254,8 +1254,3 @@ key_bindings:
   - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
   - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
   - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
-
-cursor:
-  thickness: 0.2
-  style:
-    shape: Beam

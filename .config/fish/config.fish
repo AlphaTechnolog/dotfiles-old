@@ -8,9 +8,11 @@ set PATH "$PATH:$HOME/.local/bin"
 
 # Aliases
 
+alias t='tmux'
 alias grep "grep --color=auto"
 alias cat "bat --style=plain --paging=never --theme=TwoDark"
-alias ls "exa --group-directories-first"
+alias ls "exa -g -l --icons"
+alias lsa 'll -la'
 alias tree "exa -T"
 alias vim='nvim'
 alias g="copier -c github_token 2>&1 > /dev/null && git"
@@ -18,7 +20,12 @@ alias yr='yarn run --ignore-engines'
 
 # Prompt
 
-starship init fish | source
+set -g theme_color_scheme terminal-dark
+set -g fish_prompt_pwd_dir_length 1
+set -g theme_display_user yes
+set -g theme_hide_hostname no
+set -g theme_hostname always
+# starship init fish | source
 
 # Colorscripts and some stuff
 

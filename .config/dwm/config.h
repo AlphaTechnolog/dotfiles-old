@@ -149,11 +149,14 @@ static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
-    { oneh4ck.inactive, oneh4ck.bg, window_border },
-    { oneh4ck.active, oneh4ck.focus,  oneh4ck.focus  },
+    { solarized_dark.inactive, solarized_dark.bg, window_border },
+    { solarized_dark.active, solarized_dark.focus, solarized_dark.focus },
 
     { onedarker.inactive, onedarker.bg, window_border },
     { onedarker.active, onedarker.focus,  onedarker.focus  },
+
+    { oneh4ck.inactive, oneh4ck.bg, window_border },
+    { oneh4ck.active, oneh4ck.focus,  oneh4ck.focus  },
 
     { onedark.inactive, onedark.bg, window_border },
     { onedark.active, onedark.focus,  onedark.focus  },
@@ -175,9 +178,6 @@ static const char *colors[][3] = {
 
     { tokyonight_storm.inactive, tokyonight_storm.bg, window_border },
     { tokyonight_storm.active, tokyonight_storm.focus, tokyonight_storm.focus },
-
-    { solarized_dark.inactive, solarized_dark.bg, window_border },
-    { solarized_dark.active, solarized_dark.focus, solarized_dark.focus },
 
     { moonlight.inactive, moonlight.bg, window_border },
     { moonlight.active, moonlight.focus, moonlight.focus },
