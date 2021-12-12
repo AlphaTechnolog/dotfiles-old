@@ -9,6 +9,7 @@ local on_attach = function(client, bufnr)
 
   buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
   buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
+  buf_set_keymap('n', 'gR', '<Cmd>lua vim.lsp.buf.rename()<cr>', opts)
 end
 
 lsp.tsserver.setup({
@@ -88,7 +89,8 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 )
 
 lsp.pylsp.setup({
-  capabilities = capabilities
+  capabilities = capabilities,
+  on_attach = on_attach
 })
 
 lsp.vls.setup({
