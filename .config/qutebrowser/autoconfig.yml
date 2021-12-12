@@ -6,7 +6,5 @@
 
 config_version: 2
 settings:
-  statusbar.show:
-    global: never
-  tabs.show:
-    global: never
+  content.user_stylesheets:
+    global: /home/alphatechnolog/.config/qutebrowser/./qutebrowser_solarized_dark/solarized-dark.css
