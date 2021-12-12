@@ -7,3 +7,4 @@ fish_variables
 .local/bin/monitor-config
 **/**/*.o
 .config/dwm/dwm
+/.config/qutebrowser/autoconfig.yml
