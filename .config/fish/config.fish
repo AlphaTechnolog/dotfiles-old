@@ -1,4 +1,8 @@
+# exit if not in interactive mode
+status -i || exit
+
 # greeting
+
 set fish_greeting ""
 
 # ENV
@@ -78,3 +82,10 @@ else
   bind ! __history_previous_command
   bind '$' __history_previous_command_arguments
 end
+
+# Color
+
+set fish_color_normal brcyan
+set fish_color_command brblue
+set fish_color_param brblue
+

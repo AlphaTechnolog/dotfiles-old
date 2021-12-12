@@ -394,4 +394,4 @@ config.bind('xx', 'config-cycle statusbar.show always never;; config-cycle tabs.
 
 # Bindings for cycling through CSS stylesheets from Solarized Everything CSS:
 # https://github.com/alphapapa/solarized-everything-css
-config.bind(',sd', 'config-cycle content.user_stylesheets ./qutebrowser-solarized-dark/solarized-dark.css ""')
+config.bind(',sd', 'config-cycle content.user_stylesheets /home/alphatechnolog/.config/qutebrowser/./qutebrowser_solarized_dark/solarized-dark.css ""')

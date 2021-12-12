@@ -6,6 +6,9 @@
 #
 # My bash config. Not much to see here; just some pretty standard stuff.
 
+# exit if in interactive mode
+[ -z "$PS1" ] && exit
+
 ### EXPORT
 export TERM="xterm-256color"                      # getting proper colors
 export HISTCONTROL=ignoredups:erasedups           # no duplicate entries
