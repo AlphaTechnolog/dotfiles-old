@@ -1,5 +1,7 @@
 #!/bin/bash
 
+exit
+
 xset led
 dwmblocks &
 picom -b

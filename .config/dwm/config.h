@@ -221,8 +221,8 @@ static const int resizehints = 1; // 1 means respect size hints in tiled resizal
 #include "layouts.c"
 static const Layout layouts[] = {
     // symbol   arrange function
-    { "[]",     tile }, // first entry is default
-    { "[M]",    monocle },
+    { "[M]",    monocle }, // first entry is default
+    { "[]",     tile },
     { "[F]",    NULL }, // no layout function means floating behavior 
     { "[C]",    tcl },
     { "[G]",    grid },

@@ -43,9 +43,11 @@ exec --no-startup-id xset led # Turn on the keyboard leds
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
+# tray icons
 exec --no-startup-id nm-applet
+exec --no-startup-id volumeicon
+exec --no-startup-id cbatticon -u 5
+exec --no-startup-id udiskie -t
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
