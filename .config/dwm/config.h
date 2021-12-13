@@ -21,8 +21,8 @@ static const int topbar = 1;
 
 // ---------------------------------- Fonts ------------------------------------
 
-static const char *fonts[] = { "UbuntuMono Nerd Font:size=11:weight=bold:antialias=true:autohint:true" };
-static const char dmenufont[] = "UbuntuMono Nerd Font:size=12:antialias=true:autohint=true";
+static const char *fonts[] = { "Hack Nerd Font:size=11.5:weight=bold:antialias=true:autohint:true" };
+static const char dmenufont[] = "Hack Nerd Font:size=12.5:antialias=true:autohint=true";
 
 // ---------------------------------- Colors -----------------------------------
 
