@@ -93,7 +93,9 @@ myNormColor   = "#282c34"   -- Border color of normal windows
 
 myFocusColor :: String
 -- Onedark
-myFocusColor  = "#46d9ff"   -- Border color of focused windows
+-- myFocusColor  = "#46d9ff"   -- Border color of focused windows
+-- Solarized Dark
+myFocusColor = "#268bd2"
 -- Nightfox
 -- myFocusColor  = "#719cd6"   -- Border color of focused windows
 -- Moonlight
@@ -129,7 +131,9 @@ myStartupHook = do
     spawnOnce "$HOME/.local/bin/monitor-config"
     spawnOnce "udiskie -t &"
     -- Onedark
-    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1e222a  --height 22 &"
+    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1e222a  --height 22 &"
+    -- Solarized Dark
+    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x002b36  --height 22 &"
     -- Nightfox
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x192330  --height 22 &"
     -- Calvera Dark
@@ -416,7 +420,9 @@ main = do
               { ppOutput = \x -> hPutStrLn xmproc0 x                          -- xmobar on monitor 1
                               >> hPutStrLn xmproc1 x                          -- xmobar on monitor 2
               -- Onedark
-              , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
+              -- , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
+              -- Solarized Dark
+              , ppCurrent = xmobarColor "#2aa198" "" . wrap "<box type=Bottom width=2 mb=2 color=#2aa198>" "</box>"         -- Current workspace
               -- Nightfox
               -- , ppCurrent = xmobarColor "#719cd6" "" . wrap "<box type=Bottom width=2 mb=2 color=#719cd6>" "</box>"         -- Current workspace
               -- Moonlight
@@ -442,7 +448,9 @@ main = do
               -- Gruvbox
               -- , ppCurrent = xmobarColor "#b16286" "" . wrap "<box type=Bottom width=2 mb=2 color=#b16286>" "</box>"
               -- Onedark
-              , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
+              -- , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
+              -- Solarized Dark
+              , ppVisible = xmobarColor "#2aa198" "" . clickable              -- Visible but not current workspace
               -- Nightfox
               -- , ppVisible = xmobarColor "#719cd6" "" . clickable              -- Visible but not current workspace
               -- Moonlight
@@ -468,7 +476,9 @@ main = do
               -- Gruvbox
               -- , ppVisible = xmobarColor "#b16286" "" . clickable              -- Visible but not current workspace
               -- Onedark
-              , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
+              -- , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
+              -- Solarized Dark
+              , ppHidden = xmobarColor "#d33682" "" . wrap "<box type=Top width=2 mt=2 color=#d33682>" "</box>" . clickable -- Hidden workspaces
               -- Nightfox
               -- , ppHidden = xmobarColor "#9d79d6" "" . wrap "<box type=Top width=2 mt=2 color=#9d79d6>" "</box>" . clickable -- Hidden workspaces
               -- Moonlight
@@ -494,7 +504,9 @@ main = do
               -- Gruvbox
               -- , ppHidden = xmobarColor "#458588" "" . wrap "<box type=Top width=2 mt=2 color=#458588>" "</box>" . clickable -- Hidden workspaces
               -- Onedark
-              , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
+              -- , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
+              -- Solarized Dark
+              , ppHiddenNoWindows = xmobarColor "#268bd2" ""  . clickable     -- Hidden workspaces (no windows)
               -- Nightfox
               -- , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
               -- Moonlight
@@ -520,7 +532,9 @@ main = do
               -- Gruvbox
               -- , ppHiddenNoWindows = xmobarColor "#458588" ""  . clickable     -- Hidden workspaces (no windows)
               -- Onedark
-              , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
+              -- , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
+              -- Solarized Dark
+              , ppTitle = xmobarColor "#859900" "" . shorten 60               -- Title of active window
               -- Nightfox
               -- , ppTitle = xmobarColor "#719cd6" "" . shorten 60               -- Title of active window
               -- Moonlight
