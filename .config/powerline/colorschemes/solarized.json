@@ -29,12 +29,12 @@
 		"hostname":                   { "fg": "solarized:base02", "bg": "solarized:red", "attrs": [] },
 		"environment":                { "fg": "solarized:base3", "bg": "solarized:green", "attrs": [] },
 		"attached_clients":           { "fg": "solarized:base3", "bg": "solarized:green", "attrs": [] },
-		"date":                       { "fg": "solarized:base02", "bg": "solarized:blue", "attrs": [] },
+		"date":                       { "fg": "solarized:base02", "bg": "solarized:magenta", "attrs": [] },
 		"time":                       { "fg": "solarized:base02", "bg": "solarized:green", "attrs": [] },
 		"time:divider":               { "fg": "solarized:base1", "bg": "solarized:base02", "attrs": [] },
 		"system_load":                { "fg": "solarized:base02", "bg": "solarized:cyan", "attrs": [] },
 		"weather_temp_gradient":      { "fg": "blue_red", "bg": "solarized:base03", "attrs": [] },
 		"weather":                    { "fg": "solarized:base1", "bg": "solarized:base03", "attrs": [] },
-		"uptime":                     { "fg": "solarized:base02", "bg": "solarized:magenta", "attrs": [] }
+		"uptime":                     { "fg": "solarized:base02", "bg": "solarized:blue", "attrs": ["bold"] }
 	}
 }
