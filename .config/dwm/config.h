@@ -21,8 +21,8 @@ static const int topbar = 1;
 
 // ---------------------------------- Fonts ------------------------------------
 
-static const char *fonts[] = { "Hack Nerd Font:size=11.5:weight=bold:antialias=true:autohint:true" };
-static const char dmenufont[] = "Hack Nerd Font:size=12.5:antialias=true:autohint=true";
+static const char *fonts[] = { "SauceCodePro Nerd Font:size=9:weight=bold:antialias=true:autohint:true" };
+static const char dmenufont[] = "SauceCodePro Nerd Font:size=10:antialias=true:autohint=true";
 
 // ---------------------------------- Colors -----------------------------------
 
