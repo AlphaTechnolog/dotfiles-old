@@ -74,8 +74,8 @@ bindsym $mod+w kill
 # rofi
 bindsym $mod+Shift+Return exec --no-startup-id rofi -show drun
 
-# qutebrowser
-bindsym $mod+b exec --no-startup-id qutebrowser
+# firefox
+bindsym $mod+b exec --no-startup-id firefox
 
 # change focus
 bindsym $mod+h focus left
