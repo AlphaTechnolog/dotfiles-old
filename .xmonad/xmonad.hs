@@ -76,7 +76,7 @@ myTerminal :: String
 myTerminal = "kitty"    -- Sets default terminal
 
 myBrowser :: String
-myBrowser = "qutebrowser"  -- Sets qutebrowser as browser
+myBrowser = "firefox"  -- Sets firefox as browser
 
 myEmacs :: String
 myEmacs = "emacs"  -- Makes emacs keybindings easier to type
@@ -185,7 +185,7 @@ mygridConfig colorizer = (buildDefaultGSConfig myColorizer)
 myAppGrid = [ ("Audacity", "audacity")
                  , ("Deadbeef", "deadbeef")
                  , ("Emacs", "emacs")
-                 , ("Firefox", "qutebrowser")
+                 , ("Firefox", "firefox")
                  , ("Geany", "geany")
                  , ("Geary", "geary")
                  , ("Gimp", "gimp")
@@ -270,7 +270,7 @@ myManageHook = composeAll
      , className =? "toolbar"         --> doFloat
      , className =? "Yad"             --> doCenterFloat
      , title =? "Oracle VM VirtualBox Manager"  --> doFloat
-     , (className =? "qutebrowser" <&&> resource =? "Dialog") --> doFloat  -- Float Firefox Dialog
+     , (className =? "firefox" <&&> resource =? "Dialog") --> doFloat  -- Float Firefox Dialog
      , isFullscreen -->  doFullFloat
      ]
 
@@ -380,7 +380,7 @@ myKeys =
         , ("<XF86AudioMute>", spawn "amixer set Master toggle")
         , ("<XF86AudioLowerVolume>", spawn "amixer set Master 5%- unmute")
         , ("<XF86AudioRaiseVolume>", spawn "amixer set Master 5%+ unmute")
-        , ("<XF86HomePage>", spawn "qutebrowser https://www.youtube.com/c/DistroTube")
+        , ("<XF86HomePage>", spawn "firefox https://www.youtube.com/c/DistroTube")
         , ("<XF86Search>", spawn "dm-websearch")
         , ("<XF86Mail>", runOrRaise "thunderbird" (resource =? "thunderbird"))
         , ("<XF86Calculator>", runOrRaise "qalculate-gtk" (resource =? "qalculate-gtk"))
