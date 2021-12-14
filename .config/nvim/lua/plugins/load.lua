@@ -26,4 +26,5 @@ return require('packer').startup(function()
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
   use 'onsails/lspkind-nvim'
+  use 'windwp/nvim-ts-autotag'
 end)
