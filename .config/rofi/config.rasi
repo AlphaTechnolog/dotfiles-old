@@ -3,7 +3,7 @@ configuration {
 	width: 50;
 	lines: 15;
 	columns: 1;
-	font: "Hack NF 14.5";
+	font: "Hack NF 12";
 	bw: 1;
 	location: 0;
 	padding: 5;
