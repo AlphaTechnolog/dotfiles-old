@@ -27,4 +27,5 @@ return require('packer').startup(function()
   use 'saadparwaiz1/cmp_luasnip'
   use 'onsails/lspkind-nvim'
   use 'windwp/nvim-ts-autotag'
+  use 'marko-cerovac/material.nvim'
 end)

@@ -1,1 +1,2 @@
-require'colorschemes.neosolarized'
+require'colorschemes.material'
+-- require'colorschemes.neosolarized'

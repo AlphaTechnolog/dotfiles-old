@@ -83,9 +83,8 @@ else
   bind '$' __history_previous_command_arguments
 end
 
-# Color
-
-set fish_color_normal brcyan
-set fish_color_command brblue
+# color
+set fish_color_normal brgreen
+set fish_color_command brgreen
 set fish_color_param brblue
-
+set fish_color_error brred

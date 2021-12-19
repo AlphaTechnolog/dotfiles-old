@@ -21,8 +21,8 @@ static const int topbar = 1;
 
 // ---------------------------------- Fonts ------------------------------------
 
-static const char *fonts[] = { "SauceCodePro Nerd Font:size=9:weight=bold:antialias=true:autohint:true" };
-static const char dmenufont[] = "SauceCodePro Nerd Font:size=10:antialias=true:autohint=true";
+static const char *fonts[] = { "UbuntuMono Nerd Font:size=11:weight=bold:antialias=true:autohint:true" };
+static const char dmenufont[] = "UbuntuMono Nerd Font:size=12:antialias=true:autohint=true";
 
 // ---------------------------------- Colors -----------------------------------
 
@@ -34,10 +34,10 @@ struct Theme {
 };
 
 static const struct Theme material_ocean = {
-    .inactive = "#4c566a",
+.inactive = "#4c566a",
     .active = "#ffffff",
     .bg = "#0f101a",
-    .focus = "#d3a7ee",
+    .focus = "#a151d3"
 };
 
 static const struct Theme nord = {
@@ -149,6 +149,9 @@ static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { material_ocean.inactive, material_ocean.bg, window_border },
+    { material_ocean.active, material_ocean.focus, material_ocean.focus },
+
     { solarized_dark.inactive, solarized_dark.bg, window_border },
     { solarized_dark.active, solarized_dark.focus, solarized_dark.focus },
 
@@ -181,9 +184,6 @@ static const char *colors[][3] = {
 
     { moonlight.inactive, moonlight.bg, window_border },
     { moonlight.active, moonlight.focus, moonlight.focus },
-
-    { material_ocean.inactive, material_ocean.bg, window_border },
-    { material_ocean.active, material_ocean.focus, material_ocean.focus },
 
     { nightfox.inactive, nightfox.bg, window_border },
     { nightfox.active, nightfox.focus, nightfox.focus },

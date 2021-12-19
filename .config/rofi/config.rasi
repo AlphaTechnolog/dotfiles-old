@@ -3,7 +3,7 @@ configuration {
 	width: 50;
 	lines: 15;
 	columns: 1;
-	font: "Hack NF 12";
+	font: "UbuntuMono Nerd Font 16";
 	bw: 1;
 	location: 0;
 	padding: 5;
@@ -127,4 +127,4 @@ configuration {
 	me-accept-entry: "MouseDPrimary";
 	me-accept-custom: "Control+MouseDPrimary";
 }
-@theme "solarized"
+@theme "onedark"
