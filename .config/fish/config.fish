@@ -25,12 +25,12 @@ alias yr='yarn run --ignore-engines'
 
 # Prompt
 
-set -g theme_color_scheme terminal-dark
-set -g fish_prompt_pwd_dir_length 1
-set -g theme_display_user yes
-set -g theme_hide_hostname no
-set -g theme_hostname always
-# starship init fish | source
+# set -g theme_color_scheme terminal-dark
+# set -g fish_prompt_pwd_dir_length 1
+# set -g theme_display_user yes
+# set -g theme_hide_hostname no
+# set -g theme_hostname always
+starship init fish | source
 
 # Colorscripts and some stuff
 
@@ -84,7 +84,7 @@ else
 end
 
 # color
-set fish_color_normal brgreen
-set fish_color_command brgreen
+set fish_color_normal brwhite
+set fish_color_command brwhite
 set fish_color_param brblue
 set fish_color_error brred

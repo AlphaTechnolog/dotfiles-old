@@ -34,7 +34,7 @@ struct Theme {
 };
 
 static const struct Theme material_ocean = {
-.inactive = "#4c566a",
+    .inactive = "#4c566a",
     .active = "#ffffff",
     .bg = "#0f101a",
     .focus = "#a151d3"
@@ -200,7 +200,7 @@ static const char *colors[][3] = {
 
 // -------------------------------- Workspaces ---------------------------------
 
-static const char *tags[] = { " ", " ", " ", " ", " ", " ", " ", "ﭮ ", " " };
+static const char *tags[] = { " ", " ", " ", " ", " ", " ", " ", "ﭮ ", " " };
 
 static const Rule rules[] = {
     /* xprop(1):
