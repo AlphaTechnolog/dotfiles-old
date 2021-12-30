@@ -149,3 +149,7 @@ My apps are:
 ### Spectrwm
 
 ![spectrwm](./screenshots/spectrwm.screenshot.png)
+
+## Enjoy
+
+Thank you for read me, if you like my work, give me a star :)

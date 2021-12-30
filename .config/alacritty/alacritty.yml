@@ -1,45 +1,48 @@
 background_opacity: 1.0
 colors:
   bright:
-    black: '0x5c6370'
-    blue: '0x61afef'
-    cyan: '0x56b6c2'
-    green: '0x98c379'
-    magenta: '0xc678dd'
-    red: '0xe06c75'
-    white: '0xe6efff'
-    yellow: '0xd19a66'
-  dim:
-    black: '0x1e2127'
-    blue: '0x61afef'
-    cyan: '0x56b6c2'
-    green: '0x98c379'
-    magenta: '0xc678dd'
-    red: '0xe06c75'
-    white: '0x828791'
-    yellow: '0xd19a66'
+    black: '#6E6C7E'
+    blue: '#A4B9EF'
+    cyan: '#E5B4E2'
+    green: '#B1E3AD'
+    magenta: '#C6AAE8'
+    red: '#E38C8F'
+    white: '#DADAE8'
+    yellow: '#EBDDAA'
+  cursor:
+    cursor: '#DADAE8'
+    text: '#1E1E28'
+  indexed_colors:
+  - color: '#F2CECF'
+    index: 16
+  - color: '#3E4058'
+    index: 17
   normal:
-    black: '0x1e2127'
-    blue: '0x61afef'
-    cyan: '0x56b6c2'
-    green: '0x98c379'
-    magenta: '0xc678dd'
-    red: '0xe06c75'
-    white: '0x828791'
-    yellow: '0xd19a66'
+    black: '#6E6C7E'
+    blue: '#A4B9EF'
+    cyan: '#E5B4E2'
+    green: '#B1E3AD'
+    magenta: '#C6AAE8'
+    red: '#E38C8F'
+    white: '#DADAE8'
+    yellow: '#EBDDAA'
   primary:
-    background: '0x282c34'
-    bright_foreground: '0xe6efff'
-    foreground: '0xabb2bf'
+    background: '#1E1E28'
+    foreground: '#DADAE8'
+cursor:
+  style:
+    shape: Beam
+env:
+  TERM: xterm-256color
 font:
   bold:
-    family: Caskaydia Cove Nerd Font
+    family: JetBrains Mono ExtraBold Nerd Font
   italic:
-    family: Caskaydia Cove Nerd Font
+    family: JetBrains Mono Medium Nerd Font
   normal:
-    family: Caskaydia Cove Nerd Font
-  size: 13.2
+    family: JetBrains Mono Medium Nerd Font
+  size: 13.5
 window:
   padding:
-    x: 0
-    y: 0
+    x: 22
+    y: 22
