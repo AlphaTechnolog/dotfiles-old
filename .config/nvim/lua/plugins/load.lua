@@ -3,7 +3,15 @@
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
-return require('packer').startup(function()
+local packer = require('packer')
+
+packer.init({
+  git = {
+    clone_timeout = 10000
+  }
+})
+
+return packer.startup(function()
   use 'wbthomason/packer.nvim'
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
@@ -28,4 +36,6 @@ return require('packer').startup(function()
   use 'onsails/lspkind-nvim'
   use 'windwp/nvim-ts-autotag'
   use 'marko-cerovac/material.nvim'
+  use 'navarasu/onedark.nvim'
+  use {'catppuccin/nvim', as = 'catppuccin'}
 end)

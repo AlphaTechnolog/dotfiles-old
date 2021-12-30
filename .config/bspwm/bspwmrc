@@ -28,7 +28,10 @@ bspc config focus_follows_pointer true
 
 # Onedark
 # bspc config normal_border_color "#282c34"
-# bspc config focused_border_color "#528bff"
+# bspc config focused_border_color "#61AFEF"
+# Catppuccin
+# bspc config normal_border_color "#282c34"
+# bspc config focused_border_color "#E5B4E2"
 # Dracula
 # bspc config normal_border_color "#282a36"
 # bspc config focused_border_color "#bd93f9"

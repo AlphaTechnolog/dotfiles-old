@@ -23,6 +23,15 @@ alias vim='nvim'
 alias g="copier -c github_token 2>&1 > /dev/null && git"
 alias yr='yarn run --ignore-engines'
 
+function v
+  set arg "$argv"
+  if test (count $argv) = 0
+    set arg '.'
+  end
+
+  vim "$arg"
+end
+
 # Prompt
 
 # set -g theme_color_scheme terminal-dark
@@ -36,10 +45,19 @@ starship init fish | source
 
 source $HOME/.config/fish/spark.fish
 
+# -- colorscript
+
 # function fish_greeting
 #   colorscript random
 # end
-# 
+
+# -- rxfetch
+# function fish_greeting
+#   rxfetch
+# end
+ 
+# -- sparklines
+
 # function clear
 #   tput reset
 #   echo && echo
@@ -85,6 +103,12 @@ end
 
 # color
 set fish_color_normal brwhite
-set fish_color_command brwhite
-set fish_color_param brblue
+set fish_color_command brmagenta
+set fish_color_param brpurple
 set fish_color_error brred
+
+# vi-mode
+set fish_cursor_default block
+set fish_cursor_insert line
+set fish_cursor_replace_one underscore
+set fish_cursor_visual block

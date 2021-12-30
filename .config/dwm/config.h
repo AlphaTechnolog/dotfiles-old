@@ -3,7 +3,7 @@
 // border pixel of windows
 static const unsigned int borderpx  = 1;
 // gaps between windows 
-static const unsigned int gappx = 12;
+static const unsigned int gappx = 6;
 // snap pixel 
 static const unsigned int snap = 32;
 // 0: sloppy systray follows selected monitor, >0: pin systray to monitor X 
@@ -61,11 +61,18 @@ static const struct Theme onedarker = {
     .focus = "#5BA3DE",
 };
 
+static const struct Theme catppuccin = {
+    .inactive = "#5c6370",
+    .active = "#e6efff",
+    .bg = "#1E1E29",
+    .focus = "#E5B4E2",
+};
+
 static const struct Theme onedark = {
     .inactive = "#5c6370",
     .active = "#e6efff",
-    .bg = "#1e222a",
-    .focus = "#528bff",
+    .bg = "#282c34",
+    .focus = "#61AFEF",
 };
 
 static const struct Theme dracula = {
@@ -149,6 +156,12 @@ static const char window_border[] = "#000000";
 
 static const char *colors[][3] = {
     // fg                 bg             border   
+    { catppuccin.inactive, catppuccin.bg, window_border },
+    { catppuccin.active, catppuccin.focus,  catppuccin.focus  },
+
+    { onedark.inactive, onedark.bg, window_border },
+    { onedark.active, onedark.focus,  onedark.focus  },
+
     { material_ocean.inactive, material_ocean.bg, window_border },
     { material_ocean.active, material_ocean.focus, material_ocean.focus },
 
@@ -160,9 +173,6 @@ static const char *colors[][3] = {
 
     { oneh4ck.inactive, oneh4ck.bg, window_border },
     { oneh4ck.active, oneh4ck.focus,  oneh4ck.focus  },
-
-    { onedark.inactive, onedark.bg, window_border },
-    { onedark.active, onedark.focus,  onedark.focus  },
 
     { tokyonight.inactive, tokyonight.bg, window_border },
     { tokyonight.active, tokyonight.focus, tokyonight.focus },
@@ -244,7 +254,7 @@ static const Layout layouts[] = {
 
 // Commands
 static char dmenumon[2] = "0";
-static const char *termcmd[]  = { "kitty", NULL };
+static const char *termcmd[]  = { "onedark", NULL };
 static const char *dmenucmd[] = {
     "dmenu_run", "-m", dmenumon,
     "-fn", dmenufont,
@@ -327,7 +337,7 @@ static Key keys[] = {
     { MODKEY, XK_s, spawn, SHCMD("~/.local/bin/spanish-kb-copier") },
 
     // Terminal
-    { MODKEY, XK_Return, spawn, SHCMD("kitty") },
+    { MODKEY, XK_Return, spawn, SHCMD("onedark") },
 
     // Browser
     { MODKEY, XK_b, spawn, SHCMD("firefox") },

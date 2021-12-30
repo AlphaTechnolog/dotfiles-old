@@ -1,0 +1,16 @@
+#!/bin/bash
+
+error() {
+    echo $1
+    exit 1
+}
+
+if [[ $1 == "" ]]; then
+    COMMAND='apt list --upgradable 2>/dev/null | grep -v "^List.*" | cut -d "/" -f 1' 
+elif [[ $1 == 'count' ]]; then
+    COMMAND='apt list --upgradable 2>/dev/null | grep -v "^List.*" | cut -d "/" -f 1 | wc -l' 
+else
+    error "Invalid operation, use nothing to no count and use count as arg to count the updates"
+fi
+
+echo "$COMMAND" | bash

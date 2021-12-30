@@ -1,35 +1,45 @@
 background_opacity: 1.0
 colors:
   bright:
-    black: '#282a40'
-    blue: '#a3c5ff'
-    cyan: '#98fffd'
-    green: '#e0ffad'
-    magenta: '#d6afed'
-    red: '#eb7f84'
-    white: '#d1e5ed'
-    yellow: '#ffee7e'
+    black: '0x5c6370'
+    blue: '0x61afef'
+    cyan: '0x56b6c2'
+    green: '0x98c379'
+    magenta: '0xc678dd'
+    red: '0xe06c75'
+    white: '0xe6efff'
+    yellow: '0xd19a66'
+  dim:
+    black: '0x1e2127'
+    blue: '0x61afef'
+    cyan: '0x56b6c2'
+    green: '0x98c379'
+    magenta: '0xc678dd'
+    red: '0xe06c75'
+    white: '0x828791'
+    yellow: '0xd19a66'
   normal:
-    black: '#181a29'
-    blue: '#93bbff'
-    cyan: '#98e4ff'
-    green: '#cdea9f'
-    magenta: '#d3a7ee'
-    red: '#F07178'
-    white: '#bfd5de'
-    yellow: '#ffd47e'
+    black: '0x1e2127'
+    blue: '0x61afef'
+    cyan: '0x56b6c2'
+    green: '0x98c379'
+    magenta: '0xc678dd'
+    red: '0xe06c75'
+    white: '0x828791'
+    yellow: '0xd19a66'
   primary:
-    background: '#0f101a'
-    foreground: '#c5c9de'
+    background: '0x282c34'
+    bright_foreground: '0xe6efff'
+    foreground: '0xabb2bf'
 font:
   bold:
-    family: UbuntuMono Nerd Font
+    family: Caskaydia Cove Nerd Font
   italic:
-    family: UbuntuMono Nerd Font
+    family: Caskaydia Cove Nerd Font
   normal:
-    family: UbuntuMono Nerd Font
-  size: 15.0
+    family: Caskaydia Cove Nerd Font
+  size: 13.2
 window:
   padding:
-    x: 4
-    y: 4
+    x: 0
+    y: 0

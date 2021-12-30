@@ -14,7 +14,7 @@ layout_conf = {
     # 'border_focus': colors['dark'][0],
     'border_normal': colors['dark'][0],
     'border_width': 1,
-    'margin': 6,
+    'margin': 16,
 }
 
 layouts = [
