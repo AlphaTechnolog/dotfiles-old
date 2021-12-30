@@ -112,3 +112,15 @@ set fish_cursor_default block
 set fish_cursor_insert line
 set fish_cursor_replace_one underscore
 set fish_cursor_visual block
+
+# package.json scripts
+function packageScripts
+  if ! test -f ./package.json
+    echo "package.json does not exists in this directory ($PWD)"
+  else
+    /bin/cat package.json | json-parser - '.scripts' \
+      | sed 's/{//g' \
+      | sed 's/}//g' \
+      | sed "s/'//g"
+  end
+end
