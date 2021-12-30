@@ -44,5 +44,5 @@ font:
   size: 13.5
 window:
   padding:
-    x: 22
-    y: 22
+    x: 25
+    y: 25

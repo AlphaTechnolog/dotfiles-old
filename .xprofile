@@ -1,0 +1,23 @@
+#!/bin/sh
+
+xset led
+xrandr --output LVDS-1 --mode 1366x768
+brightnessctl s 100%
+
+feh --bg-scale $HOME/.dotfiles/wallpapers/04.jpg
+
+picom -b
+nm-applet &
+volumeicon &
+cbatticon -u 5 &
+udiskie -t &
+
+export PATH="$HOME/.local/bin:$PATH"
+
+YARN_PATH="$HOME/.yarn/bin"
+
+if test -d $YARN_PATH; then
+    export PATH="$PATH:$YARN_PATH"
+fi
+
+export TERM="xterm-256color"
