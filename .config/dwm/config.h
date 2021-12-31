@@ -1,7 +1,7 @@
 // -------------------------------- Appearance ---------------------------------
 
 // border pixel of windows
-static const unsigned int borderpx  = 1;
+static const unsigned int borderpx  = 0;
 // gaps between windows 
 static const unsigned int gappx = 18;
 // snap pixel 
