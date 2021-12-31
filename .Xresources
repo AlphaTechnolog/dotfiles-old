@@ -1,71 +1,34 @@
+*background: #1E1E28
+*foreground: #DADAE8
 
-!-- Xft settings -- !
-Xft.dpi:        96
-Xft.antialias:  true
-Xft.rgba:       rgb
-Xft.hinting:    true
-Xft.hintstyle:  hintfull
+! Black + dark black
+*color0: #6E6C7E
+*color8: #6E6C7E
 
-! window padding
-st.borderpx:          15
-st.font: JetBrains Mono::pixelsize=15
-st.fontalt0: FuraCode Nerd Font:style=Regular:pixelsize=14
-! st.font:           JetBrainsMono Nerd Font:pixelsize=15 , Material Design Icons :pixelsize =15
-st.opacity: 255
+! Red
+*color1: #E38C8F
+*color9: #E38C8F
 
-! Base16 OneDark
-! Scheme: Lalit Magant (http://github.com/tilal6991)
+! Green
+*color2: #B1E3AD
+*color10: #B1E3AD
 
-#define base00 #282c34
-#define base01 #353b45
-#define base02 #3e4451
-#define base03 #545862
-#define base04 #565c64
-#define base05 #abb2bf
-#define base06 #b6bdca
-#define base07 #c8ccd4
-#define base08 #e06c75
-#define base09 #d19a66
-#define base0A #e5c07b
-#define base0B #98c379
-#define base0C #56b6c2
-#define base0D #61afef
-#define base0E #c678dd
-#define base0F #be5046
+! Yellow
+*color3: #EBDDAA
+*color11:  #EBDDAA
 
-*foreground:   base07
-#ifdef background_opacity
-*background:   [background_opacity]base00
-#else
-*background:   base00
-#endif
-*cursorColor:  base05
+! Blue
+*color4: #A4B9EF
+*color12: #A4B9EF
 
-*color0:       base00
-*color1:       base08
-*color2:       base0B
-*color3:       base0A
-*color4:       base0D
-*color5:       base0E
-*color6:       base0C
-*color7:       base05
+! Magenta
+*color5: #C6AAE8
+*color13: #C6AAE8
 
-*color8:       base03
-*color9:       base08
-*color10:      base0B
-*color11:      base0A
-*color12:      base0D
-*color13:      base0E
-*color14:      base0C
-*color15:      base07
+! Pink
+*color6: #E5B4E2
+*color14: #E5B4E2
 
-! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
-! use 'shell' template to set these if necessary
-*color16:      base09
-*color17:      base0F
-*color18:      base01
-*color19:      base02
-*color20:      base04
-*color21:      base06
-
-Xcursor.theme: Breeze
+! Whites
+*color7: #DADAE8
+*color15: #DADAE8

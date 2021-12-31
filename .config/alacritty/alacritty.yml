@@ -41,7 +41,7 @@ font:
     family: JetBrains Mono Medium Nerd Font
   normal:
     family: JetBrains Mono Medium Nerd Font
-  size: 13.5
+  size: 12.0
 window:
   padding:
     x: 25
