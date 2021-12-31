@@ -41,5 +41,6 @@ floating_layout = layout.Floating(
         Match(title='branchdialog'),
         Match(title='pinentry'),
     ],
-    border_focus=colors['focus' if theme != 'dark-grey' else 'inactive'][0]
+    border_focus=colors['focus' if theme != 'dark-grey' else 'inactive'][0],
+    border_width=0,
 )

@@ -32,6 +32,7 @@ colors:
 cursor:
   style:
     shape: Beam
+  thickness: 0
 env:
   TERM: xterm-256color
 font:
