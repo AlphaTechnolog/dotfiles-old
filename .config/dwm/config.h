@@ -65,7 +65,7 @@ static const struct Theme catppuccin = {
     .inactive = "#5c6370",
     .active = "#e6efff",
     .bg = "#1E1E29",
-    .focus = "#E5B4E2",
+    .focus = "#C6AAE8",
 };
 
 static const struct Theme onedark = {
