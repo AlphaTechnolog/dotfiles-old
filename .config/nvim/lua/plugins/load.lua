@@ -38,4 +38,5 @@ return packer.startup(function()
   use 'marko-cerovac/material.nvim'
   use 'navarasu/onedark.nvim'
   use {'catppuccin/nvim', as = 'catppuccin'}
+  use 'akinsho/bufferline.nvim'
 end)

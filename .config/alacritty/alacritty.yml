@@ -32,7 +32,6 @@ colors:
 cursor:
   style:
     shape: Beam
-  thickness: 0
 env:
   TERM: xterm-256color
 font:
@@ -42,8 +41,8 @@ font:
     family: JetBrains Mono Medium Nerd Font
   normal:
     family: JetBrains Mono Medium Nerd Font
-  size: 12.0
+  size: 10.5
 window:
   padding:
-    x: 25
-    y: 25
+    x: 15
+    y: 15

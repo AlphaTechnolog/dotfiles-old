@@ -8,7 +8,6 @@ set fish_greeting ""
 # ENV
 
 set yarnpath (yarn global bin 2>/dev/null)
-set PATH "$PATH:$yarnpath:/opt/node/bin"
 set PATH "$PATH:$HOME/.local/bin"
 
 # Aliases

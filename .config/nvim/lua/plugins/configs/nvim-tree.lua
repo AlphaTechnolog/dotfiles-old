@@ -30,13 +30,12 @@ require'nvim-tree'.setup {
     side = 'left',
     auto_resize = true,
     number = true,
-    relativenumber = true,
-    width = 35,
+    relativenumber = true
   }
 }
 
 vim.cmd [[
-let g:nvim_tree_quit_on_open = 1 "0 by default, closes the tree when you open a file
+let g:nvim_tree_quit_on_open = 0 "0 by default, closes the tree when you open a file
 let g:nvim_tree_git_hl = 1 "0 by default, will enable file highlight for git attributes (can be used without the icons).
 let g:nvim_tree_highlight_opened_files = 1 "0 by default, will enable folder and file icon highlight for opened files/directories.
 let g:nvim_tree_disable_window_picker = 1 "0 by default, will disable the window picker.
