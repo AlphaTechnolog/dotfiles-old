@@ -4,9 +4,9 @@ xset led
 xrandr --output LVDS-1 --mode 1366x768
 brightnessctl s 100%
 
-feh --bg-scale $HOME/.dotfiles/wallpapers/05.png
+feh --bg-scale $HOME/.dotfiles/wallpapers/07.png
 
-picom -b
+picom -b --experimental-backends
 nm-applet &
 volumeicon &
 cbatticon -u 5 &
