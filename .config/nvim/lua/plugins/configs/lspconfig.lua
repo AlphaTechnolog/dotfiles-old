@@ -147,14 +147,14 @@ require'lspconfig'.sumneko_lua.setup {
 -- emmet
 
 require'lspconfig'.emmet_ls.setup {
-  filetypes = { 'html', 'css', 'django-html', 'php' }
+  filetypes = { 'html', 'css', 'django-html' }
 }
 
 -- html and another stuff
 
 require'lspconfig'.html.setup {
   capabilities = capabilities,
-  filetypes = { 'html', 'css', 'django-html', 'php' },
+  filetypes = { 'html', 'css', 'django-html' },
 }
 
 -- php

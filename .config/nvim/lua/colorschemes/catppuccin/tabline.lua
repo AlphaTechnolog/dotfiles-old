@@ -34,7 +34,7 @@ require('bufferline').setup {
     diagnostics_indicator = function(count, level, diagnostics_dict, context)
       return "("..count..")"
     end,
-    offsets = {{filetype = "NvimTree", text = "Files"}},
+    offsets = {{filetype = "NvimTree", text = ""}},
     show_buffer_icons = true, -- disable filetype icons for buffers
     show_buffer_close_icons = true,
     show_close_icon = true,
