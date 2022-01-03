@@ -59,7 +59,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "b", lazy.spawn('firefox')),
 
     # Terminal
-    ([mod], "Return", lazy.spawn("kitty")),
+    ([mod], "Return", lazy.spawn("alacritty")),
 
     # ------------ Hardware Configs ------------
 

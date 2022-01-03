@@ -15,14 +15,15 @@ mem() {
 
 ## VOLUME
 vol() {
-    vol=`amixer get Master | awk -F'[][]' 'END{ print $4":"$2 }' | sed 's/on://g'`
-    echo -e "$vol"
+  vol=`pamixer --get-volume`
+  echo -e "$vol%"
 }
 
 ## Updates
 updates () {
-  updates=$(checkupdates | wc -l)
-  echo -e "$updates"
+  echo -e "0"
+  # updates=$(checkupdates | wc -l)
+  # echo -e "$updates"
 }
 
 SLEEP_SEC=3
