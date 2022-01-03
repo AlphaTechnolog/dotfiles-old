@@ -28,9 +28,7 @@ require'nvim-tree'.setup {
   view = {
     hide_root_folder = false,
     side = 'left',
-    auto_resize = true,
-    number = true,
-    relativenumber = true
+    auto_resize = true
   }
 }
 
@@ -93,6 +91,4 @@ let g:nvim_tree_icons = {
     \   }
     \ }
 
-" a list of groups can be found at `:help nvim_tree_highlight`
-highlight NvimTreeFolderIcon guibg=#d33682
 ]]

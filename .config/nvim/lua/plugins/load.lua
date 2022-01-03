@@ -39,4 +39,11 @@ return packer.startup(function()
   use 'navarasu/onedark.nvim'
   use {'catppuccin/nvim', as = 'catppuccin'}
   use 'akinsho/bufferline.nvim'
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    },
+    -- tag = 'release' -- To use the latest release
+  }
 end)

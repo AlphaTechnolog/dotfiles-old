@@ -71,7 +71,6 @@ lsp.diagnosticls.setup {
       less = 'prettier',
       typescript = 'eslint_d',
       typescriptreact = 'eslint_d',
-      json = 'prettier',
       markdown = 'prettier',
     }
   }
@@ -110,7 +109,7 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
             spacing = 5,
             severity_limit = 'Warning',
         },
-        update_in_insert = true,
+        update_in_insert = false,
     }
 )
 
@@ -162,4 +161,4 @@ require'lspconfig'.html.setup {
 require'lspconfig'.intelephense.setup {}
 
 -- eslint
-require'lspconfig'.eslint.setup {}
+-- require'lspconfig'.eslint.setup {}
