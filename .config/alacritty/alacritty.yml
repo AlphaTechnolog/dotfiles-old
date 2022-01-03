@@ -10,8 +10,8 @@ colors:
     white: '#DADAE8'
     yellow: '#EBDDAA'
   cursor:
-    cursor: '#DADAE8'
-    text: '#1E1E28'
+    cursor: '#B1E3AD'
+    text: '#B1E3AD'
   indexed_colors:
   - color: '#F2CECF'
     index: 16
@@ -41,8 +41,8 @@ font:
     family: JetBrains Mono Medium Nerd Font
   normal:
     family: JetBrains Mono Medium Nerd Font
-  size: 10.5
+  size: 11.5
 window:
   padding:
-    x: 10
-    y: 10
+    x: 13
+    y: 13
