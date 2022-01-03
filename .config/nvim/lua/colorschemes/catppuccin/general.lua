@@ -3,10 +3,10 @@ local catppuccin = require('catppuccin')
 catppuccin.setup({
   term_colors = true,
   styles = {
-    comments = "italic",
+    comments = "NONE",
     functions = "NONE",
-    keywords = "italic",
-    strings = "italic",
+    keywords = "NONE",
+    strings = "NONE",
     variables = "NONE",
   },
   integrations = {
@@ -14,10 +14,10 @@ catppuccin.setup({
     native_lsp = {
       enabled = true,
       virtual_text = {
-        errors = "italic",
-        hints = "italic",
-        warnings = "italic",
-        information = "italic",
+        errors = "NONE",
+        hints = "NONE",
+        warnings = "NONE",
+        information = "NONE",
       },
       underlines = {
         errors = "underline",

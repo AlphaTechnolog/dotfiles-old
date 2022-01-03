@@ -9,6 +9,7 @@ set fish_greeting ""
 
 set yarnpath (yarn global bin 2>/dev/null)
 set PATH "$PATH:$HOME/.local/bin"
+set TERM xterm-256color
 
 # Aliases
 

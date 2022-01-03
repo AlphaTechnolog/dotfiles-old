@@ -40,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Arc-Darkest</name>
+    <name>Arc-Dark</name>
     <titleLayout>DSLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -418,7 +418,7 @@
           <enabled>true</enabled>
           <name>Terminal</name>
         </startupnotify>
-        <command>alacritty</command>
+        <command>kitty</command>
       </action>
     </keybind>
     <!-- Hardware -->
