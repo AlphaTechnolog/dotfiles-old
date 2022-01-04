@@ -9,6 +9,7 @@ opt.cmdheight = options.cmdheight
 opt.cul = true -- cursor line
 
 opt.wrap = options.wrap
+opt.showmode = options.showmode
 
 -- Indentline
 opt.expandtab = options.expandtab

@@ -1,18 +1,22 @@
 #!/bin/sh
 
+# vim: ft=bash
+
+export PATH="$HOME/.local/bin:$PATH"
+
+xsetroot -cursor_name left_ptr
+
 xset led
 xrandr --output LVDS-1 --mode 1366x768
 brightnessctl s 100%
 
-feh --bg-scale $HOME/.dotfiles/wallpapers/08.png
+wl restore
 
-picom -b --experimental-backends
+picom -b
 nm-applet &
 volumeicon &
 cbatticon -u 5 &
 udiskie -t &
-
-export PATH="$HOME/.local/bin:$PATH"
 
 YARN_PATH="$HOME/.yarn/bin"
 

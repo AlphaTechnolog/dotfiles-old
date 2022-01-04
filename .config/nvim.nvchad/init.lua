@@ -1,6 +1,8 @@
 -- try to call custom init
 pcall(require, "custom")
 
+vim.g.did_load_filetypes = 1
+
 local core_modules = {
    "core.options",
    "core.autocmds",

@@ -222,6 +222,13 @@ return packer.startup(function()
          require("core.mappings").telescope()
       end,
    }
+   use {
+     "nathom/filetype.nvim"
+   }
+   use {
+     "luukvbaal/stabilize.nvim",
+     config = function () require("stabilize").setup() end
+   }
    -- load user defined plugins
    require("core.hooks").run("install_plugins", use)
 end)

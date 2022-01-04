@@ -8,6 +8,7 @@ M.options = {
    -- general nvim/vim options , check :h optionname to know more about an option
 
    clipboard = "unnamedplus",
+   showmode = false,
    cmdheight = 1,
    ruler = false,
    hidden = true,
@@ -21,7 +22,7 @@ M.options = {
    expandtab = true,
    shiftwidth = 2,
    smartindent = true,
-   tabstop = 8,
+   tabstop = 2,
    timeoutlen = 400,
    updatetime = 250,
    undofile = true,

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# vim: ft=python
 
 from argparse import Namespace as CommandArguments
 from random import randint
@@ -22,7 +23,6 @@ def error(message: str):
 def get_random_wallpaper_name() -> str:
     configured_wallpapers = wallpapers.get_wallpapers()
     index = randint(0, (len(configured_wallpapers) - 1))
-    print(index)
     wallpaper = configured_wallpapers[index]
 
     return wallpaper
