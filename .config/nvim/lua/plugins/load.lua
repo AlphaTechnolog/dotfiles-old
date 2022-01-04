@@ -46,5 +46,4 @@ return packer.startup(function()
     },
     -- tag = 'release' -- To use the latest release
   }
-  use 'lukas-reineke/indent-blankline.nvim'
 end)

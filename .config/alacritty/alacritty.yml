@@ -1,34 +1,36 @@
 background_opacity: 1.0
 colors:
   bright:
-    black: '#6E6C7E'
-    blue: '#A4B9EF'
-    cyan: '#E5B4E2'
-    green: '#B1E3AD'
-    magenta: '#C6AAE8'
-    red: '#E38C8F'
-    white: '#DADAE8'
-    yellow: '#EBDDAA'
-  cursor:
-    cursor: '#B1E3AD'
-    text: '#B1E3AD'
-  indexed_colors:
-  - color: '#F2CECF'
-    index: 16
-  - color: '#3E4058'
-    index: 17
+    black: '#5c6370'
+    blue: '#61afef'
+    cyan: '#56b6c2'
+    green: '#98c379'
+    magenta: '#c678dd'
+    red: '#e06c75'
+    white: '#e6efff'
+    yellow: '#d19a66'
+  dim:
+    black: '#1e2127'
+    blue: '#61afef'
+    cyan: '#56b6c2'
+    green: '#98c379'
+    magenta: '#c678dd'
+    red: '#e06c75'
+    white: '#828791'
+    yellow: '#d19a66'
   normal:
-    black: '#6E6C7E'
-    blue: '#A4B9EF'
-    cyan: '#E5B4E2'
-    green: '#B1E3AD'
-    magenta: '#C6AAE8'
-    red: '#E38C8F'
-    white: '#DADAE8'
-    yellow: '#EBDDAA'
+    black: '#1e2127'
+    blue: '#61afef'
+    cyan: '#56b6c2'
+    green: '#98c379'
+    magenta: '#c678dd'
+    red: '#e06c75'
+    white: '#828791'
+    yellow: '#d19a66'
   primary:
-    background: '#1E1E28'
-    foreground: '#DADAE8'
+    background: '#282c34'
+    bright_foreground: '#e6efff'
+    foreground: '#abb2bf'
 cursor:
   style:
     shape: Beam
