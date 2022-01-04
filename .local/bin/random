@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+process.argv = process.argv.slice(2)
+
+const [min, max] = process.argv.map(i => Number(i))
+const arr = [min, max]
+
+if (arr.find(i => isNaN(i)) !== undefined) {
+  console.error('Invalid max or min')
+  process.exit(1)
+}
+
+const mi = min || 1
+const ma = max || 100
+
+const getRandomVal = (min, max) => {
+  min = Math.ceil(min)
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
+console.log(getRandomVal(mi, ma).toString())
