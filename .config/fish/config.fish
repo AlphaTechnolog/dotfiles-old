@@ -102,9 +102,9 @@ else
 end
 
 # color
-set fish_color_normal brwhite
-set fish_color_command brmagenta
-set fish_color_param brpurple
+set fish_color_normal brblue
+set fish_color_command brblue
+set fish_color_param brblue
 set fish_color_error brred
 
 # vi-mode
