@@ -927,5 +927,8 @@
       </position>
       <fullscreen>yes</fullscreen>
     </application>
+    <application class="*">
+      <decor>no</decor>
+    </application>
   </applications>
 </openbox_config>
