@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [[ $WALLPAPERS_FOLDER == "" ]]; then
+  WALLPAPERS_FOLDER=$HOME/.dotfiles/wallpapers
+fi
+if ! test -d "${WALLPAPERS_FOLDER}"; then
+  >&2 echo "${WALLPAPERS_FOLDER} don't exists, export variable WALLPAPERS_FOLDER to override it's value"
+  exit 1
+fi
+
+cd ${WALLPAPERS_FOLDER}
+if ! test -f ./apply-random.sh; then
+  >&2 echo "cannot get the script apply-random.sh in $pwd, please make sure it exists"
+  exit 1
+fi
+
+bash ./apply-random.sh
