@@ -337,7 +337,7 @@ static Key keys[] = {
     { MODKEY, XK_s, spawn, SHCMD("~/.local/bin/spanish-kb-copier") },
 
     // Terminal
-    { MODKEY, XK_Return, spawn, SHCMD("alacritty") },
+    { MODKEY, XK_Return, spawn, SHCMD("kitty") },
 
     // Browser
     { MODKEY, XK_b, spawn, SHCMD("firefox") },
