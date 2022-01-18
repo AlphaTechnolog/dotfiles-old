@@ -437,8 +437,8 @@ remove_all_config() {
     done
 
     if confirm "Neovim has a special uninstallation method, do you want to uninstall it?"; then
-      echo "==> rm -rf $HOME.cache/nvim $HOME.local/share/nvim"
-      rm -rf $HOME.cache/nvim $HOME.local/share/nvim
+      echo "==> rm -rf $HOME/.cache/nvim $HOME/.local/share/nvim"
+      rm -rf $HOME/.cache/nvim $HOME/.local/share/nvim
     fi
   fi
 }
