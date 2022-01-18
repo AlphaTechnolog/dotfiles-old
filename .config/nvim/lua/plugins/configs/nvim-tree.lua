@@ -88,4 +88,4 @@ au BufEnter NvimTree setlocal statusline=%!DisableST()
 hi NvimTreeStatusLineNC guibg=nvim_treebg guifg=nvim_treebg
 ]]
 
-g.nvim_tree_quit_on_open = 1
+g.nvim_tree_quit_on_open = 0

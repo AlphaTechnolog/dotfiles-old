@@ -124,16 +124,16 @@ windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace
 
 myStartupHook :: X ()
 myStartupHook = do
-    spawnOnce "picom &"
-    spawnOnce "xset led"
+    -- spawnOnce "picom &"
+    -- spawnOnce "xset led"
     -- spawnOnce "nm-applet &"
-    spawnOnce "volumeicon &"
-    spawnOnce "$HOME/.local/bin/monitor-config"
-    spawnOnce "udiskie -t &"
+    -- spawnOnce "volumeicon &"
+    -- spawnOnce "$HOME/.local/bin/monitor-config"
+    -- spawnOnce "udiskie -t &"
     -- Onedark
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1e222a  --height 22 &"
     -- Solarized Dark
-    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x002b36  --height 22 &"
+    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x002b36  --height 22 &"
     -- Nightfox
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x192330  --height 22 &"
     -- Calvera Dark
@@ -157,10 +157,10 @@ myStartupHook = do
     -- Dracula
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282a36  --height 22 &"
     -- Tokyonight
-    -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1a1b26  --height 22 &"
+    spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1a1b26  --height 22 &"
     -- Gruvbox
     -- spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x1d2021  --height 22 &"
-    spawnOnce "/usr/bin/wl restore"
+    -- spawnOnce "/usr/bin/wl restore"
     setWMName "LG3D"
 
 myColorizer :: Window -> Bool -> X (String, String)
@@ -213,7 +213,7 @@ tall     = renamed [Replace "tall"]
            $ windowNavigation
            $ subLayout [] (smartBorders Simplest)
            $ limitWindows 12
-           $ mySpacing 6
+           $ mySpacing 10
            $ ResizableTall 1 (3/100) (1/2) []
 monocle  = renamed [Replace "monocle"]
            $ smartBorders
@@ -241,8 +241,8 @@ myLayoutHook = avoidStruts
     $ T.toggleLayouts floats
     $ mkToggle (NBFULL ?? NOBORDERS ?? EOT) myDefaultLayout
   where
-    myDefaultLayout = noBorders monocle
-                      |||  withBorder myBorderWidth tall
+    myDefaultLayout = withBorder myBorderWidth tall
+                      |||  noBorders monocle
 
 -- myWorkspaces = [" net ", " dev ", " term ", " fs ", " ref ", " misc ", " mus ", " chat ", " conf "]
 -- myWorkspaces = ["   ", "   ", "   ", "   ", "   ", "   ", "   ", " ﭮ  ", " 漣  "]
@@ -422,7 +422,7 @@ main = do
               -- Onedark
               -- , ppCurrent = xmobarColor "#c792ea" "" . wrap "<box type=Bottom width=2 mb=2 color=#c792ea>" "</box>"         -- Current workspace
               -- Solarized Dark
-              , ppCurrent = xmobarColor "#2aa198" "" . wrap "<box type=Bottom width=2 mb=2 color=#2aa198>" "</box>"         -- Current workspace
+              -- , ppCurrent = xmobarColor "#2aa198" "" . wrap "<box type=Bottom width=2 mb=2 color=#2aa198>" "</box>"         -- Current workspace
               -- Nightfox
               -- , ppCurrent = xmobarColor "#719cd6" "" . wrap "<box type=Bottom width=2 mb=2 color=#719cd6>" "</box>"         -- Current workspace
               -- Moonlight
@@ -432,7 +432,7 @@ main = do
               -- Tokyonight Day
               -- , ppCurrent = xmobarColor "#2e7de9" "" . wrap "<box type=Bottom width=2 mb=2 color=#2e7de9>" "</box>"         -- Current workspace
 	      -- Tokyonight
-              -- , ppCurrent = xmobarColor "#7aa2f7" "" . wrap "<box type=Bottom width=2 mb=2 color=#7aa2f7>" "</box>"         -- Current workspace
+              , ppCurrent = xmobarColor "#7aa2f7" "" . wrap "<box type=Bottom width=2 mb=2 color=#7aa2f7>" "</box>"         -- Current workspace
               -- Horizon Dark
               -- , ppCurrent = xmobarColor "#ee64ac" "" . wrap "<box type=Bottom width=2 mb=2 color=#ee64ac>" "</box>"         -- Current workspace
               -- Material Ocean
@@ -450,7 +450,7 @@ main = do
               -- Onedark
               -- , ppVisible = xmobarColor "#c792ea" "" . clickable              -- Visible but not current workspace
               -- Solarized Dark
-              , ppVisible = xmobarColor "#2aa198" "" . clickable              -- Visible but not current workspace
+              -- , ppVisible = xmobarColor "#2aa198" "" . clickable              -- Visible but not current workspace
               -- Nightfox
               -- , ppVisible = xmobarColor "#719cd6" "" . clickable              -- Visible but not current workspace
               -- Moonlight
@@ -460,7 +460,7 @@ main = do
               -- Tokyonight Day
               -- , ppVisible = xmobarColor "#2e7de9" "" . clickable              -- Visible but not current workspace
 	      -- Tokyonight
-              -- , ppVisible = xmobarColor "#7aa2f7" "" . clickable              -- Visible but not current workspace
+              , ppVisible = xmobarColor "#7aa2f7" "" . clickable              -- Visible but not current workspace
               -- Horizon Dark
 	            -- , ppVisible = xmobarColor "#ee64ac" "" . clickable              -- Visible but not current workspace
               -- Material Ocean
@@ -478,7 +478,7 @@ main = do
               -- Onedark
               -- , ppHidden = xmobarColor "#82AAFF" "" . wrap "<box type=Top width=2 mt=2 color=#82AAFF>" "</box>" . clickable -- Hidden workspaces
               -- Solarized Dark
-              , ppHidden = xmobarColor "#d33682" "" . wrap "<box type=Top width=2 mt=2 color=#d33682>" "</box>" . clickable -- Hidden workspaces
+              -- , ppHidden = xmobarColor "#d33682" "" . wrap "<box type=Top width=2 mt=2 color=#d33682>" "</box>" . clickable -- Hidden workspaces
               -- Nightfox
               -- , ppHidden = xmobarColor "#9d79d6" "" . wrap "<box type=Top width=2 mt=2 color=#9d79d6>" "</box>" . clickable -- Hidden workspaces
               -- Moonlight
@@ -488,7 +488,7 @@ main = do
               -- Tokyonight Day
               -- , ppHidden = xmobarColor "#a9b1d6" "" . wrap "<box type=Top width=2 mt=2 color=#a9b1d6>" "</box>" . clickable -- Hidden workspaces
 	      -- Tokyonight
-              -- , ppHidden = xmobarColor "#7dcfff" "" . wrap "<box type=Top width=2 mt=2 color=#7dcfff>" "</box>" . clickable -- Hidden workspaces
+              , ppHidden = xmobarColor "#7dcfff" "" . wrap "<box type=Top width=2 mt=2 color=#7dcfff>" "</box>" . clickable -- Hidden workspaces
               -- Horizon Dark
               -- , ppHidden = xmobarColor "#26bbd9" "" . wrap "<box type=Top width=2 mt=2 color=#26bbd9>" "</box>" . clickable -- Hidden workspaces
               -- Material Ocean
@@ -506,7 +506,7 @@ main = do
               -- Onedark
               -- , ppHiddenNoWindows = xmobarColor "#82AAFF" ""  . clickable     -- Hidden workspaces (no windows)
               -- Solarized Dark
-              , ppHiddenNoWindows = xmobarColor "#268bd2" ""  . clickable     -- Hidden workspaces (no windows)
+              -- , ppHiddenNoWindows = xmobarColor "#268bd2" ""  . clickable     -- Hidden workspaces (no windows)
               -- Nightfox
               -- , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
               -- Moonlight
@@ -516,7 +516,7 @@ main = do
               -- Tokyonight Day
               -- , ppHiddenNoWindows = xmobarColor "#a9b1d6" ""  . clickable     -- Hidden workspaces (no windows)
 	      -- Tokyonight
-              -- , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
+              , ppHiddenNoWindows = xmobarColor "#3e4451" ""  . clickable     -- Hidden workspaces (no windows)
               -- Horizon Dark
               -- , ppHiddenNoWindows = xmobarColor "#26bbd9" ""  . clickable     -- Hidden workspaces (no windows)
               -- Material Ocean
@@ -534,7 +534,7 @@ main = do
               -- Onedark
               -- , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window
               -- Solarized Dark
-              , ppTitle = xmobarColor "#859900" "" . shorten 60               -- Title of active window
+              -- , ppTitle = xmobarColor "#859900" "" . shorten 60               -- Title of active window
               -- Nightfox
               -- , ppTitle = xmobarColor "#719cd6" "" . shorten 60               -- Title of active window
               -- Moonlight
@@ -544,7 +544,7 @@ main = do
               -- Tokyonight Day
               -- , ppTitle = xmobarColor "#2e7de9" "" . shorten 60               -- Title of active window
 	      -- Tokyonight
-              -- , ppTitle = xmobarColor "#7aa2f7" "" . shorten 60               -- Title of active window
+              , ppTitle = xmobarColor "#7aa2f7" "" . shorten 60               -- Title of active window
               -- Horizon Dark
               -- , ppTitle = xmobarColor "#d5d8da" "" . shorten 60               -- Title of active window
               -- Material Ocean

@@ -2,13 +2,13 @@ local M = {}
 local configs = {
   -- uncomment/comment where you want to enable/disable
   -- the configs are located in /lua/lsp/configs/*
-  'html',
-  'cssls',
-  'emmetls',
-  'intelephense',
-  'tsserver',
-  'pyright',
-  'vls'
+  -- 'html',
+  -- 'cssls',
+  -- 'emmetls',
+  -- 'intelephense',
+  -- 'tsserver',
+  -- 'pyright',
+  -- 'vls'
 }
 local lspconfig = require('lspconfig')
 

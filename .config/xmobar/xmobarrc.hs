@@ -2,8 +2,8 @@
 -- Dependencies: otf-font-awesome ttf-mononoki ttf-ubuntu-font-family trayer
 -- Also depends on scripts from dtos-local-bin from the dtos-core-repo.
 
-Config {   font            = "xft:Hack Nerd Font:weight=bold:pixelsize=10.5:antialias=true:hinting=true"
-       , additionalFonts = [ "xft:Hack Nerd Font:pixelsize=11:antialias=true:hinting=true"
+Config {   font            = "xft:JetBrainsMono Nerd Font:weight=bold:pixelsize=10.5:antialias=true:hinting=true"
+       , additionalFonts = [ "xft:JetBrainsMono Nerd Font:pixelsize=11:antialias=true:hinting=true"
                            , "xft:Font Awesome 5 Free Solid:pixelsize=12"
                            , "xft:Font Awesome 5 Brands:pixelsize=12"
                            ]
@@ -14,8 +14,8 @@ Config {   font            = "xft:Hack Nerd Font:weight=bold:pixelsize=10.5:anti
        -- , bgColor = "#1C1F26"
        -- , fgColor = "#61AFEF"
        -- Solarized Dark
-       , bgColor = "#002b36"
-       , fgColor = "#dc322f"
+       -- , bgColor = "#002b36"
+       -- , fgColor = "#dc322f"
        -- Nightfox colors:
        -- , bgColor      = "#192330"
        -- , fgColor      = "#9d79d6"
@@ -45,8 +45,8 @@ Config {   font            = "xft:Hack Nerd Font:weight=bold:pixelsize=10.5:anti
        -- , fgColor      = "#9ea3c0"
        -- Tokyonight colors
        -- , bgColor      = "#24283b" -- This for storm
-       -- , bgColor      = "#1a1b26"
-       -- , fgColor      = "#c0caf5"
+       , bgColor      = "#1a1b26"
+       , fgColor      = "#c0caf5"
        -- --------------------------
        -- Dracula colors
        -- , bgColor      = "#282a36"
@@ -82,7 +82,7 @@ Config {   font            = "xft:Hack Nerd Font:weight=bold:pixelsize=10.5:anti
                         -- Time and date
                     , Run Date "<fn=2>\xf017</fn>  %b %d %Y - (%H:%M) " "date" 50
                         -- Script that dynamically adjusts xmobar padding depending on number of trayer icons.
-                    , Run Com "/home/alphatechnolog/.config/xmobar/trayer-padding-icon.sh" [] "trayerpad" 20
+                    , Run Com "/home/gabriel/.config/xmobar/trayer-padding-icon.sh" [] "trayerpad" 20
                         -- Prints out the left side items such as workspaces, layout, etc.
                     , Run UnsafeStdinReader
                     ]
@@ -93,7 +93,7 @@ Config {   font            = "xft:Hack Nerd Font:weight=bold:pixelsize=10.5:anti
        -- Onedark
        -- , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#ecbe7b><fc=#ecbe7b><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#ff6c6b><fc=#ff6c6b><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#a9a1e1><fc=#a9a1e1><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#98be65><fc=#98be65>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#46d9ff><fc=#46d9ff>%date%</fc></box> %trayerpad%"
        -- Solarized Dark
-       , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#cb4b16><fc=#cb4b16><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#dc322f><fc=#dc322f><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#d33682><fc=#d33682><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#859900><fc=#859900>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#268bd2><fc=#268bd2>%date%</fc></box> %trayerpad%"
+       -- , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#cb4b16><fc=#cb4b16><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#dc322f><fc=#dc322f><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#d33682><fc=#d33682><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#859900><fc=#859900>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#268bd2><fc=#268bd2>%date%</fc></box> %trayerpad%"
        -- Nightfox
        -- , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#dbc074><fc=#dbc074><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#c94f6d><fc=#c94f6d><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#9d79d6><fc=#9d79d6><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#81b29a><fc=#81b29a>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#63cdcf><fc=#63cdcf>%date%</fc></box> %trayerpad%"
        -- Moonlight
@@ -115,5 +115,5 @@ Config {   font            = "xft:Hack Nerd Font:weight=bold:pixelsize=10.5:anti
        -- Ayu mirage
        -- , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#fdcc60><fc=#fdcc60><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#f08778><fc=#f08778><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#929BE5><fc=#929BE5><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#53bf97><fc=#53bf97>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#60b8d6><fc=#60b8d6>%date%</fc></box> %trayerpad%"
        -- Tokyonight
-       -- , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#e0af68><fc=#e0af68><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#f7768e><fc=#f7768e><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#bb9af7><fc=#bb9af7><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#9ece6a><fc=#9ece6a>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#7dcfff><fc=#7dcfff>%date%</fc></box> %trayerpad%"
+       , template = " <icon=haskell_20.xpm/>   <fc=#666666>|</fc> %UnsafeStdinReader% }{<box type=Bottom width=2 mb=2 color=#e0af68><fc=#e0af68><action=`alacritty -e htop`>%cpu%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#f7768e><fc=#f7768e><action=`alacritty -e htop`>%memory%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#bb9af7><fc=#bb9af7><action=`alacritty -e htop`>%disku%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#9ece6a><fc=#9ece6a>%uparrow%  <action=`alacritty -e htop`>%uptime%</action></fc></box>    <box type=Bottom width=2 mb=2 color=#7dcfff><fc=#7dcfff>%date%</fc></box> %trayerpad%"
        }

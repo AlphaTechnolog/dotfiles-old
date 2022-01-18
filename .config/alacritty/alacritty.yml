@@ -1,39 +1,31 @@
 background_opacity: 1.0
 colors:
   bright:
-    black: '#5c6370'
-    blue: '#61afef'
-    cyan: '#56b6c2'
-    green: '#98c379'
-    magenta: '#c678dd'
-    red: '#e06c75'
-    white: '#e6efff'
-    yellow: '#d19a66'
-  cursor:
-    cursor: '#61afef'
-    text: '#abb2bf'
-  dim:
-    black: '#1e2127'
-    blue: '#61afef'
-    cyan: '#56b6c2'
-    green: '#98c379'
-    magenta: '#c678dd'
-    red: '#e06c75'
-    white: '#828791'
-    yellow: '#d19a66'
+    black: '#414868'
+    blue: '#7aa2f7'
+    cyan: '#7dcfff'
+    green: '#9ece6a'
+    magenta: '#bb9af7'
+    red: '#f7768e'
+    white: '#c0caf5'
+    yellow: '#e0af68'
+  indexed_colors:
+  - color: '#ff9e64'
+    index: 16
+  - color: '#db4b4b'
+    index: 17
   normal:
-    black: '#1e2127'
-    blue: '#61afef'
-    cyan: '#56b6c2'
-    green: '#98c379'
-    magenta: '#c678dd'
-    red: '#e06c75'
-    white: '#828791'
-    yellow: '#d19a66'
+    black: '#15161E'
+    blue: '#7aa2f7'
+    cyan: '#7dcfff'
+    green: '#9ece6a'
+    magenta: '#bb9af7'
+    red: '#f7768e'
+    white: '#a9b1d6'
+    yellow: '#e0af68'
   primary:
-    background: '#1e222a'
-    bright_foreground: '#e6efff'
-    foreground: '#abb2bf'
+    background: '#1a1b26'
+    foreground: '#c0caf5'
 cursor:
   style:
     shape: Beam
@@ -49,5 +41,5 @@ font:
   size: 11.5
 window:
   padding:
-    x: 5
-    y: 5
+    x: 0
+    y: 0
