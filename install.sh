@@ -303,7 +303,7 @@ clone_dotfiles() {
 
   echo "*****************Before run this, install git!****************"
 
-  repository_url="https://github.com/AlphaTechnolog/dotfiles.git"
+  repository_url="https://github.com/AlphaTechnolog/dotfiles-old.git"
 
   printf "Write the address to clone the dotfiles directory (default $HOME) (it appends .dotfiles): "
   read directory
