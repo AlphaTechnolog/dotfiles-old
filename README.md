@@ -31,7 +31,7 @@ directories, it makes symlinks on your system to the dotfiles files (remember th
 To use the `install.sh` script, get it!:
 
 ```sh
-curl -sL https://raw.githubusercontent.com/AlphaTechnolog/dotfiles/main/install.sh -o dotfiles-install.sh
+curl -sL https://raw.githubusercontent.com/AlphaTechnolog/dotfiles-old/main/install.sh -o dotfiles-install.sh
 chmod +x ./dotfiles-install.sh
 ```
 
